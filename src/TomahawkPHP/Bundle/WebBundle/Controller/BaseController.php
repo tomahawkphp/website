@@ -1,0 +1,77 @@
+<?php
+
+namespace TomahawkPHP\Bundle\WebBundle\Controller;
+
+use Symfony\Component\HttpFoundation\Request;
+use Tomahawk\Asset\AssetContainer;
+use Tomahawk\Routing\Controller;
+use Tomahawk\Auth\AuthInterface;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Tomahawk\Database\DatabaseManager;
+use Tomahawk\Hashing\HasherInterface;
+use Tomahawk\Forms\FormsManagerInterface;
+use Tomahawk\Asset\AssetManagerInterface;
+use Tomahawk\Encryption\CryptInterface;
+use Tomahawk\DI\ContainerInterface;
+use Tomahawk\Session\SessionInterface;
+use Tomahawk\HttpCore\Response\CookiesInterface;
+use Tomahawk\Cache\CacheInterface;
+use Tomahawk\HttpCore\ResponseBuilderInterface;
+use Symfony\Component\Templating\EngineInterface;
+use Tomahawk\Config\ConfigInterface;
+use Tomahawk\Url\UrlGeneratorInterface;
+
+class BaseController extends Controller
+{
+    public function __construct(
+        AuthInterface $auth,
+        FormsManagerInterface $forms,
+        CookiesInterface $cookies,
+        AssetManagerInterface $assets,
+        HasherInterface $hasher,
+        SessionInterface $session = null,
+        CryptInterface $crypt,
+        CacheInterface $cache,
+        ResponseBuilderInterface $response,
+        EngineInterface $templating,
+        ConfigInterface $config,
+        ContainerInterface $container,
+        DatabaseManager $database = null,
+        UrlGeneratorInterface $url
+    )
+    {
+        parent::__construct($auth, $forms,$cookies,$assets,$hasher,$session,$crypt,$cache,$response,$templating,$config,$container,$database,$url);
+
+        $headAssets = new AssetContainer('head');
+        $footerAssets = new AssetContainer('footer');
+
+        $headAssets
+            ->addCss('bootstrap_css', 'bootstrap/css/bootstrap.min.css')
+            ->addCss('site_css', 'css/style.css', array('bootstrap_css'));
+
+        $footerAssets
+            ->addJS('bootstrap_js', 'bootstrap/js/bootstrap.min.js', array('jquery'))
+            ->addJS('jquery', 'js/jquery.min.js');
+
+        $this->assets->addContainer($headAssets);
+        $this->assets->addContainer($footerAssets);
+    }
+
+    protected function addCodeMirrorAssets()
+    {
+        $this->assets->container('footer')
+            ->addJs('assets', 'js/assets.js', array('codemirror'))
+            ->addJs('codemirror', 'js/codemirror/lib/codemirror.js', array('jquery'))
+
+            ->addJs('clike_mode', 'js/codemirror/mode/clike/clike.js', array('codemirror'))
+            ->addJs('htmlm_mode', 'js/codemirror/mode/htmlmixed/htmlmixed.js', array('codemirror'))
+            ->addJs('xml_mode', 'js/codemirror/mode/xml/xml.js', array('codemirror'))
+            ->addJs('php_mode', 'js/codemirror/mode/php/php.js', array('codemirror'))
+
+
+            ->addCss('codemirror_css', 'js/codemirror/lib/codemirror.css')
+            ->addCss('codemirror_theme_css', 'js/codemirror/theme/ambiance.css', array('codemirror_css'));
+    }
+
+}

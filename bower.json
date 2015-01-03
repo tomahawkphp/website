@@ -1,0 +1,25 @@
+{
+  "name": "TomahawkPHP",
+  "version": "1.0.0",
+  "homepage": "http://tomahawkphp.com",
+  "authors": [
+    "Tom Ellis <tellishtc@gmail.com>"
+  ],
+  "description": "TomahawkPHP Framework",
+  "keywords": [
+    "PHP",
+    "Framework"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.*"
+  }
+}

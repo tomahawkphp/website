@@ -1,0 +1,287 @@
+
+a {
+  color: #333333;
+}
+
+a:hover, a:focus {
+  color: @brandcolor;
+  text-decoration: underline;
+}
+
+.push-down-10 {
+  margin-top: 10px;
+}
+
+.push-down-20 {
+  margin-top: 20px;
+}
+
+.push-up-10 {
+  margin-bottom: 10px;
+}
+
+.push-up-20 {
+  margin-bottom: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.centralise {
+  margin: 0 auto;
+}
+
+.brand-red-text {
+  color: @brandcolor
+}
+
+.brand-red {
+  background-color: @brandcolor
+}
+
+.banner {
+  display: block;
+  margin: 100px auto 0;
+  width: 400px;
+  text-align: center;
+}
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+
+.main-container {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  /*.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; *//* Scrollable contents if viewport is shorter than content. *//*
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }*/
+}
+
+.left-nav {
+  background-color: rgb(243,243,244);
+  margin-top: 30px;
+
+  li > a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .nav .nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 13px;
+  }
+
+  .nav-title > a {
+    font-weight: bold;
+  }
+}
+
+
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 5px;
+  margin-left: -20px;
+
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: @brandcolor;
+}
+
+.nav-sidebar > li > ul > .active > a,
+.nav-sidebar > li > ul > .active > a:hover,
+.nav-sidebar > li > ul > .active > a:focus {
+  font-weight: bold;
+  background-color: #eee;
+}
+
+.navbar {
+  background-color: rgb(243,243,244);
+  border-bottom: 1px solid #cccccc;
+
+}
+
+.navbar-inverse {
+  border-color: #cccccc;
+}
+
+.navbar-default .navbar-nav > li {
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-right: 10px;
+
+  &.active {
+    > a {
+      background-color: @brandcolor;
+      border-radius: 5px;
+      color: #FFFFFF;
+    }
+  }
+
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover {
+      background-color: @brandcolor;
+      border-radius: 5px;
+      color: #FFFFFF;
+    }
+  }
+
+}
+
+.nav-sidebar > li {
+  &.active > a {
+    background-color: @brandcolor;
+  }
+}
+
+.navbar-brand {
+  height: 65px;
+  color: #333333;
+  margin-right: 20px;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+a.link-me {
+  color: @brandcolor;
+}
+
+pre {
+  background: #3F3F49;
+  border-radius: 2px;
+  padding: 20px;
+  color: #ffffff;
+  display: block;
+  overflow: hidden;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+}
+
+pre.codeprint {
+  display: block;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  background-color: #333;
+  font-size: 8px;
+  border: 0;
+  color: #ffffff;
+  line-height: 1.9em;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 20px!important;
+  white-space: pre;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+pre.codeprint code {
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  font-size: 11px;
+}
+
+pre code {
+  background: 0 0!important;
+  padding: 0;
+  white-space: pre;
+}
+
+.bigcode {
+  padding: 10px 5px;
+}
+
+.CodeMirror {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*
+
+.navbar-toggle {
+  border-color: #cccccc;
+  background-color: #FFFFFF;
+}
+*/
