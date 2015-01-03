@@ -14,4 +14,11 @@ class HomeController extends BaseController
         ));
     }
 
+    public function aboutAction()
+    {
+        return $this->renderView('WebBundle:About:home', array(
+            'assets' => $this->assets
+        ));
+    }
+
 }

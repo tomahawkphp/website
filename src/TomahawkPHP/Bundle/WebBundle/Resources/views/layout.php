@@ -34,5 +34,11 @@
 
 <?php echo $assets->outputCss('footer') ?>
 <?php echo $assets->outputJS('footer') ?>
+
+<footer>
+    <p>
+        Tomahawk &copy; <?php echo date('Y') ?> Tom Ellis | Tomahawk logo by Thomas Hampson
+    </p>
+</footer>
 </body>
 </html>
