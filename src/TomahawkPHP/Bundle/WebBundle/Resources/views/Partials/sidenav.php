@@ -31,7 +31,7 @@ $currentRoute = $view['request']->getParameter('_route');
                 <a href="<?php echo $view['url']->route('docs.components.config') ?>">Config</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.components.cli') ? 'active' : '' ?>">
-                <a href="<?php echo $view['url']->route('docs.components.cli') ?>">CLI</a>
+                <a href="<?php echo $view['url']->route('docs.components.cli') ?>">Hatchet CLI</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.components.di') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.components.di') ?>">Dependency Injection</a>

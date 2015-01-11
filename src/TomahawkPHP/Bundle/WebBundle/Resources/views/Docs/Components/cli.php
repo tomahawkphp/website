@@ -15,7 +15,8 @@
 
     <p>
         The Hatchet Command Line Interface is build around the Symfony2 Console Component. You can read more about it
-        <a class="links" href="http://symfony.com/doc/current/components/console/introduction.html" target="_blank">here</a>.
+        <a class="links" href="http://symfony.com/doc/current/components/console/introduction.html" target="_blank">here</a>
+        including how to create a command.
     </p>
 
 
@@ -93,6 +94,16 @@ class MyCommand extends Command
 <pre>
 <code>app/hatchet hello</code>
 </pre>
+
+
+    <h3>
+        Using the DI Container in a command
+    </h3>
+
+    <p>
+        If you have your command implement <code>Tomahawk\DI\ContainerAwareInterface</code> it will get passed in for you.
+        You will they have access to it through <code>$this->container</code> (if you named the property container that is).
+    </p>
 
 <div class="push-down-20"></div>
 
