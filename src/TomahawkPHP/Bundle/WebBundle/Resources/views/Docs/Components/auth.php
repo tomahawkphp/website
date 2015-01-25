@@ -23,7 +23,7 @@
     </p>
 
     <p>
-        Other wise just add the following parameter to the construct method of your Controller
+        Otherwise just add the following parameter to the construct method of your Controller
         <code>Tomahawk\Auth\AuthInterface</code> and it will get injected in through the Service Container.
     </p>
 
