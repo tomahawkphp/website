@@ -110,8 +110,59 @@ class WebBundle extends Bundle
     </h3>
 
     <p>
-
+        To create a service provider you need to implement the <code>Tomahawk\DI\ServiceProviderInterface</code> interface.
     </p>
+
+    <p>The <code>ServiceProviderInterface</code> only has one method called <code>register</code> to implement.</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;?php
+
+namespace MyCompany\Bundle\WebBundle\DI;
+
+use Tomahawk\DI\ServiceProviderInterface;
+use Tomahawk\DI\ContainerInterface;
+
+class EmailServiceProvider implements ServiceProviderInterface
+{
+    public function register(ContainerInterface $container)
+    {
+        $container->set('email', function(ContainerInterface $c) {
+            return new Mailer($c->get('email.transport'));
+        });
+
+        $container->set('email.transport', function(ContainerInterface $c) {
+            return new Transport();
+        });
+    }
+}
+</script>
+</div>
+
+
+    <p>You remember the services we registered in the Bundle earlier, this can be replaced with the service provider instead:</p>
+
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;?php
+
+namespace MyCompany\Bundle\WebBundle;
+
+use Tomahawk\HttpKernel\Bundle\Bundle;
+use Tomahawk\DI\ContainerInterface;
+use MyCompany\Bundle\WebBundle\DI\EmailServiceProvider;
+
+class WebBundle extends Bundle
+{
+    public function boot()
+    {
+        $this->container->register(new EmailServiceProvider());
+    }
+}
+</script>
+</div>
 
 <div class="push-down-20"></div>
 
