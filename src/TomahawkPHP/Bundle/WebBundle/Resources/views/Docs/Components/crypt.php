@@ -28,6 +28,32 @@
     </p>
 
 
+    <h2>
+        Encrypting a String
+    </h2>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;?php
+
+$encrypted = $this->crypt->encrypt('A Value');
+
+</script>
+</div>
+
+    <h2>
+        Decrypting a String
+    </h2>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;?php
+
+$decrypted = $this->crypt->decrypt('A Value');
+
+</script>
+</div>
+
 <div class="push-down-20"></div>
 
 <?php $view['blocks']->stop() ?>
