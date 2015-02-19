@@ -46,7 +46,7 @@ $currentRoute = $view['request']->getParameter('_route');
                 <a href="<?php echo $view['url']->route('docs.components.hashing') ?>">Hashing</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.components.html') ? 'active' : '' ?>">
-                <a href="<?php echo $view['url']->route('docs.components.html') ?>">HTML Generator</a>
+                <a href="<?php echo $view['url']->route('docs.components.html') ?>">HTML Builder</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.components.input') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.components.input') ?>"> Input Manager</a>
