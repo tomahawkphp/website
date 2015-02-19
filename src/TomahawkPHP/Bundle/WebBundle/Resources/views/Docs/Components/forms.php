@@ -77,9 +77,6 @@ $form = new Form('/user/create', 'POST');
     </h2>
 
     <p>
-
-    </p>
-    <p>
         Below are a list of available Form elements you can add to your form:
     </p>
 
