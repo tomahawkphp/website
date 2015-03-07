@@ -21,6 +21,7 @@ use Tomahawk\HttpCore\ResponseBuilderInterface;
 use Symfony\Component\Templating\EngineInterface;
 use Tomahawk\Config\ConfigInterface;
 use Tomahawk\Url\UrlGeneratorInterface;
+use Tomahawk\Input\InputInterface;
 
 class BaseController extends Controller
 {
@@ -38,10 +39,11 @@ class BaseController extends Controller
         ConfigInterface $config,
         ContainerInterface $container,
         DatabaseManager $database = null,
-        UrlGeneratorInterface $url
+        UrlGeneratorInterface $url,
+        InputInterface $input
     )
     {
-        parent::__construct($auth, $forms,$cookies,$assets,$hasher,$session,$crypt,$cache,$response,$templating,$config,$container,$database,$url);
+        parent::__construct($auth, $forms,$cookies,$assets,$hasher,$session,$crypt,$cache,$response,$templating,$config,$container,$database,$url, $input);
 
         $headAssets = new AssetContainer('head');
         $footerAssets = new AssetContainer('footer');
