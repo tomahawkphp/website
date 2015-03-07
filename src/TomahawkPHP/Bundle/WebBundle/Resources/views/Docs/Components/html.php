@@ -25,8 +25,7 @@
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -39,8 +38,7 @@ $html = new HtmlBuilder();
     <p>Convert all applicable characters to HTML entities.</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -55,8 +53,7 @@ $html->entities('<p>hello</p>');
     <p>Output <code>&lt;script&gt;</code> element to a given source.</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -70,8 +67,7 @@ $html->script('/js/jquery.js');
     <p>You can also pass an array of attributes as the 2nd parameter:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -87,8 +83,7 @@ $html->script('/js/jquery.js', array('media' => 'all'));
     <p>Output <code>&lt;link&gt;</code> element to a given source.</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -102,8 +97,7 @@ $html->style('/css/style.css');
     <p>You can also pass an array of attributes as the 2nd parameter:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -120,8 +114,7 @@ $html->style('/css/style.css', array('media' => 'all'));
     <p>Output <code>&lt;a&gt;</code> element to a given url.</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 
@@ -135,8 +128,7 @@ $html->link('/about', 'About');
     <p>You can also pass an array of attributes as the 3rd parameter:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Html\HtmlBuilder;
 

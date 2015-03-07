@@ -53,8 +53,7 @@
     <p>You can create a new Asset Container by doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $container = new Tomahawk\Asset\AssetContainer();
 $container->addJs('jquery-ui', 'js/jquery-ui/jquery-ui.js');
 $container->addCss('jquery-ui-css', 'js/jquery-ui/jquery-ui.css');
@@ -64,8 +63,7 @@ $container->addCss('jquery-ui-css', 'js/jquery-ui/jquery-ui.css');
     <p>And this is how you set dependencies:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $container = new Tomahawk\Asset\AssetContainer();
 $container->addJs('jquery', 'js/jquery.js');
 $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'));
@@ -75,8 +73,7 @@ $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'));
     <p>You can also add extra parameters</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $container = new Tomahawk\Asset\AssetContainer();
 $container->addJs('jquery', 'js/jquery.js');
 $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'), array('media' => 'all');
@@ -87,8 +84,7 @@ $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'), array('media'
 
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $container = new Tomahawk\Asset\AssetContainer();
 $container->addJs('jquery', 'js/jquery.js');
 $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'), array('media' => 'all');
@@ -106,8 +102,7 @@ $this->assets->addContainer($container);
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $container = new Tomahawk\Asset\AssetContainer();
 $container->addJs('jquery', 'js/jquery.js');
 $container->addJs('jquery-ui', 'js/jquery-ui.js', array('jquery'), array('media' => 'all');
@@ -123,8 +118,7 @@ return $this->renderView('MyBundle:Section:index', array(
     <p>Then just tell the manager what asset type to output and from what container:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php echo $assets->outputCss('head') ?&gt;
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php echo $assets->outputCss('head') ?&gt;
 &lt;?php echo $assets->outputJS('head') ?&gt;
 </script>
 </div>

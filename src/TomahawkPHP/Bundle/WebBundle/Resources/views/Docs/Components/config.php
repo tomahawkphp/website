@@ -34,8 +34,7 @@
     <p>You can get a config value by doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $name = $this->config->get('name');
 </script>
 </div>
@@ -43,8 +42,7 @@ $name = $this->config->get('name');
     <p>You can get a pass a default value in case a value isn't set:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $name = $this->config->get('name', 'Tom');
 </script>
 </div>
@@ -56,8 +54,7 @@ $name = $this->config->get('name', 'Tom');
     <p>You can get a config value by doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->config->set('name', 'Tom Ellis');
 </script>
 </div>

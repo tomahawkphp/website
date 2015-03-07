@@ -32,8 +32,7 @@
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 
@@ -56,8 +55,7 @@ class WebBundle extends Bundle
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 
@@ -84,8 +82,7 @@ class WebBundle extends Bundle
 
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 
@@ -116,8 +113,7 @@ class WebBundle extends Bundle
     <p>The <code>ServiceProviderInterface</code> only has one method called <code>register</code> to implement.</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle\DI;
 
@@ -145,8 +141,7 @@ class EmailServiceProvider implements ServiceProviderInterface
 
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 

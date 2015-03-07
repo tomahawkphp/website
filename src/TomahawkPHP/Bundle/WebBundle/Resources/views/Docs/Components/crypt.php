@@ -33,8 +33,7 @@
     </h2>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 $encrypted = $this->crypt->encrypt('A Value');
 
@@ -46,8 +45,7 @@ $encrypted = $this->crypt->encrypt('A Value');
     </h2>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 $decrypted = $this->crypt->decrypt('A Value');
 

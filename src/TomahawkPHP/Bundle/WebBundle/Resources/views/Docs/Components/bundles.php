@@ -68,8 +68,7 @@ class WebBundle extends Bundle
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 
@@ -99,8 +98,7 @@ class WebBundle extends Bundle
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 
@@ -127,8 +125,7 @@ class WebBundle extends Bundle
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 namespace MyCompany\Bundle\WebBundle;
 

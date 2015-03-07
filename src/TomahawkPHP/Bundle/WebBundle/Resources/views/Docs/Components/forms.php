@@ -56,8 +56,7 @@
     </ul>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 
@@ -92,8 +91,7 @@ $form = new Form('/user/create', 'POST');
     <p>You can create a new Checkbox element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Checkbox;
@@ -116,8 +114,7 @@ $form->add(new Checkbox('active');
     <p>You can create a new Date element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Date;
@@ -140,8 +137,7 @@ $form->add(new Date('dob');
     <p>You can create a new Email element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Email;
@@ -163,8 +159,7 @@ $form->add(new Email('user_email');
     <p>You can create a new Hidden element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Hidden;
@@ -189,8 +184,7 @@ $form->add(new Hidden('id');
     <p>You can create a new Number element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Number;
@@ -211,8 +205,7 @@ $form->add(new Number('count');
     <p>You can create a new Password element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Password;
@@ -236,8 +229,7 @@ $form->add(new Password('user_password');
     <p>You can create a new Phone element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Phone;
@@ -263,8 +255,7 @@ $form->add(new Phone('telephone');
     <p>You can create a new Radio element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Radio;
@@ -289,8 +280,7 @@ $form->add(new Radio('gender', 'female'));
     <p>You can create a new Search element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Search;
@@ -312,8 +302,7 @@ $form->add(new Search('site_search');
     <p>You can create a new Select element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Select;
@@ -334,8 +323,7 @@ $form->add(new Select('title', array('mr' => 'Mr', 'mrs' => 'Mrs'), 'mr'));
     <p>You can create a new Submit element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Submit;
@@ -356,8 +344,7 @@ $form->add(new Submit('submit', 'Save');
     <p>You can create a new Text element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Text;
@@ -378,8 +365,7 @@ $form->add(new Text('first_name');
     <p>You can create a new TextArea element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\TextArea;
@@ -400,8 +386,7 @@ $form->add(new TextArea('description');
     <p>You can create a new Url element doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 use Tomahawk\Forms\Form;
 use Tomahawk\Forms\Element\Url;

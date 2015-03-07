@@ -40,8 +40,7 @@
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 $hashed = $this->hasher->make('password');
 </script>
@@ -57,8 +56,7 @@ $hashed = $this->hasher->make('password');
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
 $raw = 'password';
 $hashed = $this->hasher->make($raw);

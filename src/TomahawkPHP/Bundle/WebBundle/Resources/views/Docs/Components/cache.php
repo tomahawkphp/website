@@ -34,8 +34,7 @@
     <p>You can put something in the cache by doing the following:</p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->cache->save('name', 'value');
 </script>
 </div>
@@ -49,8 +48,7 @@ $this->cache->save('name', 'value');
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->cache->fetch('name');
 </script>
 </div>
@@ -64,8 +62,7 @@ $this->cache->fetch('name');
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->cache->contains('name');
 </script>
 </div>
@@ -79,8 +76,7 @@ $this->cache->contains('name');
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->cache->remove('name');
 </script>
 </div>
@@ -93,8 +89,7 @@ $this->cache->remove('name');
     </p>
 
 <div>
-<script data-style="application/x-httpd-php" type="x-code-example">
-&lt;?php
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 $this->cache->flush();
 </script>
 </div>
