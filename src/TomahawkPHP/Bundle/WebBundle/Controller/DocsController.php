@@ -22,9 +22,16 @@ class DocsController extends BaseController
         ));
     }
 
-    public function componentsAction()
+    public function configureAction()
     {
-        return $this->renderView('WebBundle:Docs:components', array(
+        return $this->renderView('WebBundle:Docs:configuration', array(
+            'assets' => $this->assets
+        ));
+    }
+
+    public function servicesAction()
+    {
+        return $this->renderView('WebBundle:Docs:services', array(
             'assets' => $this->assets
         ));
     }
@@ -33,7 +40,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/asset', array(
+        return $this->renderView('WebBundle:Docs:Services/asset', array(
             'assets' => $this->assets
         ));
     }
@@ -42,7 +49,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/auth', array(
+        return $this->renderView('WebBundle:Docs:Services/auth', array(
             'assets' => $this->assets
         ));
     }
@@ -51,7 +58,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/bundles', array(
+        return $this->renderView('WebBundle:Docs:Services/bundles', array(
             'assets' => $this->assets
         ));
     }
@@ -60,7 +67,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/cache', array(
+        return $this->renderView('WebBundle:Docs:Services/cache', array(
             'assets' => $this->assets
         ));
     }
@@ -69,7 +76,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/config', array(
+        return $this->renderView('WebBundle:Docs:Services/config', array(
             'assets' => $this->assets
         ));
     }
@@ -78,7 +85,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/cli', array(
+        return $this->renderView('WebBundle:Docs:Services/cli', array(
             'assets' => $this->assets
         ));
     }
@@ -87,7 +94,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/di', array(
+        return $this->renderView('WebBundle:Docs:Services/di', array(
             'assets' => $this->assets
         ));
     }
@@ -96,7 +103,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/crypt', array(
+        return $this->renderView('WebBundle:Docs:Services/crypt', array(
             'assets' => $this->assets
         ));
     }
@@ -105,7 +112,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/forms', array(
+        return $this->renderView('WebBundle:Docs:Services/forms', array(
             'assets' => $this->assets
         ));
     }
@@ -114,7 +121,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/hashing', array(
+        return $this->renderView('WebBundle:Docs:Services/hashing', array(
             'assets' => $this->assets
         ));
     }
@@ -123,7 +130,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/html', array(
+        return $this->renderView('WebBundle:Docs:Services/html', array(
             'assets' => $this->assets
         ));
     }
@@ -132,7 +139,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/input', array(
+        return $this->renderView('WebBundle:Docs:Services/input', array(
             'assets' => $this->assets
         ));
     }
@@ -141,7 +148,16 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/middleware', array(
+        return $this->renderView('WebBundle:Docs:Services/middleware', array(
+            'assets' => $this->assets
+        ));
+    }
+
+    public function responsesAction()
+    {
+        $this->addCodeMirrorAssets();
+
+        return $this->renderView('WebBundle:Docs:Services/responses', array(
             'assets' => $this->assets
         ));
     }
@@ -150,7 +166,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/routing', array(
+        return $this->renderView('WebBundle:Docs:Services/routing', array(
             'assets' => $this->assets
         ));
     }
@@ -159,7 +175,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/sessions', array(
+        return $this->renderView('WebBundle:Docs:Services/sessions', array(
             'assets' => $this->assets
         ));
     }
@@ -168,7 +184,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/templates', array(
+        return $this->renderView('WebBundle:Docs:Services/templates', array(
             'assets' => $this->assets
         ));
     }
@@ -177,7 +193,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/url', array(
+        return $this->renderView('WebBundle:Docs:Services/url', array(
             'assets' => $this->assets
         ));
     }
@@ -186,7 +202,7 @@ class DocsController extends BaseController
     {
         $this->addCodeMirrorAssets();
 
-        return $this->renderView('WebBundle:Docs:Components/validation', array(
+        return $this->renderView('WebBundle:Docs:Services/validation', array(
             'assets' => $this->assets
         ));
     }

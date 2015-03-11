@@ -24,7 +24,7 @@
     <p>
         The easiest way to add services is to do it in a Bundle.
         You can read more about them
-        <a class="link-me" href="<?php echo $view['url']->route('docs.components.bundles') ?>">here</a>.
+        <a class="link-me" href="<?php echo $view['url']->route('docs.services.bundles') ?>">here</a>.
     </p>
 
     <p>

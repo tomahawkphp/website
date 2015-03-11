@@ -2324,12 +2324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomahawkphp/framework.git",
-                "reference": "79356bb087694437424f4b3878307e3184c4b162"
+                "reference": "6c642c04b76ba188e4ee53623e8b088d23d495f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomahawkphp/framework/zipball/79356bb087694437424f4b3878307e3184c4b162",
-                "reference": "79356bb087694437424f4b3878307e3184c4b162",
+                "url": "https://api.github.com/repos/tomahawkphp/framework/zipball/6c642c04b76ba188e4ee53623e8b088d23d495f6",
+                "reference": "6c642c04b76ba188e4ee53623e8b088d23d495f6",
                 "shasum": ""
             },
             "require": {
@@ -2392,7 +2392,7 @@
                 "framework",
                 "tomahawk"
             ],
-            "time": "2015-03-06 18:34:17"
+            "time": "2015-03-11 12:40:32"
         },
         {
             "name": "twig/twig",

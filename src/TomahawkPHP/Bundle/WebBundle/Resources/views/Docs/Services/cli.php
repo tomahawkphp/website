@@ -15,7 +15,7 @@
 
     <p>
         The Hatchet Command Line Interface is build around the Symfony2 Console Component. You can read more about it
-        <a class="links" href="http://symfony.com/doc/current/components/console/introduction.html" target="_blank">here</a>
+        <a class="links" href="http://symfony.com/doc/current/services/console/introduction.html" target="_blank">here</a>
         including how to create a command.
     </p>
 
@@ -42,7 +42,7 @@
 
     <p>
         This sections assumes you already have a Bundle created. To learn more about Bundles click
-        <a class="links" href="<?php echo $view['url']->route('docs.components.bundles') ?>" target="_blank">here</a>.
+        <a class="links" href="<?php echo $view['url']->route('docs.services.bundles') ?>" target="_blank">here</a>.
     </p>
 
     <p>

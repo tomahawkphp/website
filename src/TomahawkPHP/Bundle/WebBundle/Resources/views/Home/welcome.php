@@ -3,11 +3,11 @@
 <?php $view['blocks']->start('content') ?>
 
     <div class="jumbotron">
-        <h2 class="text-center brand-red-text">
+        <h1 class="text-center brand-red-text">
             TomahawkPHP is a full-stack PHP 5.3+ Framework
             <br>
             built on top of Symfony2 Components
-        </h2>
+        </h1>
     </div>
 
     <div class="well clearfix">

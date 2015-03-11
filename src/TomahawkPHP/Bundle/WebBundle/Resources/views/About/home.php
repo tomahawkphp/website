@@ -26,7 +26,7 @@
     </p>
 
     <p>
-        Other features have been build specifically for use in the Tomahawk PHP framework, but will become components
+        Other features have been build specifically for use in the Tomahawk PHP framework, but will become services
         at a later date.
     </p>
 

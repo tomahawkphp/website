@@ -4,6 +4,7 @@
 
     <ol class="breadcrumb">
         <li><a href="#">Documentation</a></li>
+        <li>Setup</li>
         <li class="active">Installation</li>
     </ol>
 

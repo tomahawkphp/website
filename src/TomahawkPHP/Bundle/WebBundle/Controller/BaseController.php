@@ -73,7 +73,7 @@ class BaseController extends Controller
 
 
             ->addCss('codemirror_css', 'js/codemirror/lib/codemirror.css')
-            ->addCss('codemirror_theme_css', 'js/codemirror/theme/ambiance.css', array('codemirror_css'));
+            ->addCss('codemirror_theme_css', 'js/codemirror/theme/base16-light.css', array('codemirror_css'));
     }
 
 }

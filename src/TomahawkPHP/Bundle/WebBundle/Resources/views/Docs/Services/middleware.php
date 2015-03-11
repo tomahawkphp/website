@@ -13,7 +13,7 @@
         Middleware
     </h1>
 
-    <p>Middleware is used in Tomahawk to make it easier to hook into the behaviour of components during a request.</p>
+    <p>Middleware is used in Tomahawk to make it easier to hook into the behaviour of services during a request.</p>
 
     <p>Tomahawk includes middleware for Sessions, Cookies and String Responses.</p>
 

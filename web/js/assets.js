@@ -20,7 +20,7 @@ $(document).ready(function() {
             indentUnit: 4,
             indentWithTabs: true,
             readOnly: true,
-            theme: "ambiance",
+            theme: "base16-light",
             viewportMargin: Infinity
         });
 

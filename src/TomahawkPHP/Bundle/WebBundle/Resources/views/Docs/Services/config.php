@@ -27,8 +27,11 @@
         Controller <code>Tomahawk\Config\ConfigInterface</code> and it will get injected in through the Service Container.
     </p>
 
+    <h3>Using The Config Manager</h3>
+    <hr>
+
     <h4>
-        Getting a config value
+        Getting A Config Value
     </h4>
 
     <p>You can get a config value by doing the following:</p>
@@ -48,7 +51,7 @@ $name = $this->config->get('name', 'Tom');
 </div>
 
     <h4>
-        Setting a config value
+        Setting A Config Value
     </h4>
 
     <p>You can get a config value by doing the following:</p>

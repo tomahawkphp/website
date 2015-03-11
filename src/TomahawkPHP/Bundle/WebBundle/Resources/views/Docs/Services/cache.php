@@ -27,6 +27,9 @@
         Controller <code>Tomahawk\Cache\CacheInterface</code> and it will get injected in through the Service Container.
     </p>
 
+    <h3>Using The Cache Manager</h3>
+    <hr>
+
     <h4>
         Putting something in the cache
     </h4>

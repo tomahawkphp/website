@@ -27,7 +27,7 @@
     <hr>
     <ul>
         <li>
-            Break out key features into components
+            Break out key features into services
         </li>
     </ul>
 
