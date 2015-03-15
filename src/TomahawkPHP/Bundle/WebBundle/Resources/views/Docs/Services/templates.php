@@ -13,6 +13,10 @@
         Templates
     </h1>
 
+    <div class="alert alert-info">
+        This documentation is incomplete.
+    </div>
+
     <p>
         Tomahawk uses Symfony's PhpEngine for templates. Further templating engines will be added in time.
     </p>

@@ -13,10 +13,9 @@
         Validation
     </h1>
 
-    <p>
-        Coming soon...
-    </p>
-
+    <div class="alert alert-info">
+        This documentation is incomplete.
+    </div>
 
     <div class="push-down-20"></div>
 

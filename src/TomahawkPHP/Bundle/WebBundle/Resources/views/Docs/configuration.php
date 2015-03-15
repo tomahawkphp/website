@@ -12,4 +12,8 @@
         Configuration
     </h1>
 
+    <div class="alert alert-info">
+        This documentation is incomplete.
+    </div>
+
 <?php $view['blocks']->stop() ?>

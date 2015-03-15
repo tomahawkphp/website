@@ -13,6 +13,9 @@
         Services
     </h1>
 
+    <div class="alert alert-info">
+        This documentation is incomplete.
+    </div>
 
     <p>
         The Components implement common features needed to develop websites.
