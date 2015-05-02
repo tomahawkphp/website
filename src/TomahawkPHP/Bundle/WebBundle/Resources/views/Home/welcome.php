@@ -13,12 +13,12 @@
     <div class="well clearfix">
         <div class="col-lg-9">
             <p>
-                Version 1.0.0 is our initial release, packed with enough features to get you started.
+                Version 1.1.0 is our current release. Packed with bug fixes and improvements.
             </p>
         </div>
         <div class="col-lg-3">
-            <a href="#" class="btn btn-lg btn-success">
-                <span class="glyphicon glyphicon-download"></span> Download v1.0.0
+            <a href="https://github.com/tomahawkphp" class="btn btn-lg btn-success">
+                <span class="glyphicon glyphicon-download"></span> Download v1.1.0
             </a>
         </div>
 

@@ -39,5 +39,29 @@
         <li>General bug fixes</li>
     </ul>
 
+    <h3>
+        v1.2.*
+    </h3>
+    <hr>
+    <ul>
+        <li>General bug fixes</li>
+    </ul>
+
+
+    <h3>
+        v2.0
+    </h3>
+    <hr>
+
+    <ul>
+        <li>
+            Remove Support for Illuminate Database Layer.
+            This dependency pulls in too much un-needed laravel files.
+        </li>
+        <li>
+            Replace Tomahawk Service Container with Symfonys.
+        </li>
+    </ul>
+
 
 <?php $view['blocks']->stop() ?>
