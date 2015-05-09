@@ -27,7 +27,8 @@ class AppKernel extends Kernel
         return array(
             new \Tomahawk\HttpCore\Middleware\StringResponse(),
             new \Tomahawk\HttpCore\Middleware\HeaderCookies(),
-            new \Tomahawk\Session\Middleware\Session()
+            new \Tomahawk\Session\Middleware\Session(),
+            new \TomahawkPHP\Middleware\ErrorMiddleware(),
         );
     }
 }
