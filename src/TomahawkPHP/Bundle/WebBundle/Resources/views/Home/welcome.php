@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
 
-        <img src="<?php echo $view['url']->asset('images/tomahawk-home.png') ?>" alt="TomahawkPHP" style="display: block; margin: 10px auto">
+        <img src="<?php echo $view['url']->asset('images/tomahawk-home.png') ?>" alt="TomahawkPHP" class="center-block img-responsive">
 
         <h1 class="text-center brand-red-text">
             TomahawkPHP is a full-stack PHP 5.3+ Framework
