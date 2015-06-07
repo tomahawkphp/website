@@ -25,6 +25,8 @@ use Tomahawk\Input\InputInterface;
 
 class BaseController extends Controller
 {
+    protected $publishedVersion = '1.2.0';
+
     public function __construct(
         AuthInterface $auth,
         FormsManagerInterface $forms,
@@ -60,6 +62,13 @@ class BaseController extends Controller
         $this->assets->addContainer($footerAssets);
     }
 
+    public function renderView($view, array $parameters = array())
+    {
+        $parameters['publishedVersion'] = $this->publishedVersion;
+
+        return parent::renderView($view, $parameters);
+    }
+
     protected function addCodeMirrorAssets()
     {
         $this->assets->container('footer')
@@ -70,7 +79,6 @@ class BaseController extends Controller
             ->addJs('htmlm_mode', 'js/codemirror/mode/htmlmixed/htmlmixed.js', array('codemirror'))
             ->addJs('xml_mode', 'js/codemirror/mode/xml/xml.js', array('codemirror'))
             ->addJs('php_mode', 'js/codemirror/mode/php/php.js', array('codemirror'))
-
 
             ->addCss('codemirror_css', 'js/codemirror/lib/codemirror.css')
             ->addCss('codemirror_theme_css', 'js/codemirror/theme/base16-light.css', array('codemirror_css'));

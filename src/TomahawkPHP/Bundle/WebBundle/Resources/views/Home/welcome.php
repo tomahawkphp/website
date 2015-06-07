@@ -15,13 +15,13 @@
 
     <div class="well clearfix">
         <div class="col-lg-9">
-            <p>
-                Version 1.1.0 is our current release. Packed with bug fixes and improvements.
+            <p class="version-copy">
+                Version <?php echo $publishedVersion ?> is our current release. Packed with bug fixes and improvements.
             </p>
         </div>
         <div class="col-lg-3">
             <a href="https://github.com/tomahawkphp" class="btn btn-lg btn-success">
-                <span class="glyphicon glyphicon-download"></span> Download v1.1.0
+                <span class="glyphicon glyphicon-download"></span> Download v<?php echo $publishedVersion ?>
             </a>
         </div>
 

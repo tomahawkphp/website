@@ -6,20 +6,17 @@
         <li>
             <a href="<?php echo $view['url']->route('docs.home') ?>">Documentation</a>
         </li>
-        <li class="active">Services</li>
+        <li class="active">Extending Tomahawk</li>
     </ol>
 
     <h1>
-        Services
+        Extending Tomahawk
     </h1>
 
-    <p>
-        Tomahawk comes with various services to help you build your website.
-    </p>
+    <div class="alert-info alert">
+        Documentation coming soon
+    </div>
 
-    <p>
-        Some services take advantage of the Symfony2 components and some have been written for Tomahawk.
-    </p>
 
 
 <?php $view['blocks']->stop() ?>

@@ -14,7 +14,7 @@
 
     <h3>Server Requirements</h3>
     <ul>
-        <li>PHP 5.3.3+</li>
+        <li>PHP 5.3.3+ (We recommend 5.5.0+)</li>
         <li>MCrypt PHP Extension</li>
     </ul>
 

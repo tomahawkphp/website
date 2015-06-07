@@ -8,6 +8,13 @@ a:hover, a:focus {
   text-decoration: underline;
 }
 
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 /*h1 {
   font-size: 1.8em;
 }
@@ -29,6 +36,10 @@ h4 {
 h4 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0 20px 0;
 }
 
 .jumbotron h1 {
@@ -135,20 +146,33 @@ h4 {
 }
 
 .left-nav {
-  background-color: rgb(243,243,244);
+  /*background-color: rgb(243,243,244);*/
   margin-top: 30px;
+
+  li {
+
+  }
 
   li > a {
     display: block;
     padding: 10px 20px;
     font-size: 13px;
     font-weight: 500;
+    background-color: #ffffff;
+  }
+
+  li > a:hover {
+    display: block;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #ffffff;
   }
 
   .nav .nav > li > a {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
     font-size: 13px;
   }
 
@@ -171,18 +195,25 @@ h4 {
   padding-left: 20px;
 }
 
+a.header-link, .left-nav li>a.header-link {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sidenav-section {
+  margin-top: 10px;
+}
+
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: @brandcolor;
+  color: @brandcolor;
 }
 
 .nav-sidebar > li > ul > .active > a,
 .nav-sidebar > li > ul > .active > a:hover,
 .nav-sidebar > li > ul > .active > a:focus {
   font-weight: bold;
-  background-color: #eee;
 }
 
 .navbar {
@@ -204,8 +235,8 @@ h4 {
   &.active {
     > a {
       background-color: @brandcolor;
+      color: #ffffff;
       border-radius: 5px;
-      color: #FFFFFF;
     }
   }
 
@@ -215,8 +246,8 @@ h4 {
 
     &:hover {
       background-color: @brandcolor;
+      color: #ffffff;
       border-radius: 5px;
-      color: #FFFFFF;
     }
   }
 
@@ -224,7 +255,7 @@ h4 {
 
 .nav-sidebar > li {
   &.active > a {
-    background-color: @brandcolor;
+    color: @brandcolor;
   }
 }
 
@@ -306,6 +337,17 @@ pre code {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.version-copy {
+  vertical-align: middle;
+  line-height: 2em;
+  margin: 10px 0 10px;
+}
+
+.navbar-toggle {
+  margin-top: 16px;
+}
+
 /*
 
 .navbar-toggle {

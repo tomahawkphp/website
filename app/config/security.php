@@ -1,6 +1,11 @@
 <?php
 
 return array(
+
+    // CSRF Token Name
+    'csrf_token_name' => '_csrf_token',
+
+
     /*
      * Application Key
      */

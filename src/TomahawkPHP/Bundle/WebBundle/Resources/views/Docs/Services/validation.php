@@ -106,56 +106,133 @@ if ($validator->validate($request->request->all())) {
 
     <h2>Available Validators</h2>
 
-    <p>Tomahawk comes with a few built-in validators. Each one takes 1 parameter which is an array of settings: </p>
-
+    <p>
+        Tomahawk comes with a few built-in validators. Each one takes 1 parameter which is an array of settings:
+    </p>
 
     <table class="table table-responsive">
         <thead>
             <tr>
                 <th style="width: 25%">Name</th>
                 <th>Explanation</th>
+                <th>Full Class</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td>Alpha</td>
+                <td>Validates that field contains alphabetic characters</td>
+                <td>Tomahawk\Validation\Constraints\Alpha</td>
+            </tr>
+            <tr>
+                <td>AlphaDash</td>
+                <td>Validates that field contains alphanumeric characters, dashes and underscores</td>
+                <td>Tomahawk\Validation\Constraints\AlphaDash</td>
+            </tr>
+            <tr>
+                <td>AlphaNumeric</td>
+                <td>Validates that field contains alphanumeric characters</td>
+                <td>Tomahawk\Validation\Constraints\AlphaNumeric</td>
+            </tr>
+            <tr>
+                <td>DateFormat</td>
+                <td>Validates that field is in correct date format</td>
+                <td>Tomahawk\Validation\Constraints\DateFormat</td>
+            </tr>
+            <tr>
+                <td>DigitsBetween</td>
+                <td>Validates that field is between given digits</td>
+                <td>Tomahawk\Validation\Constraints\DigitsBetween</td>
+            </tr>
+            <tr>
                 <td>Email</td>
                 <td>Validates that field contains a valid email format</td>
+                <td>Tomahawk\Validation\Constraints\Email</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>Validates that an uploaded file is an image</td>
+                <td>Tomahawk\Validation\Constraints\Image</td>
+            </tr>
+            <tr>
+                <td>In</td>
+                <td>Validates that a field is from a selection in an array</td>
+                <td>Tomahawk\Validation\Constraints\In</td>
+            </tr>
+            <tr>
+                <td>NotIn</td>
+                <td>Validates that a field is NOT from a selection in an array</td>
+                <td>Tomahawk\Validation\Constraints\NotIn</td>
+            </tr>
+            <tr>
+                <td>IpAddress</td>
+                <td>Validates that a field is a valid IPv4 Address</td>
+                <td>Tomahawk\Validation\Constraints\IpAddress</td>
+            </tr>
+            <tr>
+                <td>IpAddress</td>
+                <td>Validates that a field is a valid IPv4 Address</td>
+                <td>Tomahawk\Validation\Constraints\IpAddress</td>
             </tr>
             <tr>
                 <td>Required</td>
                 <td>Validates that a field’s value is not null, empty string or an empty array.</td>
+                <td>Tomahawk\Validation\Constraints\Required</td>
             </tr>
             <tr>
                 <td>RequiredWith</td>
                 <td>Validates that a field’s value is not null, empty string or an empty array when another field is present</td>
+                <td>Tomahawk\Validation\Constraints\RequiredWith</td>
+            </tr>
+            <tr>
+                <td>RequiredWithout</td>
+                <td>Validates that a field’s value is not null, empty string or an empty array when another field is NOT present</td>
+                <td>Tomahawk\Validation\Constraints\RequiredWithout</td>
             </tr>
             <tr>
                 <td>Identical</td>
                 <td>Validates that 2 field values are identical</td>
+                <td>Tomahawk\Validation\Constraints\Identical</td>
             </tr>
             <tr>
                 <td>StringLength</td>
                 <td>Validates the length of a string</td>
+                <td>Tomahawk\Validation\Constraints\StringLength</td>
             </tr>
             <tr>
                 <td>Numeric</td>
                 <td>Validates if a value is numeric</td>
+                <td>Tomahawk\Validation\Constraints\Numeric</td>
             </tr>
             <tr>
                 <td>Integer</td>
                 <td>Validates if a value is a number</td>
+                <td>Tomahawk\Validation\Constraints\Integer</td>
             </tr>
             <tr>
                 <td>MinLength</td>
                 <td>Validates the minimum length of a value</td>
+                <td>Tomahawk\Validation\Constraints\MinLength</td>
             </tr>
             <tr>
                 <td>MaxLength</td>
                 <td>Validates the maximum length of a value</td>
+                <td>Tomahawk\Validation\Constraints\MaxLength</td>
             </tr>
             <tr>
                 <td>Regex</td>
                 <td>Validates that the value of a field matches a regular expression</td>
+                <td>Tomahawk\Validation\Constraints\Regex</td>
+            </tr>
+            <tr>
+                <td>TimeZone</td>
+                <td>Validates that the value is a valid timeszone</td>
+                <td>Tomahawk\Validation\Constraints\TimeZone</td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td>Validates that the value is a valid URL</td>
+                <td>Tomahawk\Validation\Constraints\URL</td>
             </tr>
         </tbody>
     </table>
@@ -194,6 +271,14 @@ class CoolRule extends Constraint
             return false;
         }
 
+        return true;
+    }
+
+    /**
+     * @return bool
+     */
+    public function shouldSkipOnNoValue()
+    {
         return true;
     }
 

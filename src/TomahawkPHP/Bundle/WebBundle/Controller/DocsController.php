@@ -108,6 +108,33 @@ class DocsController extends BaseController
         ));
     }
 
+    public function environmentsAction()
+    {
+        $this->addCodeMirrorAssets();
+
+        return $this->renderView('WebBundle:Docs:environments', array(
+            'assets' => $this->assets
+        ));
+    }
+
+    public function errorHandlingAction()
+    {
+        $this->addCodeMirrorAssets();
+
+        return $this->renderView('WebBundle:Docs:Services/errors', array(
+            'assets' => $this->assets
+        ));
+    }
+
+    public function extendingAction()
+    {
+        $this->addCodeMirrorAssets();
+
+        return $this->renderView('WebBundle:Docs:Extending/home', array(
+            'assets' => $this->assets
+        ));
+    }
+
     public function formsAction()
     {
         $this->addCodeMirrorAssets();

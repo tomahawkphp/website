@@ -19,9 +19,9 @@
     </p>
 
 
-    <h3>
+    <h2>
         Creating Your First Bundle
-    </h3>
+    </h2>
 
     <p>
         When you install Tomahawk, it comes with a basic bundle to get you started, with a Controller and View.
@@ -50,18 +50,18 @@ class WebBundle extends Bundle
 </script>
 </div>
 
-    <h3>
+    <h2>
         Doing more with your Bundles
-    </h3>
+    </h2>
 
     <p>
         There are 3 methods that you will most likely use, <code>boot</code> (When the Bundle boots),
         <code>shutdown</code> (When the Bundle shutsdown) and <code>getParent</code> (What Bundle to override).
     </p>
 
-    <h4>
+    <h3>
         Booting your Bundle
-    </h4>
+    </h3>
 
     <p>
         The <code>boot</code> method is used to register any services to setup you bundle or even add event listeners, for example:
@@ -88,9 +88,9 @@ class WebBundle extends Bundle
 </script>
 </div>
 
-    <h4>
+    <h3>
         Shutting down your Bundle
-    </h4>
+    </h3>
 
 
     <p>
@@ -114,9 +114,9 @@ class WebBundle extends Bundle
 </script>
 </div>
 
-    <h4>
+    <h3>
         Override an existing bundle
-    </h4>
+    </h3>
 
 
     <p>
@@ -140,6 +140,66 @@ class EmailBundle extends Bundle
 }
 </script>
 </div>
+
+    <h3>
+        Bundle Routes
+    </h3>
+
+
+    <p>
+        From version 1.2.0 of Tomahawk you can now define a path in your bundle to load routes from:
+    </p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+
+    /**
+     * File path to load routes from
+     *
+     * /dir/to/routes.php
+     *
+     * @return mixed
+     */
+    public function getRoutePath()
+    {
+        return __DIR__ . '/Resources/routes.php';
+    }
+
+</script>
+</div>
+
+    <h3>
+        Registering Event Listeners/Subscribers
+    </h3>
+
+
+    <p>
+        From version 1.2.0 of Tomahawk you can now register event listener/subscribers. All bundles are loaded at this
+        point giving you access to all services in the container
+    </p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+
+    /**
+     * Register any events for the bundle
+     *
+     * This is called after all bundles have been boot so you get access
+     * to all the services
+     *
+     *
+     * @param EventDispatcherInterface $dispatcher
+     */
+    public function registerEvents(EventDispatcherInterface $dispatcher)
+    {
+        $dispatcher->addSubscriber(...);
+    }
+
+</script>
+</div>
+
 
 <div class="push-down-20"></div>
 

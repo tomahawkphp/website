@@ -16,4 +16,52 @@
         This documentation is incomplete.
     </div>
 
+    <h2>Cache</h2>
+
+    <p>...</p>
+
+    <h2>Database/Doctrine</h2>
+
+    <p>...</p>
+
+    <h2>Error</h2>
+
+    <p>...</p>
+
+    <h2>Kernel</h2>
+
+    <p>...</p>
+
+    <h2>Kernel</h2>
+
+    <p>...</p>
+
+    <h2>Request</h2>
+
+    <p>...</p>
+
+    <h2>Monolog</h2>
+
+    <p>...</p>
+
+    <h2>Security</h2>
+
+    <p>...</p>
+
+    <h2>Session</h2>
+
+    <p>...</p>
+
+    <h2>Swiftmailer</h2>
+
+    <p>...</p>
+
+    <h2>Templating</h2>
+
+    <p>...</p>
+
+    <h2>Translation</h2>
+
+    <p>...</p>
+
 <?php $view['blocks']->stop() ?>

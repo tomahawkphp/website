@@ -19,9 +19,11 @@ $router->section('/roadmap', array(), function(Router $router) use($routeNamespa
 });
 
 $router->section('/docs', array(), function(Router $router) use($routeNamespace) {
+
     $router->get('/', 'docs.home', $routeNamespace .'DocsController::homeAction');
     $router->get('/installation', 'docs.setup.installation', $routeNamespace .'DocsController::installAction');
     $router->get('/configuration', 'docs.setup.configuration', $routeNamespace .'DocsController::configureAction');
+    $router->get('/environments', 'docs.setup.environments', $routeNamespace .'DocsController::environmentsAction');
 
     $router->section('/services', array(), function(Router $router) use($routeNamespace) {
         $router->get('/', 'docs.services.home', $routeNamespace .'DocsController::servicesAction');
@@ -33,6 +35,7 @@ $router->section('/docs', array(), function(Router $router) use($routeNamespace)
         $router->get('/cli', 'docs.services.cli', $routeNamespace .'DocsController::cliAction');
         $router->get('/dependency-injection', 'docs.services.di', $routeNamespace .'DocsController::diAction');
         $router->get('/encryption', 'docs.services.encryption', $routeNamespace .'DocsController::cryptAction');
+        $router->get('/error-handing', 'docs.services.error', $routeNamespace .'DocsController::errorHandlingAction');
         $router->get('/forms', 'docs.services.forms', $routeNamespace .'DocsController::formsAction');
         $router->get('/hashing', 'docs.services.hashing', $routeNamespace .'DocsController::hashingAction');
         $router->get('/html', 'docs.services.html', $routeNamespace .'DocsController::htmlAction');
@@ -44,8 +47,8 @@ $router->section('/docs', array(), function(Router $router) use($routeNamespace)
         $router->get('/templates', 'docs.services.templates', $routeNamespace .'DocsController::templatesAction');
         $router->get('/url-generator', 'docs.services.url', $routeNamespace .'DocsController::urlAction');
         $router->get('/validation', 'docs.services.validation', $routeNamespace .'DocsController::validationAction');
+        $router->get('/extending', 'docs.extending', $routeNamespace .'DocsController::extendingAction');
     });
-
 
 });
 

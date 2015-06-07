@@ -12,8 +12,7 @@ $currentRoute = $view['request']->getParameter('_route');
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo $view['url']->route('home') ?>">
-                <img src="<?php echo $view['url']->asset('images/logo-head.png') ?>">
-                TomahawkPHP
+                <img src="<?php echo $view['url']->asset('images/tomahawk-micro2.png') ?>" alt="TomahawkPHP">
             </a>
         </div>
         <div class="collapse navbar-collapse">

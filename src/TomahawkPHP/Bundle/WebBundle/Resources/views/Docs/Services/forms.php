@@ -10,9 +10,12 @@
     </ol>
 
     <h1>
-        Forms
+        Html Forms
     </h1>
 
+    <p>The Forms service provides great functionality for creating and managing forms.</p>
+
+    <hr>
 
     <h2>
         Form Manager
@@ -33,6 +36,7 @@
         Controller <code>Tomahawk\Forms\FormsManagerInterface</code> and it will get injected in through the Service Container.
     </p>
 
+    <hr>
 
     <h2>
         Creating a Form
@@ -70,6 +74,7 @@ $form = new Form('/user/create', 'POST');
         and how to add them.
     </p>
 
+    <hr>
 
     <h2>
         Form Elements
@@ -393,6 +398,82 @@ use Tomahawk\Forms\Element\Url;
 
 $form = new Form('/user/create');
 $form->add(new Url('website');
+</script>
+</div>
+
+    <hr>
+
+    <h2>CSRF Protection</h2>
+
+    <p>
+        Tomahawk comes with a CSRF Bundle, giving you access to a CSRF Middleware that checks on a POST request
+        if a route requires a CSRF token and that it is valid
+    </p>
+
+    <hr>
+
+    <h3>Configuration</h3>
+
+    <p>First make sure the CSRFBundle is being loaded in the AppKernel</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+use Tomahawk\HttpKernel\Kernel;
+
+class AppKernel extends Kernel
+{
+    public function registerBundles()
+    {
+        $bundles = array(
+            ...
+            new \Tomahawk\Bundle\CSRFBundle\CSRFBundle(),
+        );
+    }
+
+}
+
+</script>
+</div>
+
+    <p>The default name of the input for the CSRF token is <code>_csrf_token</code>.
+        You can change it by setting the <code>csrf_token_name</code> value in <code>app/config/security.php</code>
+    </p>
+
+    <hr>
+
+    <h3>Using the Token Manager</h3>
+
+    <p>
+        The easiest way to use the Token Manager is to add the following parameter to the construct method of your
+        Controller <code>Tomahawk\Bundle\CSRFBundle\Token\TokenManagerInterface</code> and it will get injected in through the Service Container.
+    </p>
+
+    <p>You can also access it through the service container by doing:</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+$this->container->get('security.csrf.tokenmanager')
+
+</script>
+</div>
+
+    <hr>
+
+    <h3>Create the Form Control</h3>
+
+    <p>Now you have access to the token manager you can create the form control.</p>
+
+    <p>All you need to do is add a hidden form input to the form using a token generated via the token manager.</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+$tokenManager = $this->container->get('security.csrf.tokenmanager');
+
+$form->add(new Hidden($tokenManager->getTokenName(), $tokenManager->generateToken());
+
 </script>
 </div>
 

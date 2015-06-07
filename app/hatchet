@@ -20,7 +20,7 @@ if ($debug) {
     Debug::enable();
 }
 
-$kernel = new AppKernel('prod', false);
+$kernel = new AppKernel($env, $debug);
 $output = new Output(Output::VERBOSITY_NORMAL, true);
 
 $application = new Application($kernel);

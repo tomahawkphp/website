@@ -13,6 +13,7 @@ class AppKernel extends Kernel
             new \Tomahawk\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \TomahawkPHP\Bundle\WebBundle\WebBundle(),
+            //new TomahawkPHP\Bundle\TemplateBundle\TemplateBundle(),
         );
 
         if ($this->getEnvironment() === 'dev') {
@@ -24,11 +25,13 @@ class AppKernel extends Kernel
 
     public function registerMiddleware()
     {
-        return array(
+        $middleware = array(
             new \Tomahawk\HttpCore\Middleware\StringResponse(),
             new \Tomahawk\HttpCore\Middleware\HeaderCookies(),
             new \Tomahawk\Session\Middleware\Session(),
-            new \TomahawkPHP\Middleware\ErrorMiddleware(),
+            //new \TomahawkPHP\Middleware\ErrorMiddleware(),
         );
+
+        return $middleware;
     }
 }
