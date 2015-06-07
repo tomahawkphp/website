@@ -13,10 +13,6 @@
         Environments
     </h1>
 
-    <div class="alert alert-info">
-        This documentation is incomplete.
-    </div>
-
     <p>
         Environments allow you to run Tomahawk with different configuration, locally, on a dev box and on a production server.
     </p>
@@ -31,35 +27,6 @@
         its own front controller to send all requests through, <code>app.php</code> for prod and
         <code>app_dev.php</code> for dev.
     </p>
-
-    <hr>
-
-    <h2>Creating New Environments</h2>
-
-
-    <p>
-        Creating a new environment is easy:
-    </p>
-
-    <p>
-        1) In your <code>app/config</code> directory create a directory for the name of
-        your environment, e.g <code>local</code>.
-    </p>
-
-    <p>
-        2) Then copy from the main <code>app/config</code> and config files you want to change for that environment.
-        See the configuration section for more details on setting these.
-    </p>
-
-    <p>
-        3) Create the front controller. In the <code>web</code> folder copy <code>app.php</code> and set the name
-        as <code>app_env.php</code> e.g. <code>app_local.php</code>.
-    </p>
-
-    <p>
-        4) Boom! Your all good to go.
-    </p>
-
 
     <hr>
 
@@ -81,9 +48,80 @@
 
     <p>
         By default, any commands ran in <code>hatchet</code>, Tomahawks CLI are ran with the <code>dev</code> environment with
-        debugging on.
+        debugging on. Use the <code>--env</code> and <code>--no-debug</code> options to modify this behavior:
     </p>
 
+<div>
+<script data-style="text/x-sh" type="x-code-example">
+# 'dev' environment and debug enabled
+$ php app/hatchet
+
+# 'prod' environment (debug is always disabled for 'prod')
+$ php app/hatchet command_name --env=prod
+
+# 'test' environment and debug disabled
+$ php app/hatchet command_name --env=test --no-debug
+
+</script>
+</div>
+
+    <p>
+        In addition to the <code>--env</code> and <code>--debug</code> options, the behavior of Tomahawk commands can also be
+        controlled with environment variables. The Tomahawk console application (hatchet) checks the existence
+        and value of these environment variables before executing any command:
+    </p>
+
+    <p>
+        <code>TOMAHAWK_ENV</code>
+        Sets the execution environment of the command to the value of this variable (<code>dev</code>, <code>prod</code>, etc.);
+    </p>
+    <p>
+        <code>TOMAHAWK_DEBUG</code>
+        If <code>0</code>, debug mode is disabled. Otherwise, debug mode is enabled.
+    </p>
+
+
+    <hr>
+
+    <h2>Creating New Environments</h2>
+
+
+    <p>
+        Creating a new environment is easy:
+    </p>
+
+    <p>
+        1) In your <code>app/config</code> directory create a directory for the name of
+        your environment, e.g <code>local</code>.
+    </p>
+
+    <p>
+        2) Then copy from the main <code>app/config</code> and config files you want to change for that environment.
+        See the configuration section for more details on setting these.
+    </p>
+
+    <p>
+        3) You'll want this environment to be accessible via a browser, so you should also create a front controller
+        for it. Copy the <code>web/app.php</code> file to <code>web/app_local.php</code> and edit the environment to be local:
+    </p>
+
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+// web/app_local.php
+// ...
+
+// You only need to change this line
+$kernel = new AppKernel('local', true);
+
+// ...
+</script>
+</div>
+
+
+    <p>
+        5) Boom! Your all good to go.
+    </p>
 
 <div class="push-down-20"></div>
 
