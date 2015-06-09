@@ -16,7 +16,7 @@
     <div class="well clearfix">
         <div class="col-lg-9">
             <p class="version-copy">
-                Version <?php echo $publishedVersion ?> is our current release. Packed with bug fixes and improvements.
+                Version <?php echo $publishedVersion ?> is our current release. Packed with lots of new features, improvements and bug fixes.
             </p>
         </div>
         <div class="col-lg-3">

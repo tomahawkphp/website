@@ -20,6 +20,8 @@
         <a class="links" href="http://symfony.com/doc/current/book/routing.html">here</a>.
     </p>
 
+    <hr>
+
     <h2>
         Defining Routes
     </h2>
@@ -60,6 +62,7 @@ $router->post('/', 'home.post', function() {
         <code>Controller::action</code>
     </p>
 
+    <hr>
 
     <h2>Route Parameters</h2>
 
@@ -138,12 +141,11 @@ $router->get('/user/{id}', 'home', function(Request $request, $id) {
 </script>
 </div>
 
+    <hr>
 
     <h2>Route Sections</h2>
 
     <p>You can also define a section to control a group of routes.</p>
-
-    <p></p>
 
 <div>
 <script data-style="application/x-httpd-php" type="x-code-example">&lt;?php

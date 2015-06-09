@@ -41,6 +41,9 @@ $currentRoute = $view['request']->getParameter('_route');
             <li class="<?php echo Str::is($currentRoute, 'docs.services.cli') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.cli') ?>">Hatchet CLI</a>
             </li>
+            <li class="<?php echo Str::is($currentRoute, 'docs.services.database') ? 'active' : '' ?>">
+                <a href="<?php echo $view['url']->route('docs.services.database') ?>">Database</a>
+            </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.services.di') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.di') ?>">Dependency Injection</a>
             </li>

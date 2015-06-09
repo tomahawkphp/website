@@ -108,6 +108,15 @@ class DocsController extends BaseController
         ));
     }
 
+    public function databaseAction()
+    {
+        $this->addCodeMirrorAssets();
+
+        return $this->renderView('WebBundle:Docs:Services/database', array(
+            'assets' => $this->assets
+        ));
+    }
+
     public function environmentsAction()
     {
         $this->addCodeMirrorAssets();

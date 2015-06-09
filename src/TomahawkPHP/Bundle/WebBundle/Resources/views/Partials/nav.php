@@ -23,6 +23,9 @@ $currentRoute = $view['request']->getParameter('_route');
                 <li class="<?php echo Str::is($currentRoute, 'docs.*') ? 'active' : '' ?>">
                     <a href="<?php echo $view['url']->route('docs.home') ?>">Documentation</a>
                 </li>
+                <li>
+                    <a href="<?php echo $view['url']->to('/api') ?>">API</a>
+                </li>
                 <li class="<?php echo Str::is($currentRoute, 'roadmap.*') ? 'active' : '' ?>">
                     <a href="<?php echo $view['url']->route('roadmap.home') ?>">Roadmap</a>
                 </li>

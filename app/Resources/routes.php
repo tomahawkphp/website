@@ -33,6 +33,7 @@ $router->section('/docs', array(), function(Router $router) use($routeNamespace)
         $router->get('/cache', 'docs.services.cache', $routeNamespace .'DocsController::cacheAction');
         $router->get('/config', 'docs.services.config', $routeNamespace .'DocsController::configAction');
         $router->get('/cli', 'docs.services.cli', $routeNamespace .'DocsController::cliAction');
+        $router->get('/database', 'docs.services.database', $routeNamespace .'DocsController::databaseAction');
         $router->get('/dependency-injection', 'docs.services.di', $routeNamespace .'DocsController::diAction');
         $router->get('/encryption', 'docs.services.encryption', $routeNamespace .'DocsController::cryptAction');
         $router->get('/error-handing', 'docs.services.error', $routeNamespace .'DocsController::errorHandlingAction');

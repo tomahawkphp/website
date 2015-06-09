@@ -9,9 +9,7 @@
         <li class="active">Asset Manager</li>
     </ol>
 
-    <h1>
-        Asset Manager
-    </h1>
+    <h1>Asset Manager</h1>
 
     <p>
         The asset manager holds containers for you JS and CSS assets.
