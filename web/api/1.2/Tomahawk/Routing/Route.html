@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Tomahawk\Routing\Route | TomahawkPHP API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Tomahawk_Routing_Route" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.1.7/index.html" selected>1.1.7</option>
+                                            <option value="../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../master/index.html">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">TomahawkPHP API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Tomahawk.html">Tomahawk</a></li>
+                                        <li><a href="../../Tomahawk/Routing.html">Routing</a></li>
+    
+                <li>Route</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Route</h1>
+    </div>
+
+    <p>    class
+    <strong>Route</strong>        extends <abbr title="Symfony\Component\Routing\Route">Route</abbr></p>
+
+            <div class="description">
+            <p>Class Route</p>            <p>Base on Symfony Route, but for route collections with prefixes
+Tomahawk strips off the end slash to normalise rout matching based on URL</p>        </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(string $path, array $defaults = array(), array $requirements = array(), array $options = array(), string $host = &#039;&#039;, string|array $schemes = array(), string|array $methods = array(), string $condition = null)
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_serialize">serialize</a>()
+                                            <p>Serialise route information to an array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unserialize">unserialize</a>(string $data)
+                                            <p>Set route information from array of data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPath">getPath</a>()
+                                            <p>Returns the pattern for the path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPath">setPath</a>(string $pattern)
+                                            <p>Sets the pattern for the path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPattern">getPattern</a>()
+                                            <p>Returns the pattern for the path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setPattern">setPattern</a>(string $pattern)
+                                            <p>Sets the pattern for the path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHost">getHost</a>()
+                                            <p>Returns the pattern for the host.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHost">setHost</a>(string $pattern)
+                                            <p>Sets the pattern for the host.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSchemes">getSchemes</a>()
+                                            <p>Returns the lowercased schemes this route is restricted to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSchemes">setSchemes</a>(string|array $schemes)
+                                            <p>Sets the schemes (e.g. 'https') this route is restricted to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasScheme">hasScheme</a>(string $scheme)
+                                            <p>Checks if a scheme requirement has been set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethods">getMethods</a>()
+                                            <p>Returns the uppercased HTTP methods this route is restricted to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethods">setMethods</a>(string|array $methods)
+                                            <p>Sets the HTTP methods (e.g. 'POST') this route is restricted to.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOptions">getOptions</a>()
+                                            <p>Returns the options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOptions">setOptions</a>(array $options)
+                                            <p>Sets the options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addOptions">addOptions</a>(array $options)
+                                            <p>Adds options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOption">setOption</a>(string $name, mixed $value)
+                                            <p>Sets an option value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOption">getOption</a>(string $name)
+                                            <p>Get an option value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasOption">hasOption</a>(string $name)
+                                            <p>Checks if an option has been set</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaults">getDefaults</a>()
+                                            <p>Returns the defaults.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaults">setDefaults</a>(array $defaults)
+                                            <p>Sets the defaults.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDefaults">addDefaults</a>(array $defaults)
+                                            <p>Adds defaults.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefault">getDefault</a>(string $name)
+                                            <p>Gets a default value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasDefault">hasDefault</a>(string $name)
+                                            <p>Checks if a default value is set for the given variable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefault">setDefault</a>(string $name, mixed $default)
+                                            <p>Sets a default value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequirements">getRequirements</a>()
+                                            <p>Returns the requirements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequirements">setRequirements</a>(array $requirements)
+                                            <p>Sets the requirements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addRequirements">addRequirements</a>(array $requirements)
+                                            <p>Adds requirements.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequirement">getRequirement</a>(string $key)
+                                            <p>Returns the requirement for the given key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasRequirement">hasRequirement</a>(string $key)
+                                            <p>Checks if a requirement is set for the given key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRequirement">setRequirement</a>(string $key, string $regex)
+                                            <p>Sets a requirement for the given key.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCondition">getCondition</a>()
+                                            <p>Returns the condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCondition">setCondition</a>(string $condition)
+                                            <p>Sets the condition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compile">compile</a>()
+                                            <p>Compiles the route.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_where">where</a>($parameter, $pattern)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDefaultParameter">setDefaultParameter</a>($name, $value)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 88</div>
+        <code>                    
+    <strong>__construct</strong>(string $path, array $defaults = array(), array $requirements = array(), array $options = array(), string $host = &#039;&#039;, string|array $schemes = array(), string|array $methods = array(), string $condition = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor.</p>                    <p>Available options:</p>
+
+<ul>
+<li>compiler_class: A class name able to compile this route instance (RouteCompiler by default)</li>
+</ul>
+</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td>The path pattern to match</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td>An array of default parameter values</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td>An array of requirements for parameters (regexes)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>An array of options</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>The host pattern to match</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$schemes</td>
+                <td>A required URI scheme or an array of restricted schemes</td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$methods</td>
+                <td>A required HTTP method or an array of restricted methods</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>A condition that should evaluate to true for the route to match</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_serialize">
+        <div class="location">at line 111</div>
+        <code>                    string
+    <strong>serialize</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Serialise route information to an array</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unserialize">
+        <div class="location">at line 130</div>
+        <code>                    
+    <strong>unserialize</strong>(string $data)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set route information from array of data</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPath">
+        <div class="location">at line 148</div>
+        <code>                    string
+    <strong>getPath</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the pattern for the path.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The path pattern</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPath">
+        <div class="location">at line 162</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setPath</strong>(string $pattern)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the pattern for the path.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>The path pattern</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPattern">
+        <div class="location">at line 179</div>
+        <code>                    string
+    <strong>getPattern</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the pattern for the path.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The pattern</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPattern">
+        <div class="location">at line 195</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setPattern</strong>(string $pattern)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the pattern for the path.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>The path pattern</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHost">
+        <div class="location">at line 205</div>
+        <code>                    string
+    <strong>getHost</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the pattern for the host.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The host pattern</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHost">
+        <div class="location">at line 219</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setHost</strong>(string $pattern)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the pattern for the host.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td>The host pattern</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSchemes">
+        <div class="location">at line 233</div>
+        <code>                    array
+    <strong>getSchemes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the lowercased schemes this route is restricted to.</p>                    <p>So an empty array means that any scheme is allowed.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The schemes</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSchemes">
+        <div class="location">at line 248</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setSchemes</strong>(string|array $schemes)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the schemes (e.g. 'https') this route is restricted to.</p>                    <p>So an empty array means that any scheme is allowed.</p>
+
+<p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$schemes</td>
+                <td>The scheme or an array of schemes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasScheme">
+        <div class="location">at line 271</div>
+        <code>                    bool
+    <strong>hasScheme</strong>(string $scheme)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if a scheme requirement has been set.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$scheme</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the scheme requirement exists, otherwise false</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethods">
+        <div class="location">at line 289</div>
+        <code>                    array
+    <strong>getMethods</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the uppercased HTTP methods this route is restricted to.</p>                    <p>So an empty array means that any method is allowed.</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The schemes</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethods">
+        <div class="location">at line 304</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setMethods</strong>(string|array $methods)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the HTTP methods (e.g. 'POST') this route is restricted to.</p>                    <p>So an empty array means that any method is allowed.</p>
+
+<p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$methods</td>
+                <td>The method or an array of methods</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOptions">
+        <div class="location">at line 325</div>
+        <code>                    array
+    <strong>getOptions</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the options.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The options</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOptions">
+        <div class="location">at line 339</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setOptions</strong>(array $options)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the options.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>The options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addOptions">
+        <div class="location">at line 357</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>addOptions</strong>(array $options)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds options.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>The options</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOption">
+        <div class="location">at line 379</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setOption</strong>(string $name, mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets an option value.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>An option name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>The option value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOption">
+        <div class="location">at line 394</div>
+        <code>                    mixed
+    <strong>getOption</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get an option value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>An option name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The option value or null when not given</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasOption">
+        <div class="location">at line 406</div>
+        <code>                    bool
+    <strong>hasOption</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if an option has been set</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>An option name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the option is set, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaults">
+        <div class="location">at line 416</div>
+        <code>                    array
+    <strong>getDefaults</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the defaults.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The defaults</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaults">
+        <div class="location">at line 430</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setDefaults</strong>(array $defaults)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the defaults.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td>The defaults</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDefaults">
+        <div class="location">at line 446</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>addDefaults</strong>(array $defaults)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds defaults.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$defaults</td>
+                <td>The defaults</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefault">
+        <div class="location">at line 463</div>
+        <code>                    mixed
+    <strong>getDefault</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets a default value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>A variable name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>The default value or null when not given</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasDefault">
+        <div class="location">at line 475</div>
+        <code>                    bool
+    <strong>hasDefault</strong>(string $name)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if a default value is set for the given variable.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>A variable name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if the default value is set, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefault">
+        <div class="location">at line 490</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setDefault</strong>(string $name, mixed $default)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets a default value.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>A variable name</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$default</td>
+                <td>The default value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequirements">
+        <div class="location">at line 503</div>
+        <code>                    array
+    <strong>getRequirements</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the requirements.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td>The requirements</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequirements">
+        <div class="location">at line 517</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setRequirements</strong>(array $requirements)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the requirements.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td>The requirements</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRequirements">
+        <div class="location">at line 533</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>addRequirements</strong>(array $requirements)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds requirements.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$requirements</td>
+                <td>The requirements</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequirement">
+        <div class="location">at line 550</div>
+        <code>                    string|null
+    <strong>getRequirement</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the requirement for the given key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td>The regex or null when not given</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasRequirement">
+        <div class="location">at line 562</div>
+        <code>                    bool
+    <strong>hasRequirement</strong>(string $key)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Checks if a requirement is set for the given key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>A variable name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>true if a requirement is specified, false otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRequirement">
+        <div class="location">at line 577</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setRequirement</strong>(string $key, string $regex)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets a requirement for the given key.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$regex</td>
+                <td>The regex</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCondition">
+        <div class="location">at line 590</div>
+        <code>                    string
+    <strong>getCondition</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the condition.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>The condition</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCondition">
+        <div class="location">at line 604</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>setCondition</strong>(string $condition)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the condition.</p>                    <p>This method implements a fluent interface.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$condition</td>
+                <td>The condition</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>The current Route instance</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compile">
+        <div class="location">at line 622</div>
+        <code>                    <abbr title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</abbr>
+    <strong>compile</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Compiles the route.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</abbr></td>
+            <td>A CompiledRoute instance</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/LogicException"><abbr title="LogicException">LogicException</abbr></a></td>
+                <td>If the Route cannot be compiled because the
+                        path or host pattern is invalid</td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>RouteCompiler</td>
+                <td>which is responsible for the compilation process</td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_where">
+        <div class="location">at line 633</div>
+        <code>                    
+    <strong>where</strong>($parameter, $pattern)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parameter</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pattern</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDefaultParameter">
+        <div class="location">at line 639</div>
+        <code>                    
+    <strong>setDefaultParameter</strong>($name, $value)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
