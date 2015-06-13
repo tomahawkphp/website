@@ -138,12 +138,21 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addQueries">addQueries</a>(array $queries)
                                             <p class="no-description">No description</p>
                                     </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDoctrineQueries">addDoctrineQueries</a>(<abbr title="Tomahawk\Bundle\WebProfilerBundle\Doctrine\DBAL\Logging\DebugStack">DebugStack</abbr> $debugStack)
+                                            <p>Add queries for doctrine off the DebugStack logger</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -158,7 +167,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addLogs">addLogs</a>(array $logs = array())
@@ -177,7 +186,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addTimers">addTimers</a>(array $timers = array())
@@ -203,6 +212,16 @@
                                             <p>Render Template</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convertDoctrineParameters">convertDoctrineParameters</a>(array $parameters, array $types)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -211,7 +230,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 66</div>
+        <div class="location">at line 67</div>
         <code>                    
     <strong>__construct</strong>(<abbr title="Tomahawk\Bundle\WebProfilerBundle\Symfony\Component\Templating\EngineInterface">EngineInterface</abbr> $engine, <abbr title="Tomahawk\Bundle\WebProfilerBundle\Illuminate\Database\DatabaseManager">DatabaseManager</abbr> $manager = null, $assetsPath)</code>
     </h3>
@@ -249,7 +268,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at line 78</div>
+        <div class="location">at line 79</div>
         <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
     <strong>enable</strong>()</code>
     </h3>
@@ -276,7 +295,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enabled">
-        <div class="location">at line 89</div>
+        <div class="location">at line 90</div>
         <code>                    bool
     <strong>enabled</strong>()</code>
     </h3>
@@ -303,7 +322,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at line 99</div>
+        <div class="location">at line 100</div>
         <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
     <strong>disable</strong>()</code>
     </h3>
@@ -330,7 +349,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disabled">
-        <div class="location">at line 110</div>
+        <div class="location">at line 111</div>
         <code>                    bool
     <strong>disabled</strong>()</code>
     </h3>
@@ -357,8 +376,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addQueries">
-        <div class="location">at line 118</div>
-        <code>                    
+        <div class="location">at line 120</div>
+        <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
     <strong>addQueries</strong>(array $queries)</code>
     </h3>
     <div class="details">
@@ -375,6 +394,54 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDoctrineQueries">
+        <div class="location">at line 141</div>
+        <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
+    <strong>addDoctrineQueries</strong>(<abbr title="Tomahawk\Bundle\WebProfilerBundle\Doctrine\DBAL\Logging\DebugStack">DebugStack</abbr> $debugStack)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add queries for doctrine off the DebugStack logger</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tomahawk\Bundle\WebProfilerBundle\Doctrine\DBAL\Logging\DebugStack">DebugStack</abbr></td>
+                <td>$debugStack</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -383,7 +450,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getQueries">
-        <div class="location">at line 134</div>
+        <div class="location">at line 174</div>
         <code>                    array
     <strong>getQueries</strong>()</code>
     </h3>
@@ -408,8 +475,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addLogs">
-        <div class="location">at line 149</div>
-        <code>                    
+        <div class="location">at line 190</div>
+        <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
     <strong>addLogs</strong>(array $logs = array())</code>
     </h3>
     <div class="details">
@@ -431,6 +498,16 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -439,7 +516,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogs">
-        <div class="location">at line 159</div>
+        <div class="location">at line 202</div>
         <code>                    array
     <strong>getLogs</strong>()</code>
     </h3>
@@ -464,8 +541,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addTimers">
-        <div class="location">at line 176</div>
-        <code>                    
+        <div class="location">at line 220</div>
+        <code>                    <abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr>
     <strong>addTimers</strong>(array $timers = array())</code>
     </h3>
     <div class="details">
@@ -489,6 +566,16 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Bundle\WebProfilerBundle\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -497,7 +584,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimers">
-        <div class="location">at line 186</div>
+        <div class="location">at line 232</div>
         <code>                    array
     <strong>getTimers</strong>()</code>
     </h3>
@@ -522,7 +609,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at line 196</div>
+        <div class="location">at line 242</div>
         <code>                    string
     <strong>render</strong>()</code>
     </h3>
@@ -541,6 +628,38 @@
         </tr>
     </table>
 
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertDoctrineParameters">
+        <div class="location">at line 269</div>
+        <code>                    
+    <strong>convertDoctrineParameters</strong>(array $parameters, array $types)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parameters</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$types</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
             
             
                     </div>
