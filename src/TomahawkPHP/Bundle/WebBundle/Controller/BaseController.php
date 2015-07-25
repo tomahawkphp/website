@@ -25,7 +25,7 @@ use Tomahawk\Input\InputInterface;
 
 class BaseController extends Controller
 {
-    protected $publishedVersion = '1.2.1';
+    protected $publishedVersion = '1.2.2';
 
     public function __construct(
         AuthInterface $auth,

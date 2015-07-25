@@ -16,7 +16,7 @@ return array(
      *      memcached
      *
      */
-    'driver' => 'array',
+    'driver' => 'filesystem',
 
     /*
      * Namespace - Used with doctrine cache
