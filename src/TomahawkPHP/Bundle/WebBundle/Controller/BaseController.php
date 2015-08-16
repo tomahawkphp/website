@@ -85,4 +85,15 @@ class BaseController extends Controller
             ->addCss('codemirror_theme_css', 'js/codemirror/theme/base16-light.css', array('codemirror_css'));
     }
 
+    protected function getViewVariables(Request $request, $addCodeMirrorAssets = false)
+    {
+        if ($addCodeMirrorAssets) {
+            $this->addCodeMirrorAssets();
+        }
+
+        return array(
+            'assets'    => $this->assets,
+            'fwversion' => $request->attributes->get('fw_version')
+        );
+    }
 }

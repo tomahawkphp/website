@@ -12,7 +12,7 @@ return array(
      *      filesystem
      *
      */
-    'driver'           => 'cookie',
+    'driver'           => 'file',
 
     /*
      * Enable Sessions
@@ -26,6 +26,7 @@ return array(
      * Filesystem
      */
     'directory'        => __DIR__ .'/../storage/sessions',
+    'save_path'        => __DIR__ .'/../storage/sessions',
 
     /*
      * Cookie

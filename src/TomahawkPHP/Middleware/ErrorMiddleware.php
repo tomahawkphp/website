@@ -23,6 +23,11 @@ class ErrorMiddleware extends Middleware
 
         $this->getEventDispatcher()->addListener(KernelEvents::EXCEPTION, function(GetResponseForExceptionEvent $event) use ($environment, $logger, $templating) {
 
+
+            if (php_sapi_name() === 'cli') {
+
+            }
+
             if ($event->getException() instanceof NotFoundHttpException) {
 
                 $response = new Response();
@@ -50,7 +55,9 @@ class ErrorMiddleware extends Middleware
 
         });
 
-        set_error_handler(function($code, $error, $file, $line) use ($templating) {
+        set_error_handler(function($code, $error, $file, $line) use ($templating, $logger) {
+
+            $this->getLogger()->error($error, array('code' => $code, 'file' => $file, 'line' => $line));
 
             $response = new Response();
             $response->setContent($templating->render('WebBundle:Error:50x'));

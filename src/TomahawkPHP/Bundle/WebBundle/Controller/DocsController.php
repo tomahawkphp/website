@@ -8,241 +8,179 @@ use Tomahawk\Routing\Controller;
 class DocsController extends BaseController
 {
 
-    public function homeAction()
+    public function homeAction(Request $request)
     {
-        return $this->renderView('WebBundle:Docs:home', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request);
+        return $this->renderView('WebBundle:Docs:home', $params);
     }
 
-    public function installAction()
+    public function installAction(Request $request)
     {
-        return $this->renderView('WebBundle:Docs:installation', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request);
+        return $this->renderView('WebBundle:Docs:installation', $params);
     }
 
-    public function configureAction()
+    public function configureAction(Request $request)
     {
-        return $this->renderView('WebBundle:Docs:configuration', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request);
+        return $this->renderView('WebBundle:Docs:configuration', $params);
     }
 
-    public function servicesAction()
+    public function servicesAction(Request $request)
     {
-        return $this->renderView('WebBundle:Docs:services', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request);
+        return $this->renderView('WebBundle:Docs:services', $params);
     }
 
-    public function assetAction()
+    public function assetAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/asset', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/asset', $params);
     }
 
-    public function authAction()
+    public function authAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/auth', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/auth', $params);
     }
 
-    public function bundlesAction()
+    public function bundlesAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/bundles', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/bundles', $params);
     }
 
-    public function cacheAction()
+    public function cacheAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/cache', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/cache', $params);
     }
 
-    public function configAction()
+    public function configAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/config', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/config', $params);
     }
 
-    public function cliAction()
+    public function cliAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/cli', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/cli', $params);
     }
 
-    public function diAction()
+    public function diAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/di', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/di', $params);
     }
 
-    public function cryptAction()
+    public function cryptAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/crypt', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/crypt', $params);
     }
 
-    public function databaseAction()
+    public function databaseAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/database', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/database', $params);
     }
 
-    public function environmentsAction()
+    public function environmentsAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:environments', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:environments', $params);
     }
 
-    public function errorHandlingAction()
+    public function errorHandlingAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/errors', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/errors', $params);
     }
 
-    public function extendingAction()
+    public function extendingAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Extending/home', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Extending/home', $params);
     }
 
-    public function formsAction()
+    public function formsAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/forms', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/forms', $params);
     }
 
-    public function hashingAction()
+    public function hashingAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
+        $params = $this->getViewVariables($request, true);
 
-        return $this->renderView('WebBundle:Docs:Services/hashing', array(
-            'assets' => $this->assets
-        ));
+        return $this->renderView('WebBundle:Docs:Services/hashing', $params);
     }
 
-    public function htmlAction()
+    public function htmlAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/html', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/html', $params);
     }
 
-    public function inputAction()
+    public function inputAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/input', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/input', $params);
     }
 
-    public function middlewareAction()
+    public function middlewareAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/middleware', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/middleware', $params);
     }
 
-    public function responsesAction()
+    public function responsesAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/responses', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/responses', $params);
     }
 
-    public function routingAction()
+    public function routingAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/routing', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/routing', $params);
     }
 
-    public function sessionsAction()
+    public function sessionsAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/sessions', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/sessions', $params);
     }
 
-    public function templatesAction()
+    public function templatesAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/templates', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/templates', $params);
     }
 
-    public function urlAction()
+    public function urlAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/url', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/url', $params);
     }
 
-    public function validationAction()
+    public function validationAction(Request $request)
     {
-        $this->addCodeMirrorAssets();
-
-        return $this->renderView('WebBundle:Docs:Services/validation', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewVariables($request, true);
+        return $this->renderView('WebBundle:Docs:Services/validation', $params);
     }
-
-
 
 }

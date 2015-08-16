@@ -12,6 +12,11 @@ class TestController extends BaseController
 {
     public function homeAction(Request $request)
     {
+
+        // ./app/hatchet generate:controller WebBundle AController --actions=getAction --actions=postAction:{foo}
+        // ./app/hatchet generate:controller WebBundle DController --actions=getAction --actions=postAction:{foo}{bar}
+        // ./app/hatchet generate:controller WebBundle EController --actions=postAction:{Request foo}
+
         $validator = new Validator();
 
         $validator

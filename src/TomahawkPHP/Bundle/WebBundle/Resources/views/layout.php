@@ -24,7 +24,7 @@
 <div class="main-container container">
     <div class="row">
         <div class="col-sm-3 col-md-2 left-nav">
-            <?php echo $view->render('WebBundle:Partials:sidenav') ?>
+            <?php echo $view->render('WebBundle:Partials:sidenav', array('fwversion' => $fwversion)) ?>
         </div>
         <div class="col-sm-9 col-md-10 main">
             <?php echo $view['blocks']->get('content') ?>
