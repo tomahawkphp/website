@@ -9,17 +9,14 @@ class HomeController extends BaseController
 {
     public function homeAction(Request $request)
     {
-
-        return $this->renderView('WebBundle:Home:welcome', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewParameters($request);
+        return $this->renderView('WebBundle:Home:welcome', $params);
     }
 
-    public function aboutAction()
+    public function aboutAction(Request $request)
     {
-        return $this->renderView('WebBundle:About:home', array(
-            'assets' => $this->assets
-        ));
+        $params = $this->getViewParameters($request);
+        return $this->renderView('WebBundle:About:home', $params);
     }
 
 }

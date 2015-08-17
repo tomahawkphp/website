@@ -3,6 +3,7 @@
 namespace TomahawkPHP\Bundle\WebBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Tomahawk\Asset\AssetContainer;
 use Tomahawk\Routing\Controller;
 use Tomahawk\Auth\AuthInterface;
@@ -25,7 +26,23 @@ use Tomahawk\Input\InputInterface;
 
 class BaseController extends Controller
 {
-    protected $publishedVersion = '1.2.2';
+    /**
+     * @var string
+     */
+    protected $publishedVersion = '1.3.0';
+
+    /**
+     * @var string
+     */
+    protected $currentVersion = '1.3';
+
+    /**
+     * @var array
+     */
+    protected $availableVersions = array(
+        '1.2',
+        '1.3',
+    );
 
     public function __construct(
         AuthInterface $auth,
@@ -51,6 +68,7 @@ class BaseController extends Controller
         $footerAssets = new AssetContainer('footer');
 
         $headAssets
+            ->addCss('fontawesome', 'assets/font-awesome-4.4.0/css/font-awesome.min.css')
             ->addCss('bootstrap_css', 'bootstrap/css/bootstrap.min.css')
             ->addCss('site_css', 'css/style.css', array('bootstrap_css'));
 
@@ -85,15 +103,21 @@ class BaseController extends Controller
             ->addCss('codemirror_theme_css', 'js/codemirror/theme/base16-light.css', array('codemirror_css'));
     }
 
-    protected function getViewVariables(Request $request, $addCodeMirrorAssets = false)
+    protected function getViewParameters(Request $request, $addCodeMirrorAssets = false)
     {
+        $fwVersion = $request->attributes->get('fw_version', $this->currentVersion);
+
+        if ( ! in_array($fwVersion, $this->availableVersions)) {
+            throw new NotFoundHttpException();
+        }
+
         if ($addCodeMirrorAssets) {
             $this->addCodeMirrorAssets();
         }
 
         return array(
-            'assets'    => $this->assets,
-            'fwversion' => $request->attributes->get('fw_version')
+            'assets'     => $this->assets,
+            'fw_version' => $fwVersion,
         );
     }
 }

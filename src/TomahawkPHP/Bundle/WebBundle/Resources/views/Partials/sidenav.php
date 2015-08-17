@@ -1,15 +1,13 @@
 <?php
 use Tomahawk\Common\Str;
 $currentRoute = $view['request']->getParameter('_route');
-$fw_version = $view['request']->getRequest()->attributes->get('fw_version');
-
 ?>
 <ul class="nav nav-sidebar">
     <li class="<?php echo Str::is($currentRoute, 'docs.setup.*') ? 'active' : '' ?>">
-        <a href="<?php echo $view['url']->route('docs.setup.installation', array('fw_version' => $fwversion)) ?>" class="header-link">Setup</a>
+        <a href="<?php echo $view['url']->route('docs.setup.installation', array('fw_version' => $fw_version)) ?>" class="header-link">Setup</a>
         <ul class="nav">
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.installation') ? 'active' : '' ?>">
-                <a href="<?php echo $view['url']->route('docs.setup.installation', array('fw_version' => $fwversion)) ?>">Installation</a>
+                <a href="<?php echo $view['url']->route('docs.setup.installation', array('fw_version' => $fw_version)) ?>">Installation</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.configuration') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.setup.configuration', array('fw_version' => $fw_version)) ?>">Configuration</a>

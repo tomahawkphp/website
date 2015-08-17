@@ -14,18 +14,90 @@
     </div>
 
     <div class="well clearfix">
-        <div class="col-lg-9">
-            <p class="version-copy">
-                Version <?php echo $publishedVersion ?> is our current release. Packed with lots of new features, improvements and bug fixes.
-            </p>
+        <h2 class="brand-red-text">
+            <span class="fa fa-download"></span> Download
+        </h2>
+        <div class="row">
+            <div class="col-lg-9">
+                <p class="version-copy">
+                    Version <strong><?php echo $publishedVersion ?></strong> is our current release. Packed with lots of new features, improvements and bug fixes.
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <a href="https://github.com/tomahawkphp/standard" class="btn btn-lg btn-success">
+                    <span class="fa fa-download"></span> Download v<?php echo $publishedVersion ?>
+                </a>
+            </div>
         </div>
-        <div class="col-lg-3">
-            <a href="https://github.com/tomahawkphp" class="btn btn-lg btn-success">
-                <span class="glyphicon glyphicon-download"></span> Download v<?php echo $publishedVersion ?>
-            </a>
+    </div>
+
+    <div class="well">
+
+        <h2 class="brand-red-text">Why Tomahawk?</h2>
+
+            <p>Tomahawk has enough great features to get you started on most projects. Check out some of them below!</p>
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <h3 class="brand-red-text">
+                        <span class="fa fa-flash"></span> Basic Features
+                    </h3>
+
+                    <ul>
+                        <li>MVC</li>
+                        <li>Routing</li>
+                        <li>Dependency injection</li>
+                        <li>Auto-loader through composer</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <h3 class="brand-red-text">
+                        <span class="fa fa-database"></span> Data & Storage
+                    </h3>
+
+                    <ul>
+                        <li>Illuminate Database and Eloquent ORM</li>
+                        <li>Doctrine DBAL and ORM</li>
+                        <li>Cache powered by Doctrine</li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h3 class="brand-red-text">
+                        <span class="fa fa-newspaper-o"></span> Templating
+                    </h3>
+
+                    <ul>
+                        <li>Create templates through Symfony's PHP Engine and Twig</li>
+                        <li>Translations</li>
+                        <li>Locale</li>
+                        <li>Form builder</li>
+                        <li>Flash messages</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="brand-red-text">
+                        <span class="fa fa-plus"></span> Misc
+                    </h3>
+
+                    <ul>
+                        <li>Event dispatcher</li>
+                        <li>Crypt</li>
+                        <li>String helpers</li>
+                        <li>Array helpers</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </div>
-
 
 <?php $view['blocks']->stop() ?>
