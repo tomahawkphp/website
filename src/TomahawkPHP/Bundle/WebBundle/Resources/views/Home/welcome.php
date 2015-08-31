@@ -6,10 +6,11 @@
 
         <img src="<?php echo $view['url']->asset('images/tomahawk-home.png') ?>" alt="TomahawkPHP" class="center-block img-responsive">
 
-        <h1 class="text-center brand-red-text">
-            TomahawkPHP is a full-stack PHP 5.3+ Framework
+        <h1 class="text-center">
+            Tomahawk<span class="brand-red-text">PHP</span>
+            is a <strong>full-stack</strong> PHP 5.3+ Framework
             <br>
-            built on top of Symfony2 Components
+            built on top of <strong>Symfony2</strong> Components
         </h1>
     </div>
 
@@ -17,6 +18,7 @@
         <h2 class="brand-red-text">
             <span class="fa fa-download"></span> Download
         </h2>
+
         <div class="row">
             <div class="col-lg-9">
                 <p class="version-copy">
@@ -33,9 +35,16 @@
 
     <div class="well">
 
-        <h2 class="brand-red-text">Why Tomahawk?</h2>
+        <h2 class="brand-red-text">
+            <span class="fa fa-question"></span>
+            Why Tomahawk?
+        </h2>
 
-            <p>Tomahawk has enough great features to get you started on most projects. Check out some of them below!</p>
+            <p>
+                Tomahawk has enough great features to get you started on most projects.
+                It uses the Symfony2 Http Kernel for processing requests as well as
+                other components to make your development easier. Check out some of them below!
+            </p>
 
             <div class="row">
                 <div class="col-lg-6">
@@ -49,6 +58,7 @@
                         <li>Routing</li>
                         <li>Dependency injection</li>
                         <li>Auto-loader through composer</li>
+                        <li>Command Bus</li>
                     </ul>
                 </div>
 
@@ -89,6 +99,7 @@
                     </h3>
 
                     <ul>
+                        <li>Swiftmailer email support</li>
                         <li>Event dispatcher</li>
                         <li>Crypt</li>
                         <li>String helpers</li>

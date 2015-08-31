@@ -20,6 +20,14 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.1.7/index.html">1.1.7</option>
+                                            <option value="../../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../../1.3/index.html">1.3 branch</option>
+                                            <option value="../../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -273,7 +281,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_renderResponse">
-        <div class="location">at line 60</div>
+        <div class="location">at line 62</div>
         <code>                    
     <strong>renderResponse</strong>($view, array $parameters = array(), <abbr title="Tomahawk\Templating\Twig\Symfony\Component\HttpFoundation\Response">Response</abbr> $response = null)</code>
     </h3>

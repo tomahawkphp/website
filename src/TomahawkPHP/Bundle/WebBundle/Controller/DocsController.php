@@ -62,6 +62,12 @@ class DocsController extends BaseController
 
     public function configAction(Request $request)
     {
+        $this->get('doctrine')->getRepository('TomahawkPHP\Bundle\WebBundle\Model\User')->findAll();
+
+        $this->get('web_profiler')->addLogs(array(
+            'Test log'
+        ));
+
         $params = $this->getViewParameters($request, true);
 
         return $this->renderView('WebBundle:Docs:Services/config', $params);

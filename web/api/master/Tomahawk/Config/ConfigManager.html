@@ -20,6 +20,14 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.1.7/index.html">1.1.7</option>
+                                            <option value="../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../1.3/index.html">1.3 branch</option>
+                                            <option value="../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -88,7 +96,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Tomahawk\Config\Symfony\Component\Config\Loader\LoaderInterface">LoaderInterface</abbr> $loader, $configDirectories)
+                    <a href="#method___construct">__construct</a>(<abbr title="Tomahawk\Config\Symfony\Component\Config\Loader\LoaderInterface">LoaderInterface</abbr> $loader, $configDirectories, $cacheFile = null)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -131,9 +139,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 41</div>
+        <div class="location">at line 50</div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Tomahawk\Config\Symfony\Component\Config\Loader\LoaderInterface">LoaderInterface</abbr> $loader, $configDirectories)</code>
+    <strong>__construct</strong>(<abbr title="Tomahawk\Config\Symfony\Component\Config\Loader\LoaderInterface">LoaderInterface</abbr> $loader, $configDirectories, $cacheFile = null)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -152,6 +160,12 @@
                 <td>
 </td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$cacheFile</td>
+                <td>
+</td>
+            </tr>
             </table>
 
             
@@ -163,7 +177,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at line 52</div>
+        <div class="location">at line 62</div>
         <code>                    array|null
     <strong>get</strong>(null $key = null, null $default = null)</code>
     </h3>
@@ -205,7 +219,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_set">
-        <div class="location">at line 62</div>
+        <div class="location">at line 72</div>
         <code>                    <abbr title="Tomahawk\Config\$this">$this</abbr>
     <strong>set</strong>($key, $value)</code>
     </h3>
@@ -247,7 +261,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_load">
-        <div class="location">at line 68</div>
+        <div class="location">at line 78</div>
         <code>                    
     <strong>load</strong>()</code>
     </h3>

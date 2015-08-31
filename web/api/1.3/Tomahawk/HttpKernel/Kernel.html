@@ -171,6 +171,24 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerBundles">registerBundles</a>()
+                                            <p>Returns an array of bundles to register.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerMiddleware">registerMiddleware</a>()
+                                            <p>Returns an array of middleware to register</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -332,7 +350,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getRoutePaths">getRoutePaths</a>()
-                                            <p>Get Bundle Route Paths</p>                </div>
+                                            <p>Get Bundle Route Directories</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -386,7 +404,8 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getBundle">getBundle</a>(string $name, bool $first = true)
-                                            <p>Returns a bundle and optionally its descendants by its name.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -395,8 +414,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_locateResource">locateResource</a>(string $name, string $dir = null, bool $first = true)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Returns the file path for a given resource.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -407,7 +425,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 59</div>
+        <div class="location">at line 60</div>
         <code>                    
     <strong>__construct</strong>(string $environment, bool $debug)</code>
     </h3>
@@ -439,7 +457,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___clone">
-        <div class="location">at line 71</div>
+        <div class="location">at line 72</div>
         <code>                    
     <strong>__clone</strong>()</code>
     </h3>
@@ -453,8 +471,60 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_registerBundles">
+        <div class="location">at line 89</div>
+        <code>    abstract                <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
+    <strong>registerBundles</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an array of bundles to register.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]</td>
+            <td>An array of bundle instances.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerMiddleware">
+        <div class="location">at line 96</div>
+        <code>    abstract                <a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
+    <strong>registerMiddleware</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an array of middleware to register</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]</td>
+            <td>An array of middleware instances</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_boot">
-        <div class="location">at line 86</div>
+        <div class="location">at line 103</div>
         <code>                    
     <strong>boot</strong>()</code>
     </h3>
@@ -471,7 +541,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_terminate">
-        <div class="location">at line 123</div>
+        <div class="location">at line 140</div>
         <code>                    
     <strong>terminate</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Response">Response</abbr> $response)</code>
     </h3>
@@ -505,7 +575,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shutdown">
-        <div class="location">at line 139</div>
+        <div class="location">at line 156</div>
         <code>                    
     <strong>shutdown</strong>()</code>
     </h3>
@@ -522,7 +592,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at line 160</div>
+        <div class="location">at line 177</div>
         <code>                    
     <strong>handle</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)</code>
     </h3>
@@ -562,7 +632,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at line 184</div>
+        <div class="location">at line 201</div>
         <code>                    string
     <strong>getName</strong>()</code>
     </h3>
@@ -588,7 +658,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">at line 198</div>
+        <div class="location">at line 215</div>
         <code>                    string
     <strong>getEnvironment</strong>()</code>
     </h3>
@@ -614,7 +684,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDebug">
-        <div class="location">at line 208</div>
+        <div class="location">at line 225</div>
         <code>                    bool
     <strong>isDebug</strong>()</code>
     </h3>
@@ -640,7 +710,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRootDir">
-        <div class="location">at line 218</div>
+        <div class="location">at line 235</div>
         <code>                    string
     <strong>getRootDir</strong>()</code>
     </h3>
@@ -666,7 +736,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getContainer">
-        <div class="location">at line 233</div>
+        <div class="location">at line 250</div>
         <code>                    <a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a>
     <strong>getContainer</strong>()</code>
     </h3>
@@ -692,7 +762,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setContainer">
-        <div class="location">at line 241</div>
+        <div class="location">at line 258</div>
         <code>                    
     <strong>setContainer</strong>(<a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a> $container)</code>
     </h3>
@@ -718,7 +788,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStartTime">
-        <div class="location">at line 251</div>
+        <div class="location">at line 268</div>
         <code>                    int
     <strong>getStartTime</strong>()</code>
     </h3>
@@ -744,7 +814,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCacheDir">
-        <div class="location">at line 261</div>
+        <div class="location">at line 278</div>
         <code>                    string
     <strong>getCacheDir</strong>()</code>
     </h3>
@@ -770,7 +840,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogDir">
-        <div class="location">at line 271</div>
+        <div class="location">at line 288</div>
         <code>                    string
     <strong>getLogDir</strong>()</code>
     </h3>
@@ -796,7 +866,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCharset">
-        <div class="location">at line 281</div>
+        <div class="location">at line 298</div>
         <code>                    string
     <strong>getCharset</strong>()</code>
     </h3>
@@ -822,7 +892,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_serialize">
-        <div class="location">at line 286</div>
+        <div class="location">at line 303</div>
         <code>                    
     <strong>serialize</strong>()</code>
     </h3>
@@ -837,7 +907,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unserialize">
-        <div class="location">at line 291</div>
+        <div class="location">at line 308</div>
         <code>                    
     <strong>unserialize</strong>($data)</code>
     </h3>
@@ -863,7 +933,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initializeMiddleware">
-        <div class="location">at line 310</div>
+        <div class="location">at line 327</div>
         <code>                    
     <strong>initializeMiddleware</strong>()</code>
     </h3>
@@ -878,13 +948,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoutePaths">
-        <div class="location">at line 323</div>
+        <div class="location">at line 340</div>
         <code>                    array
     <strong>getRoutePaths</strong>()</code>
     </h3>
     <div class="details">
                     <div class="method-description">
-                                    <p>Get Bundle Route Paths</p>                                </div>
+                                    <p>Get Bundle Route Directories</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>
@@ -905,7 +975,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRoutePaths">
-        <div class="location">at line 334</div>
+        <div class="location">at line 351</div>
         <code>                    <abbr title="Tomahawk\HttpKernel\$this">$this</abbr>
     <strong>setRoutePaths</strong>(array $routePaths)</code>
     </h3>
@@ -943,7 +1013,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPaths">
-        <div class="location">at line 340</div>
+        <div class="location">at line 357</div>
         <code>                    mixed
     <strong>setPaths</strong>($paths)</code>
     </h3>
@@ -981,7 +1051,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPaths">
-        <div class="location">at line 346</div>
+        <div class="location">at line 363</div>
         <code>                    mixed
     <strong>getPaths</strong>()</code>
     </h3>
@@ -1008,7 +1078,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at line 351</div>
+        <div class="location">at line 368</div>
         <code>                    mixed
     <strong>getPath</strong>($path)</code>
     </h3>
@@ -1046,7 +1116,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundles">
-        <div class="location">at line 356</div>
+        <div class="location">at line 373</div>
         <code>                    <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundles</strong>()</code>
     </h3>
@@ -1072,13 +1142,11 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundle">
-        <div class="location">at line 367</div>
+        <div class="location">at line 384</div>
         <code>                    <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>|<a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundle</strong>(string $name, bool $first = true)</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>Returns a bundle and optionally its descendants by its name.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1111,7 +1179,8 @@
                     <table class="table table-condensed">
                     <tr>
                 <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
-                <td>when the bundle is not enabled</td>
+                <td>
+</td>
             </tr>
             </table>
 
@@ -1122,11 +1191,29 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_locateResource">
-        <div class="location">at line 522</div>
+        <div class="location">at line 539</div>
         <code>                    string|array
     <strong>locateResource</strong>(string $name, string $dir = null, bool $first = true)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the file path for a given resource.</p>                    <p>A Resource can be a file or a directory.</p>
+
+<p>The resource name must follow the following pattern:</p>
+
+<pre><code>@&lt;BundleName&gt;/path/to/a/file.something
+</code></pre>
+
+<p>where BundleName is the name of the bundle
+and the remaining part is the relative path in the bundle.</p>
+
+<p>If $dir is passed, and the first segment of the path is "Resources",
+this method will look for a file named:</p>
+
+<pre><code>$dir/&lt;BundleName&gt;/path/without/Resources
+</code></pre>
+
+<p>before looking in the bundle resource folder.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1159,6 +1246,23 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>if the file cannot be found or the name is not valid</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td>if the name contains invalid/unsafe</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td>if a custom resource is hidden by a resource in a derived bundle</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>

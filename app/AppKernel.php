@@ -13,6 +13,7 @@ class AppKernel extends Kernel
             new \Tomahawk\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \TomahawkPHP\Bundle\WebBundle\WebBundle(),
+            new \Tomahawk\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle(),
             //new TomahawkPHP\Bundle\TemplateBundle\TemplateBundle(),
         );
 
