@@ -4,7 +4,7 @@ return array(
 
     'default' => 'default2',
 
-    'enabled' => true,
+    'enabled' => false,
 
     /*
      * Fetch Mode
