@@ -9,12 +9,6 @@ class HomeController extends BaseController
 {
     public function homeAction(Request $request)
     {
-        $this->get('doctrine')->getRepository('TomahawkPHP\Bundle\WebBundle\Model\User')->findAll();
-
-        $this->get('web_profiler')->addLogs(array(
-           'Test log'
-        ));
-
         $params = $this->getViewParameters($request);
         return $this->renderView('WebBundle:Home:welcome', $params);
     }
