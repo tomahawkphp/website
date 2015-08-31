@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "991d9ef74ddf9e76c32d7dcf15a5463e",
+    "hash": "628db70ee2aa2e76cc0c798486c60ad0",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1078,6 +1078,52 @@
                 "psr-3"
             ],
             "time": "2014-12-29 21:29:35"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "v2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/64c28cc73e01d5edcef7de8cb2b16782615f648a",
+                "reference": "64c28cc73e01d5edcef7de8cb2b16782615f648a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.6",
+                "phpunit/phpunit": "~3.7|~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2015-04-01 06:37:33"
         },
         {
             "name": "nesbot/carbon",

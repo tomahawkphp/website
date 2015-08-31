@@ -12,7 +12,8 @@
     "require": {
         "php": ">=5.3.3",
         "tomahawk/framework": "1.3.*",
-        "tomahawk/doctrinemigrationsbundle": "1.*"
+        "tomahawk/doctrinemigrationsbundle": "1.*",
+        "mustache/mustache": "2.8.*"
     },
     "require-dev": {
         "mockery/mockery": "0.8.0",
