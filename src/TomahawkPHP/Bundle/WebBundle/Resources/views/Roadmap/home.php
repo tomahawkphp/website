@@ -84,7 +84,10 @@
     </h3>
     <hr>
     <ul>
-        <li>General bug fixes</li>
+        <li>Short notation Routing</li>
+        <li>Service notation Routing</li>
+        <li>Updates to Profiler bar</li>
+        <li>Add HTML navigation menu builder</li>
     </ul>
 
 
