@@ -18,7 +18,7 @@
     <div style="padding: 10px 20px">
 
         <h1 style="text-align:center">
-            500 - Interal Server Error
+            500 - Internal Server Error
         </h1>
 
         <img src="<?php echo $view['url']->asset('images/tomahawk-mini.png') ?>" alt="TomahawkPHP" style="display: block; margin: 10px auto">

@@ -9,9 +9,9 @@ class RoadmapController extends BaseController
 {
     public function homeAction(Request $request)
     {
-        return $this->renderView('WebBundle:Roadmap:home', array(
-            'assets'        => $this->assets,
-        ));
+        $params = $this->getViewParameters($request, true);
+
+        return $this->renderView('WebBundle:Roadmap:home', $params);
     }
 
 }

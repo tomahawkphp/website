@@ -27,9 +27,6 @@
         <code>Tomahawk\Auth\AuthInterface</code> and it will get injected in through the Service Container.
     </p>
 
-    <p>The config for Auth Manager can be found in the <code>app/config/security.php</code>.</p>
-
-
     <h3>Auth Handlers</h3>
 
     <hr>
@@ -42,6 +39,71 @@
         <li>Doctrine - When your using the Doctrine ORM</li>
     </ul>
 
+    <h3>Configuration</h3>
+    <hr>
+
+    <p>
+        The config for Auth Manager can be found in the <code>app/config/security.php</code>
+        and will look like the following.
+    </p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+return array(
+
+    // CSRF Token Name
+    'csrf_token_name' => '_csrf_token',
+
+
+    /*
+     * Application Key
+     */
+    'key'   => 'fJ3PD12u6603aHmg0Ncuc3w1VI3AeiQI', //http://randomkeygen.com/
+
+    // eloquent, database or doctrine
+    'handler' => 'doctrine',
+
+    'handlers' => array(
+        'doctrine' => array(
+            'model' => 'MyPackage\Models\UserDoctrine',
+
+            // Username field
+            'username'   => 'username',
+
+            // Password field
+            'password'   => 'password',
+        ),
+        'database' => array(
+            'table' => 'users',
+
+            // Primary key field
+            'key'   => 'id',
+
+            // Username field
+            'username'   => 'username',
+
+            // Password field
+            'password'   => 'password',
+
+            // Connection to use
+            'connection' => 'default',
+        ),
+        'eloquent' => array(
+            'model' => 'MyPackage\Models\User',
+
+            // Username field
+            'username'   => 'username',
+
+            // Password field
+            'password'   => 'password',
+        ),
+    ),
+
+);
+</script>
+</div>
+
     <h3>Authenticating Users</h3>
 
     <hr>
@@ -50,6 +112,10 @@
     <h4>Manual Authentication</h4>
 
     <p>To authenticate a user to pass the username and password to the <code>attempt</code> method.</p>
+
+    <div class="alert alert-info">
+        <strong>Please note: </strong> The username and password names must match those in the config.
+    </div>
 
 <div>
 <script data-style="application/x-httpd-php" type="x-code-example">&lt;?php

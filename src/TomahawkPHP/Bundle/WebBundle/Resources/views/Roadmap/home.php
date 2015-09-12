@@ -63,11 +63,38 @@
 
 
     <h3>
+        v1.3.0
+    </h3>
+    <hr>
+    <ul>
+        <li>Refactor FrameworkProvider into separate Service Provider classes</li>
+    </ul>
+
+
+    <h3>
+        v1.3.*
+    </h3>
+    <hr>
+    <ul>
+        <li>General bug fixes</li>
+    </ul>
+
+    <h3>
+        v1.4.0
+    </h3>
+    <hr>
+    <ul>
+        <li>General bug fixes</li>
+    </ul>
+
+
+    <h3>
         v2.0
     </h3>
     <hr>
 
     <ul>
+        <li>Improve Routing</li>
         <li>
             Remove Support for Illuminate Database Layer.
             This dependency pulls in too much un-needed laravel files.

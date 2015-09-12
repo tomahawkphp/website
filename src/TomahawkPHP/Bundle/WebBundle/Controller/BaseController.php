@@ -29,7 +29,7 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    protected $publishedVersion = '1.3.0';
+    protected $publishedVersion = '1.3.2';
 
     /**
      * @var string
