@@ -36,6 +36,7 @@ $router->section('/docs/{fw_version}', array('fw_version' => '1.3'), function(Ro
         $router->get('/database', 'docs.services.database', $routeNamespace .'DocsController::databaseAction');
         $router->get('/dependency-injection', 'docs.services.di', $routeNamespace .'DocsController::diAction');
         $router->get('/encryption', 'docs.services.encryption', $routeNamespace .'DocsController::cryptAction');
+        $router->get('/event-dispatcher', 'docs.services.event', $routeNamespace .'DocsController::eventAction');
         $router->get('/error-handing', 'docs.services.error', $routeNamespace .'DocsController::errorHandlingAction');
         $router->get('/forms', 'docs.services.forms', $routeNamespace .'DocsController::formsAction');
         $router->get('/hashing', 'docs.services.hashing', $routeNamespace .'DocsController::hashingAction');

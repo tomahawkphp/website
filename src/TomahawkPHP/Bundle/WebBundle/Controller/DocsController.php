@@ -108,6 +108,13 @@ class DocsController extends BaseController
         return $this->renderView('WebBundle:Docs:environments', $params);
     }
 
+    public function eventAction(Request $request)
+    {
+        $params = $this->getViewParameters($request, true);
+
+        return $this->renderView('WebBundle:Docs:Services/events', $params);
+    }
+
     public function errorHandlingAction(Request $request)
     {
         $params = $this->getViewParameters($request, true);

@@ -50,6 +50,9 @@ $currentRoute = $view['request']->getParameter('_route');
             <li class="<?php echo Str::is($currentRoute, 'docs.services.encryption') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.encryption', array('fw_version' => $fw_version)) ?>">Encryption</a>
             </li>
+            <li class="<?php echo Str::is($currentRoute, 'docs.services.event') ? 'active' : '' ?>">
+                <a href="<?php echo $view['url']->route('docs.services.event', array('fw_version' => $fw_version)) ?>">Event Dispacther</a>
+            </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.services.error') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.error', array('fw_version' => $fw_version)) ?>">Error Handling &amp; Logging</a>
             </li>
