@@ -27,6 +27,11 @@
         <code>Tomahawk\Auth\AuthInterface</code> and it will get injected in through the Service Container.
     </p>
 
+    <div class="alert alert-info">
+        <strong>Please note:</strong>
+        Before getting started, make sure that the password field is a minimum of 60 characters.
+    </div>
+
     <h3>Auth Handlers</h3>
 
     <hr>
@@ -39,8 +44,10 @@
         <li>Doctrine - When your using the Doctrine ORM</li>
     </ul>
 
-    <h3>Configuration</h3>
+    <h3>Setting Up</h3>
     <hr>
+
+    <h4>Configuration</h4>
 
     <p>
         The config for Auth Manager can be found in the <code>app/config/security.php</code>
@@ -103,6 +110,40 @@ return array(
 );
 </script>
 </div>
+
+    <h4>Creating a User model</h4>
+
+    <p>Your User class needs to implement the <code>Tomahawk\Auth\UserInterface</code> interface.</p>
+
+    <p>You should have a model which looks something like the following:</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+use Tomahawk\Auth\UserInterface;
+
+class User implements UserInterface
+{
+    /**
+     * @return mixed
+     */
+    public function getAuthIdentifier()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAuthPassword()
+    {
+        return $this->password;
+    }
+}
+
+</script>
+</div>
+
 
     <h3>Authenticating Users</h3>
 
