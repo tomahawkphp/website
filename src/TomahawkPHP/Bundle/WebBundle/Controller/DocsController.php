@@ -7,7 +7,6 @@ use Tomahawk\Routing\Controller;
 
 class DocsController extends BaseController
 {
-
     public function homeAction(Request $request)
     {
         $params = $this->getViewParameters($request);
@@ -34,166 +33,134 @@ class DocsController extends BaseController
 
     public function assetAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/asset', $params);
+        return $this->renderDocView($request, 'asset');
     }
 
     public function authAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/auth', $params);
+        return $this->renderDocView($request, 'auth');
     }
 
     public function bundlesAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/bundles', $params);
+        return $this->renderDocView($request, 'bundles');
     }
 
     public function cacheAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/cache', $params);
+        return $this->renderDocView($request, 'cache');
     }
 
     public function configAction(Request $request)
     {
-        $this->get('doctrine')->getRepository('TomahawkPHP\Bundle\WebBundle\Model\User')->findAll();
-
-        $this->get('web_profiler')->addLogs(array(
-            'Test log'
-        ));
-
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/config', $params);
+        return $this->renderDocView($request, 'config');
     }
 
     public function cliAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/cli', $params);
+        return $this->renderDocView($request, 'cli');
     }
 
     public function diAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/di', $params);
+        return $this->renderDocView($request, 'di');
     }
 
     public function cryptAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/crypt', $params);
+        return $this->renderDocView($request, 'crypt');
     }
 
     public function databaseAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/database', $params);
+        return $this->renderDocView($request, 'database');
     }
 
     public function environmentsAction(Request $request)
     {
         $params = $this->getViewParameters($request, true);
-
         return $this->renderView('WebBundle:Docs:environments', $params);
     }
 
     public function eventAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/events', $params);
+        return $this->renderDocView($request, 'events');
     }
 
     public function errorHandlingAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/errors', $params);
+        return $this->renderDocView($request, 'errors');
     }
 
     public function extendingAction(Request $request)
     {
         $params = $this->getViewParameters($request, true);
-
         return $this->renderView('WebBundle:Docs:Extending/home', $params);
     }
 
     public function formsAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/forms', $params);
+        return $this->renderDocView($request, 'forms');
     }
 
     public function hashingAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-
-        return $this->renderView('WebBundle:Docs:Services/hashing', $params);
+        return $this->renderDocView($request, 'hashing');
     }
 
     public function htmlAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/html', $params);
+        return $this->renderDocView($request, 'html');
     }
 
     public function inputAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/input', $params);
+        return $this->renderDocView($request, 'input');
     }
 
     public function middlewareAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/middleware', $params);
+        return $this->renderDocView($request, 'middleware');
     }
 
     public function responsesAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/responses', $params);
+        return $this->renderDocView($request, 'responses');
     }
 
     public function routingAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/routing', $params);
+        return $this->renderDocView($request, 'routing');
     }
 
     public function sessionsAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/sessions', $params);
+        return $this->renderDocView($request, 'sessions');
     }
 
     public function templatesAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/templates', $params);
+        return $this->renderDocView($request, 'templates');
     }
 
     public function urlAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/url', $params);
+        return $this->renderDocView($request, 'url');
     }
 
     public function validationAction(Request $request)
     {
-        $params = $this->getViewParameters($request, true);
-        return $this->renderView('WebBundle:Docs:Services/validation', $params);
+        return $this->renderDocView($request, 'validation');
     }
 
+    protected function renderDocView(Request $request, $view)
+    {
+        $params = $this->getViewParameters($request, true);
+
+        if ($this->templating->exists(sprintf('WebBundle:Docs:Services/%s/%s', $params['fw_version'], $view))) {
+            return $this->renderView(sprintf('WebBundle:Docs:Services/%s/%s', $params['fw_version'], $view), $params);
+        }
+
+        return $this->renderView(sprintf('WebBundle:Docs:Services/%s', $view), $params);
+    }
 }

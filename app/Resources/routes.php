@@ -18,7 +18,7 @@ $router->section('/roadmap', array(), function(Router $router) use($routeNamespa
     $router->get('/', 'roadmap.home', $routeNamespace .'RoadmapController::homeAction');
 });
 
-$router->section('/docs/{fw_version}', array('fw_version' => '1.3'), function(Router $router, RouteCollection $routeCollection) use($routeNamespace) {
+$router->section('/docs/{fw_version}', array('fw_version' => '1.4'), function(Router $router, RouteCollection $routeCollection) use($routeNamespace) {
 
     $router->get('/', 'docs.home', $routeNamespace .'DocsController::homeAction');
     $router->get('/installation', 'docs.setup.installation', $routeNamespace .'DocsController::installAction');

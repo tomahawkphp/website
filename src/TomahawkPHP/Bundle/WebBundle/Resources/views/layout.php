@@ -16,7 +16,7 @@
 <body>
 
 <?php $view['blocks']->startDefault('nav') ?>
-    <?php echo $view->render('WebBundle:Partials:nav', array('fw_version' => $fw_version)) ?>
+    <?php echo $view->render('WebBundle:Partials:nav', array('fw_version' => $fw_version, 'fw_versions' => $fw_versions)) ?>
 <?php $view['blocks']->stopDefault() ?>
 <?php $view['blocks']->output('nav') ?>
 
@@ -24,7 +24,7 @@
 <div class="main-container container">
     <div class="row">
         <div class="col-sm-3 col-md-2 left-nav">
-            <?php echo $view->render('WebBundle:Partials:sidenav', array('fw_version' => $fw_version)) ?>
+            <?php echo $view->render('WebBundle:Partials:sidenav', array('fw_version' => $fw_version, 'fw_versions' => $fw_versions)) ?>
         </div>
         <div class="col-sm-9 col-md-10 main">
             <?php echo $view['blocks']->get('content') ?>

@@ -29,19 +29,20 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    protected $publishedVersion = '1.3.2';
+    protected $publishedVersion = '1.4.0';
 
     /**
      * @var string
      */
-    protected $currentVersion = '1.3';
+    protected $currentVersion = '1.4';
 
     /**
      * @var array
      */
     protected $availableVersions = array(
-        '1.2',
+        '1.4',
         '1.3',
+        '1.2',
     );
 
     public function __construct(
@@ -118,6 +119,7 @@ class BaseController extends Controller
         return array(
             'assets'     => $this->assets,
             'fw_version' => $fwVersion,
+            'fw_versions' => $this->availableVersions
         );
     }
 }

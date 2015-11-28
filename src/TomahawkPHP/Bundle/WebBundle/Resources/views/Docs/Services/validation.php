@@ -46,8 +46,10 @@ if ($validator->validate($request->request->all())) {
 
     $messages = $validator->getMessages();
 
-    foreach ($messages as $field => $message) {
-        echo $message . '<br>';
+    foreach ($messages as $field => $fieldMessages) {
+        foreach ($fieldMessages as $fieldMessage) {
+            echo $fieldMessage->getMessage() . '<br>';
+        }
     }
 }
 
@@ -96,8 +98,10 @@ if ($validator->validate($request->request->all())) {
 
     $messages = $validator->getMessages();
 
-    foreach ($messages as $field => $message) {
-        echo $message . '<br>';
+    foreach ($messages as $field => $fieldMessages) {
+        foreach ($fieldMessages as $fieldMessage) {
+            echo $fieldMessage->getMessage() . '<br>';
+        }
     }
 }
 

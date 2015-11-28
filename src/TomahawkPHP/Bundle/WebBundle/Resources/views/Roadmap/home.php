@@ -87,7 +87,7 @@
         <li>Short notation Routing</li>
         <li>Service notation Routing</li>
         <li>Updates to Profiler bar</li>
-        <li>Add HTML navigation menu builder</li>
+        <li><s>Add HTML navigation menu builder</s>Delayed until version 2.0</li>
     </ul>
 
 
@@ -102,9 +102,8 @@
             Remove Support for Illuminate Database Layer.
             This dependency pulls in too much un-needed laravel files.
         </li>
-        <li>
-            Replace Tomahawk Service Container with Symfonys?
-        </li>
+        <li>Replace Tomahawk Service Container with Symfonys?</li>
+        <li>Add HTML navigation menu builder</li>
     </ul>
 
 

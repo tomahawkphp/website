@@ -27,7 +27,7 @@ $currentRoute = $view['request']->getParameter('_route');
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $view['url']->asset('/api/1.3/index.html') ?>">
+                    <a href="<?php echo $view['url']->asset('/api/1.4/index.html') ?>">
                         <span class="fa fa-cog"></span>
                         API
                     </a>
@@ -44,9 +44,39 @@ $currentRoute = $view['request']->getParameter('_route');
                 </li>
                 <li class="<?php echo Str::is($currentRoute, 'about') ? 'active' : '' ?>">
                     <a href="<?php echo $view['url']->route('about') ?>">
-                        <span class="fa fa-info-circle"></span> About</a>
+                        <span class="fa fa-info-circle"></span> About
+                    </a>
                 </li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Version <?php echo $fw_version ?> <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <?php foreach ($fw_versions as $v) : ?>
+                            <li role="presentation">
+
+                                <?php
+
+                                $url = $view['url']->route('docs.home');
+
+                                if (Str::startsWith($currentRoute, 'docs.')) {
+                                    $url = $view['url']->route($currentRoute, array('fw_version' => $v));
+                                }
+
+                                ?>
+
+                                <a href="<?php echo $url ?>">
+                                    <?php echo $v ?>
+                                </a>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
     </div>
 </div>
