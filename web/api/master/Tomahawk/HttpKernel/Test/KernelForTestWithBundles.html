@@ -24,6 +24,8 @@
                 <select id="version-switcher" name="version">
                                             <option value="../../../../1.1.7/index.html">1.1.7</option>
                                             <option value="../../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../../1.3/index.html">1.3 branch</option>
+                                            <option value="../../../../1.4/index.html">1.4 branch</option>
                                             <option value="../../../../master/index.html" selected>master branch</option>
                                     </select>
             </form>
@@ -167,6 +169,24 @@
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/HttpKernel/Kernel.html#method___clone"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerBundles">registerBundles</a>()
+                                            <p>Returns an array of bundles to register.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerMiddleware">registerMiddleware</a>()
+                                            <p>Returns an array of middleware to register</p>                </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -398,24 +418,6 @@
                                             <p>Returns the file path for a given resource.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/HttpKernel/Kernel.html#method_locateResource"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a></small></div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_registerBundles">registerBundles</a>()
-                                            <p>Returns an array of bundles to register.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_registerMiddleware">registerMiddleware</a>()
-                                            <p>Returns an array of middleware to register</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
             </div>
 
 
@@ -424,7 +426,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method___construct"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 59</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method___construct"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 60</div>
         <code>                    
     <strong>__construct</strong>(string $environment, bool $debug)</code>
     </h3>
@@ -456,7 +458,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___clone">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method___clone"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 71</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method___clone"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 72</div>
         <code>                    
     <strong>__clone</strong>()</code>
     </h3>
@@ -470,8 +472,60 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_registerBundles">
+        <div class="location">at line 11</div>
+        <code>                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
+    <strong>registerBundles</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an array of bundles to register.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]</td>
+            <td>An array of bundle instances.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerMiddleware">
+        <div class="location">at line 21</div>
+        <code>                    <a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
+    <strong>registerMiddleware</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an array of middleware to register</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]</td>
+            <td>An array of middleware instances</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_boot">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_boot"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 86</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_boot"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 103</div>
         <code>                    
     <strong>boot</strong>()</code>
     </h3>
@@ -488,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_terminate">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_terminate"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 122</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_terminate"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 140</div>
         <code>                    
     <strong>terminate</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Response">Response</abbr> $response)</code>
     </h3>
@@ -522,7 +576,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shutdown">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_shutdown"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 138</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_shutdown"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 156</div>
         <code>                    
     <strong>shutdown</strong>()</code>
     </h3>
@@ -539,7 +593,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_handle"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 159</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_handle"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 177</div>
         <code>                    
     <strong>handle</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)</code>
     </h3>
@@ -579,7 +633,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getName"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 183</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getName"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 201</div>
         <code>                    string
     <strong>getName</strong>()</code>
     </h3>
@@ -605,7 +659,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getEnvironment"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 197</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getEnvironment"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 215</div>
         <code>                    string
     <strong>getEnvironment</strong>()</code>
     </h3>
@@ -631,7 +685,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDebug">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_isDebug"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 207</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_isDebug"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 225</div>
         <code>                    bool
     <strong>isDebug</strong>()</code>
     </h3>
@@ -657,7 +711,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRootDir">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getRootDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 217</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getRootDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 235</div>
         <code>                    string
     <strong>getRootDir</strong>()</code>
     </h3>
@@ -683,7 +737,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getContainer">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getContainer"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 232</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getContainer"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 250</div>
         <code>                    <a href="../../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a>
     <strong>getContainer</strong>()</code>
     </h3>
@@ -709,7 +763,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setContainer">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setContainer"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 240</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setContainer"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 258</div>
         <code>                    
     <strong>setContainer</strong>(<a href="../../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a> $container)</code>
     </h3>
@@ -735,7 +789,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStartTime">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getStartTime"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 250</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getStartTime"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 268</div>
         <code>                    int
     <strong>getStartTime</strong>()</code>
     </h3>
@@ -761,7 +815,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCacheDir">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getCacheDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 260</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getCacheDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 278</div>
         <code>                    string
     <strong>getCacheDir</strong>()</code>
     </h3>
@@ -787,7 +841,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogDir">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getLogDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 270</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getLogDir"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 288</div>
         <code>                    string
     <strong>getLogDir</strong>()</code>
     </h3>
@@ -813,7 +867,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCharset">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getCharset"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 280</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getCharset"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 298</div>
         <code>                    string
     <strong>getCharset</strong>()</code>
     </h3>
@@ -839,7 +893,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_serialize">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_serialize"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 285</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_serialize"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 303</div>
         <code>                    
     <strong>serialize</strong>()</code>
     </h3>
@@ -854,7 +908,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unserialize">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_unserialize"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 290</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_unserialize"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 308</div>
         <code>                    
     <strong>unserialize</strong>($data)</code>
     </h3>
@@ -880,7 +934,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_initializeMiddleware">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_initializeMiddleware"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 309</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_initializeMiddleware"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 327</div>
         <code>                    
     <strong>initializeMiddleware</strong>()</code>
     </h3>
@@ -895,7 +949,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoutePaths">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getRoutePaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 322</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getRoutePaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 340</div>
         <code>                    array
     <strong>getRoutePaths</strong>()</code>
     </h3>
@@ -922,7 +976,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRoutePaths">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setRoutePaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 333</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setRoutePaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 351</div>
         <code>                    <abbr title="Tomahawk\HttpKernel\$this">$this</abbr>
     <strong>setRoutePaths</strong>(array $routePaths)</code>
     </h3>
@@ -960,7 +1014,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPaths">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setPaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 339</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_setPaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 357</div>
         <code>                    mixed
     <strong>setPaths</strong>($paths)</code>
     </h3>
@@ -998,7 +1052,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPaths">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getPaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 345</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getPaths"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 363</div>
         <code>                    mixed
     <strong>getPaths</strong>()</code>
     </h3>
@@ -1025,7 +1079,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getPath"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 350</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getPath"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 368</div>
         <code>                    mixed
     <strong>getPath</strong>($path)</code>
     </h3>
@@ -1063,7 +1117,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundles">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getBundles"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 355</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getBundles"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 373</div>
         <code>                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundles</strong>()</code>
     </h3>
@@ -1089,7 +1143,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundle">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getBundle"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 366</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_getBundle"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 384</div>
         <code>                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>|<a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundle</strong>(string $name, bool $first = true)</code>
     </h3>
@@ -1138,7 +1192,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_locateResource">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_locateResource"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 521</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Kernel.html#method_locateResource"><abbr title="Tomahawk\HttpKernel\Kernel">Kernel</abbr></a> at line 539</div>
         <code>                    string|array
     <strong>locateResource</strong>(string $name, string $dir = null, bool $first = true)</code>
     </h3>
@@ -1210,58 +1264,6 @@ this method will look for a file named:</p>
             </tr>
             </table>
 
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_registerBundles">
-        <div class="location">at line 12</div>
-        <code>                    <a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
-    <strong>registerBundles</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Returns an array of bundles to register.</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]</td>
-            <td>An array of bundle instances.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_registerMiddleware">
-        <div class="location">at line 22</div>
-        <code>                    <a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
-    <strong>registerMiddleware</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Returns an array of middleware to register</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]</td>
-            <td>An array of middleware instances</td>
-        </tr>
-    </table>
-
-            
             
                     </div>
     </div>

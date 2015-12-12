@@ -2,57 +2,52 @@
 
 use Tomahawk\Routing\Router;
 use Symfony\Component\Routing\RouteCollection;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
-
-$routeNamespace = 'TomahawkPHP\\Bundle\\WebBundle\\Controller\\';
+use TomahawkPHP\Bundle\WebBundle\Controller\BaseController;
 
 $router = new Router();
-$router->setRoutes(new RouteCollection());
 
-$router->get('/', 'home', $routeNamespace .'HomeController::homeAction');
+$router->get('/', 'home', 'WebBundle:Home:home');
 
-$router->get('/about', 'about', $routeNamespace .'HomeController::aboutAction');
+$router->get('/about', 'about', 'WebBundle:Home:about');
 
-$router->section('/roadmap', array(), function(Router $router) use($routeNamespace) {
-    $router->get('/', 'roadmap.home', $routeNamespace .'RoadmapController::homeAction');
+$router->section('/roadmap', array(), function(Router $router) {
+    $router->get('/', 'roadmap.home', 'WebBundle:Roadmap:home');
 });
 
-$router->section('/docs/{fw_version}', array('fw_version' => '1.4'), function(Router $router, RouteCollection $routeCollection) use($routeNamespace) {
+$router->section('/docs/{fw_version}', array('fw_version' => BaseController::CURRENT_VERSION), function(Router $router, RouteCollection $routeCollection) {
 
-    $router->get('/', 'docs.home', $routeNamespace .'DocsController::homeAction');
-    $router->get('/installation', 'docs.setup.installation', $routeNamespace .'DocsController::installAction');
-    $router->get('/configuration', 'docs.setup.configuration', $routeNamespace .'DocsController::configureAction');
-    $router->get('/environments', 'docs.setup.environments', $routeNamespace .'DocsController::environmentsAction');
+    $router->get('/', 'docs.home', 'WebBundle:Docs:home');
+    $router->get('/installation', 'docs.setup.installation', 'WebBundle:Docs:install');
+    $router->get('/configuration', 'docs.setup.configuration', 'WebBundle:Docs:configure');
+    $router->get('/environments', 'docs.setup.environments', 'WebBundle:Docs:environments');
 
-    $router->section('/services', array(), function(Router $router) use($routeNamespace) {
-        $router->get('/', 'docs.services.home', $routeNamespace .'DocsController::servicesAction');
-        $router->get('/asset-manager', 'docs.services.asset', $routeNamespace .'DocsController::assetAction');
-        $router->get('/auth', 'docs.services.auth', $routeNamespace .'DocsController::authAction');
-        $router->get('/bundles', 'docs.services.bundles', $routeNamespace .'DocsController::bundlesAction');
-        $router->get('/cache', 'docs.services.cache', $routeNamespace .'DocsController::cacheAction');
-        $router->get('/config', 'docs.services.config', $routeNamespace .'DocsController::configAction');
-        $router->get('/cli', 'docs.services.cli', $routeNamespace .'DocsController::cliAction');
-        $router->get('/database', 'docs.services.database', $routeNamespace .'DocsController::databaseAction');
-        $router->get('/dependency-injection', 'docs.services.di', $routeNamespace .'DocsController::diAction');
-        $router->get('/encryption', 'docs.services.encryption', $routeNamespace .'DocsController::cryptAction');
-        $router->get('/event-dispatcher', 'docs.services.event', $routeNamespace .'DocsController::eventAction');
-        $router->get('/error-handing', 'docs.services.error', $routeNamespace .'DocsController::errorHandlingAction');
-        $router->get('/forms', 'docs.services.forms', $routeNamespace .'DocsController::formsAction');
-        $router->get('/hashing', 'docs.services.hashing', $routeNamespace .'DocsController::hashingAction');
-        $router->get('/html', 'docs.services.html', $routeNamespace .'DocsController::htmlAction');
-        $router->get('/input', 'docs.services.input', $routeNamespace .'DocsController::inputAction');
-        $router->get('/middleware', 'docs.services.middleware', $routeNamespace .'DocsController::middlewareAction');
-        $router->get('/responses', 'docs.services.responses', $routeNamespace .'DocsController::responsesAction');
-        $router->get('/routing', 'docs.services.routing', $routeNamespace .'DocsController::routingAction');
-        $router->get('/sessions', 'docs.services.sessions', $routeNamespace .'DocsController::sessionsAction');
-        $router->get('/templates', 'docs.services.templates', $routeNamespace .'DocsController::templatesAction');
-        $router->get('/url-generator', 'docs.services.url', $routeNamespace .'DocsController::urlAction');
-        $router->get('/validation', 'docs.services.validation', $routeNamespace .'DocsController::validationAction');
-        $router->get('/extending', 'docs.extending', $routeNamespace .'DocsController::extendingAction');
+    $router->section('/services', array(), function(Router $router) {
+        $router->get('/', 'docs.services.home', 'WebBundle:Docs:services');
+        $router->get('/asset-manager', 'docs.services.asset', 'WebBundle:Docs:asset');
+        $router->get('/auth', 'docs.services.auth', 'WebBundle:Docs:auth');
+        $router->get('/bundles', 'docs.services.bundles', 'WebBundle:Docs:bundles');
+        $router->get('/cache', 'docs.services.cache', 'WebBundle:Docs:cache');
+        $router->get('/config', 'docs.services.config', 'WebBundle:Docs:config');
+        $router->get('/cli', 'docs.services.cli', 'WebBundle:Docs:cli');
+        $router->get('/database', 'docs.services.database', 'WebBundle:Docs:database');
+        $router->get('/dependency-injection', 'docs.services.di', 'WebBundle:Docs:di');
+        $router->get('/encryption', 'docs.services.encryption', 'WebBundle:Docs:crypt');
+        $router->get('/event-dispatcher', 'docs.services.event', 'WebBundle:Docs:event');
+        $router->get('/error-handing', 'docs.services.error', 'WebBundle:Docs:errorHandling');
+        $router->get('/forms', 'docs.services.forms', 'WebBundle:Docs:forms');
+        $router->get('/hashing', 'docs.services.hashing', 'WebBundle:Docs:hashing');
+        $router->get('/html', 'docs.services.html', 'WebBundle:Docs:html');
+        $router->get('/input', 'docs.services.input', 'WebBundle:Docs:input');
+        $router->get('/middleware', 'docs.services.middleware', 'WebBundle:Docs:middleware');
+        $router->get('/responses', 'docs.services.responses', 'WebBundle:Docs:responses');
+        $router->get('/routing', 'docs.services.routing', 'WebBundle:Docs:routing');
+        $router->get('/sessions', 'docs.services.sessions', 'WebBundle:Docs:sessions');
+        $router->get('/templates', 'docs.services.templates', 'WebBundle:Docs:templates');
+        $router->get('/url-generator', 'docs.services.url', 'WebBundle:Docs:url');
+        $router->get('/validation', 'docs.services.validation', 'WebBundle:Docs:validation');
+        $router->get('/extending', 'docs.extending', 'WebBundle:Docs:extending');
     });
 
 });
-
 
 return $router->getRoutes();

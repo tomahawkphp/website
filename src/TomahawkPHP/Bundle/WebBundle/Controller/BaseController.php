@@ -29,12 +29,12 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    protected $publishedVersion = '1.4.0';
+    const CURRENT_VERSION = '1.4';
 
     /**
      * @var string
      */
-    protected $currentVersion = '1.4';
+    protected $publishedVersion = '1.4.1';
 
     /**
      * @var array
@@ -106,7 +106,7 @@ class BaseController extends Controller
 
     protected function getViewParameters(Request $request, $addCodeMirrorAssets = false)
     {
-        $fwVersion = $request->attributes->get('fw_version', $this->currentVersion);
+        $fwVersion = $request->attributes->get('fw_version', self::CURRENT_VERSION);
 
         if ( ! in_array($fwVersion, $this->availableVersions)) {
             throw new NotFoundHttpException();

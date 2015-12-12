@@ -20,6 +20,15 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../../1.1.7/index.html">1.1.7</option>
+                                            <option value="../../../../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../../../../1.3/index.html">1.3 branch</option>
+                                            <option value="../../../../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -91,7 +100,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Hashing\HasherInterface">HasherInterface</abbr> $hasher, <abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Bundle\DoctrineBundle\RegistryInterface">RegistryInterface</abbr> $doctrine, $model, $usernameField)
+                    <a href="#method___construct">__construct</a>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Hashing\HasherInterface">HasherInterface</abbr> $hasher, <abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Bundle\DoctrineBundle\RegistryInterface">RegistryInterface</abbr> $doctrine, $model, $usernameField, $passwordField = null)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -131,9 +140,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 32</div>
+        <div class="location">at line 37</div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Hashing\HasherInterface">HasherInterface</abbr> $hasher, <abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Bundle\DoctrineBundle\RegistryInterface">RegistryInterface</abbr> $doctrine, $model, $usernameField)</code>
+    <strong>__construct</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Hashing\HasherInterface">HasherInterface</abbr> $hasher, <abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Bundle\DoctrineBundle\RegistryInterface">RegistryInterface</abbr> $doctrine, $model, $usernameField, $passwordField = null)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -164,6 +173,12 @@
                 <td>
 </td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$passwordField</td>
+                <td>
+</td>
+            </tr>
             </table>
 
             
@@ -175,7 +190,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_retrieveById">
-        <div class="location">at line 46</div>
+        <div class="location">at line 58</div>
         <code>                    <a href="../../../../../Tomahawk/Auth/UserInterface.html"><abbr title="Tomahawk\Auth\UserInterface">UserInterface</abbr></a>|null
     <strong>retrieveById</strong>(mixed $identifier)</code>
     </h3>
@@ -213,7 +228,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_retrieveByCredentials">
-        <div class="location">at line 58</div>
+        <div class="location">at line 70</div>
         <code>                    <a href="../../../../../Tomahawk/Auth/UserInterface.html"><abbr title="Tomahawk\Auth\UserInterface">UserInterface</abbr></a>|null
     <strong>retrieveByCredentials</strong>(array $credentials)</code>
     </h3>
@@ -251,7 +266,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_validateCredentials">
-        <div class="location">at line 76</div>
+        <div class="location">at line 86</div>
         <code>                    bool
     <strong>validateCredentials</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Auth\Handlers\Tomahawk\Auth\UserInterface">UserInterface</abbr> $user, array $credentials)</code>
     </h3>
