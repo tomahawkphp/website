@@ -34,7 +34,7 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    protected $publishedVersion = '1.4.2';
+    protected $publishedVersion = '1.4.4';
 
     /**
      * @var array
