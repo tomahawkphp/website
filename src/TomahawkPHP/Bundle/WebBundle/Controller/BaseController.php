@@ -34,12 +34,13 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    protected $publishedVersion = '1.4.4';
+    protected $publishedVersion = '1.4.5';
 
     /**
      * @var array
      */
     protected $availableVersions = array(
+        //'2.0',
         '1.4',
         '1.3',
         '1.2',
