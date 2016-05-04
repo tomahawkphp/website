@@ -1671,12 +1671,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "fbd0083cd9dac06556bd1096deaa0295c18a7584"
+                "reference": "9b4d2c0ba53d3226f455d5cc7d3655f6a5371b37"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/config/zipball/9b4d2c0ba53d3226f455d5cc7d3655f6a5371b37",
-                "reference": "fbd0083cd9dac06556bd1096deaa0295c18a7584",
+                "reference": "9b4d2c0ba53d3226f455d5cc7d3655f6a5371b37",
                 "shasum": ""
             },
             "require": {
@@ -2001,16 +2001,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.8.4",
+            "version": "v2.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "f08ffdf229252cd2745558cb2112df43903bcae4"
+                "reference": "dee379131dceed90a429e951546b33edfe7dccbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/f08ffdf229252cd2745558cb2112df43903bcae4",
-                "reference": "f08ffdf229252cd2745558cb2112df43903bcae4",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/dee379131dceed90a429e951546b33edfe7dccbb",
+                "reference": "dee379131dceed90a429e951546b33edfe7dccbb",
                 "shasum": ""
             },
             "require": {
@@ -2046,7 +2046,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-27 10:20:16"
+            "time": "2016-04-12 18:01:21"
         },
         {
             "name": "symfony/finder",
@@ -2541,16 +2541,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.4",
+            "version": "v2.8.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "584e52cb8f788a887553ba82db6caacb1d6260bb"
+                "reference": "e4fbcc65f90909c999ac3b4dfa699ee6563a9940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/584e52cb8f788a887553ba82db6caacb1d6260bb",
-                "reference": "584e52cb8f788a887553ba82db6caacb1d6260bb",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e4fbcc65f90909c999ac3b4dfa699ee6563a9940",
+                "reference": "e4fbcc65f90909c999ac3b4dfa699ee6563a9940",
                 "shasum": ""
             },
             "require": {
@@ -2586,7 +2586,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-04 07:54:35"
+            "time": "2016-03-29 19:00:15"
         },
         {
             "name": "tomahawk/doctrinemigrationsbundle",
@@ -2632,16 +2632,16 @@
         },
         {
             "name": "tomahawk/framework",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomahawkphp/framework.git",
-                "reference": "ddd118427e60ca17144d33cbb6d455e9814227bb"
+                "reference": "73a41e1453141d4bdb1902c60a40838b9f0e30fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomahawkphp/framework/zipball/ddd118427e60ca17144d33cbb6d455e9814227bb",
-                "reference": "ddd118427e60ca17144d33cbb6d455e9814227bb",
+                "url": "https://api.github.com/repos/tomahawkphp/framework/zipball/73a41e1453141d4bdb1902c60a40838b9f0e30fc",
+                "reference": "73a41e1453141d4bdb1902c60a40838b9f0e30fc",
                 "shasum": ""
             },
             "require": {
@@ -2705,7 +2705,7 @@
                 "framework",
                 "tomahawk"
             ],
-            "time": "2016-04-03 16:33:25"
+            "time": "2016-05-04 19:43:07"
         },
         {
             "name": "twig/twig",
@@ -3474,16 +3474,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf"
+                "reference": "2292b116f43c272ff4328083096114f84ea46a56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf",
-                "reference": "dc7a29032cf72b54f36dac15a1ca5b3a1b6029bf",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/2292b116f43c272ff4328083096114f84ea46a56",
+                "reference": "2292b116f43c272ff4328083096114f84ea46a56",
                 "shasum": ""
             },
             "require": {
@@ -3520,7 +3520,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2016-02-26 18:40:46"
+            "time": "2016-05-04 07:59:13"
         },
         {
             "name": "sebastian/exporter",
