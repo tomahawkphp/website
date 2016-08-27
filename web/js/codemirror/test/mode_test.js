@@ -61,6 +61,7 @@
 
   test.mode = function(name, mode, tokens, modeName) {
     var data = parseTokens(tokens);
+    if (name == "extend_type") console.log("set", (modeName || mode.name) + "_" + name)
     return test((modeName || mode.name) + "_" + name, function() {
       return compare(data.plain, data.tokens, mode);
     });
@@ -170,7 +171,7 @@
     for (var i = 0; i < output.length; ++i) {
       var style = output[i].style, val = output[i].text;
       s +=
-      '<td class="mt-token"' + (i == diffAt * 2 ? " style='background: pink'" : "") + '>' +
+      '<td class="mt-token"' + (i == diffAt ? " style='background: pink'" : "") + '>' +
         '<span class="cm-' + esc(String(style)) + '">' +
         esc(val.replace(/ /g,'\xb7')) +  // · MIDDLE DOT
         '</span>' +

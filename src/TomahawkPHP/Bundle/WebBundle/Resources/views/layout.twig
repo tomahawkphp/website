@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo $view['url']->asset('favicon.ico') ?>">
+    <link rel="icon" type="image/x-icon" href="<?php echo $view['url']->asset('favicon.ico') ?>">
+    <title>TomahawkPHP Framework</title>
+    {{ assets.outputCss('head')|raw }}
+    {{ assets.outputJS('head')|raw }}
+</head>
+<body>
+
+{% block nav %}
+    {% include('WebBundle:Partials:nav.twig') %}
+{% endblock %}
+
+
+<div class="main-container container">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 left-nav">
+            {% block sidenav %}
+                {% include('WebBundle:Partials:sidenav.twig') %}
+            {% endblock %}
+        </div>
+        <div class="col-sm-9 col-md-10 main">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+        <p>
+            Tomahawk &copy; <?php echo date('Y') ?> Tom Ellis | Tomahawk logo by Thomas Hampson
+        </p>
+    </footer>
+
+    {{ assets.outputCss('footer')|raw }}
+    {{ assets.outputJS('footer')|raw }}
+</body>
+</html>

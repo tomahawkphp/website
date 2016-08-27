@@ -8,13 +8,12 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             new \Tomahawk\Bundle\FrameworkBundle\FrameworkBundle(),
+            new \Tomahawk\Bundle\MonologBundle\MonologBundle(),
+            new \Tomahawk\Bundle\ErrorHandlerBundle\ErrorHandlerBundle(),
             new \Tomahawk\Bundle\GeneratorBundle\GeneratorBundle(),
-            new \Tomahawk\Bundle\MigrationsBundle\MigrationsBundle(),
             new \Tomahawk\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \TomahawkPHP\Bundle\WebBundle\WebBundle(),
-            new \Tomahawk\Bundle\DoctrineMigrationsBundle\DoctrineMigrationsBundle(),
-            //new TomahawkPHP\Bundle\TemplateBundle\TemplateBundle(),
         );
 
         if ($this->getEnvironment() === 'dev') {
@@ -22,28 +21,5 @@ class AppKernel extends Kernel
         }
 
         return $bundles;
-    }
-
-    public function registerMiddleware()
-    {
-        $middleware = array(
-            new \Tomahawk\HttpCore\Middleware\StringResponse(),
-            new \Tomahawk\HttpCore\Middleware\HeaderCookies(),
-            new \Tomahawk\Session\Middleware\Session(),
-        );
-
-        if ($this->getEnvironment() === 'prod') {
-
-            if (php_sapi_name() == "cli") {
-                // In cli-mode
-            }
-            else {
-                // Not in cli-mode
-                $middleware[] = new \TomahawkPHP\Middleware\ErrorMiddleware();
-            }
-
-        }
-
-        return $middleware;
     }
 }

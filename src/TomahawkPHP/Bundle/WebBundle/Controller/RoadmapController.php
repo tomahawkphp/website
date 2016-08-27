@@ -3,7 +3,6 @@
 namespace TomahawkPHP\Bundle\WebBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
-use Tomahawk\Routing\Controller;
 
 class RoadmapController extends BaseController
 {

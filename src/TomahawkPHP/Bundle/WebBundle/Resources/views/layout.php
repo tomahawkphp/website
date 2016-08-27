@@ -8,11 +8,12 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $view['url']->asset('favicon.ico') ?>">
     <link rel="icon" type="image/x-icon" href="<?php echo $view['url']->asset('favicon.ico') ?>">
-    <title>TomahawkPHP Framework</title>
+    <title>
+        <?php $view['slots']->output('title', 'TomahawkPHP Framework') ?>
+    </title>
     <?php echo $assets->outputCss('head') ?>
     <?php echo $assets->outputJS('head') ?>
 </head>
-
 <body>
 
 <?php $view['blocks']->startDefault('nav') ?>

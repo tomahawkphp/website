@@ -11,7 +11,7 @@ class ExtendingController extends BaseController
     public function homeAction()
     {
         return $this->renderView('WebBundle:Docs:Extending/home', array(
-            'assets' => $this->assets
+            'assets' => $this->get('assets')
         ));
     }
 
@@ -20,7 +20,7 @@ class ExtendingController extends BaseController
         $this->addCodeMirrorAssets();
 
         return $this->renderView('WebBundle:Docs:Extending/services', array(
-            'assets' => $this->assets
+            'assets' => $this->get('assets')
         ));
     }
 
@@ -29,7 +29,7 @@ class ExtendingController extends BaseController
         $this->addCodeMirrorAssets();
 
         return $this->renderView('WebBundle:Docs:Extending/bundles', array(
-            'assets' => $this->assets
+            'assets' => $this->get('assets')
         ));
     }
 }

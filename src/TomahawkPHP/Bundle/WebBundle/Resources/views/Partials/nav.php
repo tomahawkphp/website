@@ -1,6 +1,7 @@
 <?php
 use Tomahawk\Common\Str;
-$currentRoute = $view['request']->getParameter('_route');
+
+$currentRoute = $app->getRequest()->attributes->get('_route');
 ?>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
