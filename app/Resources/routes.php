@@ -42,6 +42,7 @@ $router->section('/docs/{fw_version}', array('fw_version' => BaseController::CUR
         $router->get('/responses', 'docs.services.responses', 'WebBundle:Docs:responses');
         $router->get('/routing', 'docs.services.routing', 'WebBundle:Docs:routing');
         $router->get('/sessions', 'docs.services.sessions', 'WebBundle:Docs:sessions');
+        $router->get('/translations', 'docs.services.translations', 'WebBundle:Docs:translations');
         $router->get('/templates', 'docs.services.templates', 'WebBundle:Docs:templates');
         $router->get('/url-generator', 'docs.services.url', 'WebBundle:Docs:url');
         $router->get('/validation', 'docs.services.validation', 'WebBundle:Docs:validation');

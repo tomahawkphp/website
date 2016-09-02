@@ -2,9 +2,9 @@
 
 namespace TomahawkPHP\Bundle\WebBundle\Controller;
 
+use Tomahawk\Routing\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Tomahawk\Routing\Controller;
 
 class DocsController extends BaseController
 {
@@ -132,6 +132,11 @@ class DocsController extends BaseController
     public function sessionsAction(Request $request)
     {
         return $this->renderDocView($request, 'services/sessions');
+    }
+
+    public function translationsAction(Request $request)
+    {
+        return $this->renderDocView($request, 'services/translations');
     }
 
     public function templatesAction(Request $request)

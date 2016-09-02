@@ -77,6 +77,9 @@ $currentRoute = $app->getRequest()->attributes->get('_route');
             <li class="<?php echo Str::is($currentRoute, 'docs.services.templates') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.templates', array('fw_version' => $fw_version)) ?>">Templates</a>
             </li>
+            <li class="<?php echo Str::is($currentRoute, 'docs.services.translations') ? 'active' : '' ?>">
+                <a href="<?php echo $view['url']->route('docs.services.translations', array('fw_version' => $fw_version)) ?>">Translations</a>
+            </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.services.url') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.url', array('fw_version' => $fw_version)) ?>">URL Generator</a>
             </li>
