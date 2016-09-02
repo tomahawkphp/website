@@ -14,7 +14,7 @@
     </h1>
 
     <p>
-        Tomahawk uses <strong>Symfony's Php Engine</strong> and <strong>Twig Engine</strong> for templates.
+        Tomahawk uses <strong>Symfony's Php Engine</strong> and <strong>Twig</strong> for templates.
         A Delegating engine is used so you can use either or both the template engines mentioned.
     </p>
 
@@ -157,13 +157,43 @@ return [
 
     <p>Php Engine has a few helpers you can use when creating templates:</p>
 
-    <h4>Slot Helper</h4>
+    <h4>Slots Helper</h4>
     <hr>
-    <p>Tomahawk uses the Slot helper from Symfony. You can read more about the Slot helper <a class="links" href="http://symfony.com/doc/current/components/templating/slotshelper.html">here</a> </p>
+    <p>Tomahawk uses the Slot helper from Symfony. The slot helper is used to define and output different parts of a template.
+        You can read more about the Slot helper
+        <a class="links" href="http://symfony.com/doc/current/components/templating/slotshelper.html">here</a>.
+    </p>
 
-    <p></p>
+    <p>
+        You can use the Slots helper by accessing <code>$view['slots']</code>.
+        There are 2 sets of syntax for defining slots.
+    </p>
 
-    <p>The slot helper is used to define and output different parts of a template</p>
+    <p>The first is for short bits of text, such as a page title</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;!-- layout.php --&gt;
+&lt;?php $view['slots']-&gt;output('title', 'Default Title') ?&gt;
+</script>
+</div>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;!-- home.php --&gt;
+&lt;?php $view['slots']-&gt;set('title', 'Home') ?&gt;
+</script>
+</div>
+
+    <p>You can also use the extended syntax.</p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">
+&lt;?php $view['slots']-&gt;start('title') ?&gt;
+     Home | Website Name
+&lt;?php $view['blocks']-&gt;stop() ?&gt;
+</script>
+</div>
 
     <h4>Block Helper</h4>
     <hr>
@@ -308,7 +338,7 @@ return [
 
     <h3>Extensions</h3>
 
-    <p>Tomahawk provides 2 extensions for Twig</p>
+    <p>Tomahawk provides 2 extensions for Twig, Translator and Url Generator.</p>
 
     <h4>Translator Extension</h4>
 
