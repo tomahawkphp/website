@@ -1,4 +1,4 @@
-<?php $view->extend('WebBundle::layout') ?>
+<?php $view->extend('WebBundle::wide_layout') ?>
 
 <?php $view['blocks']->start('content') ?>
 
