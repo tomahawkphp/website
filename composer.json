@@ -10,7 +10,7 @@
     },
     "require": {
         "php": ">=5.6.4",
-        "tomahawk/framework": "2.0.0-b2"
+        "tomahawk/framework": "2.0.0-b3"
     },
     "require-dev": {
         "mockery/mockery": "0.8.0",
