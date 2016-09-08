@@ -54,7 +54,7 @@ $currentRoute = $app->getRequest()->attributes->get('_route');
                 <a href="<?php echo $view['url']->route('docs.services.error', array('fw_version' => $fw_version)) ?>">Error Handling &amp; Logging</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.services.forms') ? 'active' : '' ?>">
-                <a href="<?php echo $view['url']->route('docs.services.forms', array('fw_version' => $fw_version)) ?>">Html Forms</a>
+                <a href="<?php echo $view['url']->route('docs.services.forms', array('fw_version' => $fw_version)) ?>">Forms</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.services.hashing') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.services.hashing', array('fw_version' => $fw_version)) ?>">Hashing</a>

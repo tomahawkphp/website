@@ -12,5 +12,4 @@ class RoadmapController extends BaseController
 
         return $this->renderView('WebBundle:Roadmap:home', $params);
     }
-
 }

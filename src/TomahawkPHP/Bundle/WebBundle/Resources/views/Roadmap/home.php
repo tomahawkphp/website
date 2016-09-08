@@ -2,9 +2,7 @@
 
 <?php $view['blocks']->start('content') ?>
 
-    <h1>
-        Roadmap
-    </h1>
+    <h1>Roadmap</h1>
     <hr>
     <p>
         Here is the roadmap of changes and fixes that will be made to Tomahawk for the current and future versions.
@@ -87,12 +85,19 @@
         <li>Short notation Routing</li>
         <li>Service notation Routing</li>
         <li>Updates to Profiler bar</li>
-        <li><s>Add HTML navigation menu builder</s>Delayed until version 2.0</li>
+        <li><s>Add HTML navigation menu builder</s> Delayed until version 2.0</li>
+    </ul>
+
+    <h3>v1.4.X</h3>
+    <hr>
+    <ul>
+        <li>General bug fixes</li>
+        <li>Update dependencies with security fixes</li>
     </ul>
 
 
     <h3>
-        v2.0
+        v2.0.0
     </h3>
     <hr>
 
@@ -102,8 +107,8 @@
             Remove Support for Illuminate Database Layer.
             This dependency pulls in too much un-needed laravel files.
         </li>
-        <li>Replace Tomahawk Service Container with Symfonys?</li>
-        <li>Add HTML navigation menu builder</li>
+        <li><s>Replace Tomahawk Service Container with Symfonys?</s> No longer replacing</li>
+        <li><s>Add HTML navigation menu builder</s> No longer implementing</li>
     </ul>
 
 

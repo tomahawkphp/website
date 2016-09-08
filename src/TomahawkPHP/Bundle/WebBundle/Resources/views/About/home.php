@@ -11,12 +11,12 @@
     </p>
 
     <p>
-        TomahawkPHP supports Semvar and where possble used libraries that already exist. Theres no point re-inventing the wheel right?
+        TomahawkPHP supports Semvar and where possible used libraries that already exist. Theres no point re-inventing the wheel right?
     </p>
 
     <p>
-        Tomahawk is built upon Symfony2 components, specifically for handling requests and routing.
-        We also use Doctrine and Illuminate Database for the DB layers.
+        Tomahawk is built upon Symfony3 components, specifically for handling requests and routing.
+        We also use Doctrine for the DB and App Cache layers.
     </p>
 
     <p>
@@ -25,10 +25,13 @@
     </p>
     
     <h2>Development Team</h2>
-    
-    <p>Currently the development team only consists of one person Tom Ellis.</p>
-    
-    <p>He is the Creator and Lead Developer of TomahawkPHP.</p>
 
+    <h3>Tom Ellis</h3>
+
+    <p>Creator and Lead Developer of TomahawkPHP.</p>
+
+    <h3>Craig Liddle</h3>
+
+    <p>Lead Developer of TomahawkPHP.</p>
 
 <?php $view['blocks']->stop() ?>

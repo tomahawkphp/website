@@ -28,7 +28,7 @@ $currentRoute = $app->getRequest()->attributes->get('_route');
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo $view['url']->asset('/api/1.4/index.html') ?>">
+                    <a href="<?php echo $view['url']->asset('/api/2.0/index.html') ?>">
                         <span class="fa fa-cog"></span>
                         API
                     </a>

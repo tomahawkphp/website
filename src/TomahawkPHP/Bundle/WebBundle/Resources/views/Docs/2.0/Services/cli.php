@@ -51,7 +51,7 @@
 
     <ul>
         <li>The class name must end with <code>Command.php</code></li>
-        <li>All commands must be in a Command folder within your Bundle</li>
+        <li>All commands must be in a <code>Command</code> folder within your Bundle</li>
     </ul>
 
     <p>
@@ -96,12 +96,15 @@ class MyCommand extends Command
 
 
     <h3>
-        Using the DI Container in a command
+        Using the Dependency Injection Container in a command
     </h3>
 
     <p>
-        If you have your command implement <code>Tomahawk\DI\ContainerAwareInterface</code> it will get passed in for you.
-        You will they have access to it through <code>$this->container</code> (if you named the property container that is).
+        If you have your command implement <code>Tomahawk\DependencyInjection\ContainerAwareInterface</code> or use the
+        <code>Tomahawk\DependencyInjection\ContainerAwareTrait</code> it will get passed in for you.
+    </p>
+    <p>
+        You will they have access to it through <code>$this->container</code>.
     </p>
 
 <div class="push-down-20"></div>

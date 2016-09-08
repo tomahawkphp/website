@@ -10,7 +10,7 @@
     </ol>
 
     <h1>
-        Html Forms
+        Forms
     </h1>
 
     <p>The Forms service provides great functionality for creating and managing forms.</p>
@@ -473,6 +473,40 @@ $this->container->get('security.csrf.tokenmanager')
 $tokenManager = $this->container->get('security.csrf.tokenmanager');
 
 $form->add(new Hidden($tokenManager->getTokenName(), $tokenManager->generateToken());
+
+</script>
+</div>
+
+    <h2>Data Transformers</h2>
+
+    <p>Data transformers allow you to change a value before it is rendered by a form control or when input is
+    being bound to a model.</p>
+
+    <p>Tomahawk comes with one simple data transformer <code>CallableDataTransformer</code>.</p>
+
+    <p>You pass it 2 closures, 1st first for transforming a value, the 2nd for reversing the transform.</p>
+
+    <p>For example say you had <code>dob</code> property on model and it was an instance of <code>\DateTime</code>,
+        you would want to transform it to a string before it is rendered by the form control. And when the <code>dob</code>
+        is taken from the request and given to the form, it will be reverse transformed before being given to the model.
+    </p>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+
+use Tomahawk\Forms\Form;
+use Tomahawk\Forms\CallableDataTransformer;
+use MyBundle\User;
+
+$form = new Form('/');
+$form->add(new Text('dob'));
+
+$form->->addTransformer('dob', new CallableDataTransformer(function($dateTime) {
+    return $dateTime instanceof \DateTime ? $dateTime->format('Y-m-d') : $dateTime;
+}, function($dateTime) {
+    return \DateTime::createFromFormat('Y-m-d', $dateTime);
+}));
 
 </script>
 </div>
