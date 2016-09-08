@@ -20,6 +20,13 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -110,8 +117,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_fetch">fetch</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Fetch an item out of the cache</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -120,8 +126,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_save">save</a>($id, $value, bool $lifetime = false)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Save an item into the cache</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -130,8 +135,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_contains">contains</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Check if an item has been cached</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -140,8 +144,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_delete">delete</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Delete an item from the cache</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -150,8 +153,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_flush">flush</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Delete all items from the cache</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -218,6 +220,8 @@
     <strong>fetch</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Fetch an item out of the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -254,6 +258,8 @@
     <strong>save</strong>($id, $value, bool $lifetime = false)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Save an item into the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -302,6 +308,8 @@
     <strong>contains</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Check if an item has been cached</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -338,6 +346,8 @@
     <strong>delete</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Delete an item from the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -374,6 +384,8 @@
     <strong>flush</strong>()</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Delete all items from the cache</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

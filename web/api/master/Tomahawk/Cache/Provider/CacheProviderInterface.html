@@ -20,6 +20,13 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -90,8 +97,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_fetch">fetch</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Fetch an item out of the cache</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/Cache/CacheInterface.html#method_fetch"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -100,8 +106,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_save">save</a>($id, $value, bool $lifetime = false)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Save an item into the cache</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/Cache/CacheInterface.html#method_save"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -110,8 +115,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_contains">contains</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Check if an item has been cached</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/Cache/CacheInterface.html#method_contains"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -120,8 +124,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_delete">delete</a>($id)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Delete an item from the cache</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/Cache/CacheInterface.html#method_delete"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -130,8 +133,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_flush">flush</a>()
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Delete all items from the cache</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/Cache/CacheInterface.html#method_flush"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -152,11 +154,13 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_fetch">
-        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_fetch"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 20</div>
+        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_fetch"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 23</div>
         <code>                    mixed
     <strong>fetch</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Fetch an item out of the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -188,11 +192,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_save"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 28</div>
+        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_save"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 33</div>
         <code>                    bool
     <strong>save</strong>($id, $value, bool $lifetime = false)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Save an item into the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -236,11 +242,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_contains">
-        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_contains"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 34</div>
+        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_contains"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 41</div>
         <code>                    mixed
     <strong>contains</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Check if an item has been cached</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -272,11 +280,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_delete"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 40</div>
+        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_delete"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 49</div>
         <code>                    bool
     <strong>delete</strong>($id)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Delete an item from the cache</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -308,11 +318,13 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_flush">
-        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_flush"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 45</div>
+        <div class="location">in <a href="../../../Tomahawk/Cache/CacheInterface.html#method_flush"><abbr title="Tomahawk\Cache\CacheInterface">CacheInterface</abbr></a> at line 56</div>
         <code>                    bool
     <strong>flush</strong>()</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Delete all items from the cache</p>                                </div>
                 <div class="tags">
             
                             <h4>Return Value</h4>

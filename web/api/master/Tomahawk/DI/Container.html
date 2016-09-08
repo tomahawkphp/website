@@ -22,8 +22,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../1.1.7/index.html">1.1.7</option>
-                                            <option value="../../../1.2/index.html">1.2 branch</option>
+                                            <option value="../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../2.0/index.html">2.0 branch</option>
                                             <option value="../../../master/index.html" selected>master branch</option>
                                     </select>
             </form>
@@ -233,7 +233,8 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_factory">factory</a>(callable $callable)
-                                            <p>Marks a callable as being a factory service.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -242,7 +243,8 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_protect">protect</a>(callable $callable)
-                                            <p>Protects a callable from being interpreted as a service.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -251,7 +253,8 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_raw">raw</a>(string $id)
-                                            <p>Gets a parameter or the closure defining an object.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -260,7 +263,8 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_extend">extend</a>(string $id, callable $callable)
-                                            <p>Extends an object definition.</p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -825,8 +829,6 @@ the same name as an existing parameter would break your container).</p>         
     <strong>factory</strong>(callable $callable)</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>Marks a callable as being a factory service.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -849,15 +851,6 @@ the same name as an existing parameter would break your container).</p>         
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
-                <td>Service definition has to be a closure of an invokable object</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -870,8 +863,6 @@ the same name as an existing parameter would break your container).</p>         
     <strong>protect</strong>(callable $callable)</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>Protects a callable from being interpreted as a service.</p>                    <p>This is useful when you want to store a callable as a parameter.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -894,15 +885,6 @@ the same name as an existing parameter would break your container).</p>         
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
-                <td>Service definition has to be a closure of an invokable object</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -915,8 +897,6 @@ the same name as an existing parameter would break your container).</p>         
     <strong>raw</strong>(string $id)</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>Gets a parameter or the closure defining an object.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -939,15 +919,6 @@ the same name as an existing parameter would break your container).</p>         
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
-                <td>if the identifier is not defined</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
@@ -960,9 +931,6 @@ the same name as an existing parameter would break your container).</p>         
     <strong>extend</strong>(string $id, callable $callable)</code>
     </h3>
     <div class="details">
-                    <div class="method-description">
-                                    <p>Extends an object definition.</p>                    <p>Useful when you want to extend an existing object definition,
-without necessarily loading that object.</p>            </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -990,15 +958,6 @@ without necessarily loading that object.</p>            </div>
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
-                <td>if the identifier is not defined or not a service definition</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>

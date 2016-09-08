@@ -20,6 +20,13 @@
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../master/index.html" selected>master branch</option>
+                                    </select>
+            </form>
                 <form id="search-form" action="../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
@@ -89,8 +96,7 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setContainer">setContainer</a>(<abbr title="Tomahawk\Middleware\Tomahawk\DI\ContainerInterface">ContainerInterface</abbr> $container = null)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Sets the Container.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -124,6 +130,8 @@
     <strong>setContainer</strong>(<abbr title="Tomahawk\Middleware\Tomahawk\DI\ContainerInterface">ContainerInterface</abbr> $container = null)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the Container.</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
