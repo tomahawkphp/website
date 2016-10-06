@@ -12,7 +12,7 @@
         Installation
     </h1>
 
-    <h3>Server Requirements</h3>
+    <h2>Server Requirements</h2>
     <ul>
         <li>PHP 5.6.4+ (We recommend 7.0 as its awesome)</li>
         <li>PDO Extension</li>
@@ -21,41 +21,33 @@
 
     <hr>
 
-    <h3>
-        Install Composer
-    </h3>
-    <p>
-        Install Composer
+    <h2>Installing Tomahawk</h2>
 
+    <p>
         Tomahawk uses Composer to manage its dependencies.
         You can download it <a class="link-me" href="https://getcomposer.org/">here</a>.
     </p>
 
-    <hr>
+    <h3>Via Composer</h3>
 
-    <h3>
-        Download Tomahawk Standard
-    </h3>
+    <p>You can run the following to pull down Tomahawk Standard and install the framework:</p>
+
+    <pre class="codeprint"><code>composer create-project tomahawk/standard project-name</code></pre>
+
+    <h3>Manually</h3>
 
     <p>
         Tomahawk Standard is the front end to the framework. It contains all your config files, views, controllers etc.
     </p>
     <p>
-        You can download it <a class="link-me" href="https://getcomposer.org/">here</a>.
-        Extract the zipped file to the directory you'll be running the site from.
+
+        You can download it <a class="link-me" href="https://github.com/tomahawkphp/standard/releases">here</a>.
+        Extract the zipped file to the directory you'll be running the site from and then run the following in
+        that directory.
     </p>
 
-    <p>Now you can install the Tomahawk Framework</p>
-
-    <hr>
-
-    <h3>
-        Install the Framework and Dependencies
-    </h3>
-
-    <p>Run the following command in the directory where Tomahawk Standard is: </p>
-
     <pre class="codeprint"><code>composer install</code></pre>
+
 
     <p>You now have TomahawKPHP installed!</p>
 

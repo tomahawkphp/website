@@ -6,8 +6,6 @@ set_time_limit(0);
 use Tomahawk\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
-use Symfony\Component\Console\Output\ConsoleOutput;
-use Tomahawk\Console\Output;
 
 require_once __DIR__ . '/autoload.php';
 require_once __DIR__.'/AppKernel.php';
@@ -21,8 +19,7 @@ if ($debug) {
 }
 
 $kernel = new AppKernel($env, $debug);
-$output = new Output(Output::VERBOSITY_NORMAL, true);
 
 $application = new Application($kernel);
 
-$application->run($input, $output);
+$application->run($input);

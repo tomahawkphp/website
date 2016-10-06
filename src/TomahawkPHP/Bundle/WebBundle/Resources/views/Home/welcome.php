@@ -8,9 +8,9 @@
 
         <h1 class="text-center">
             Tomahawk<span class="brand-red-text">PHP</span>
-            is a <strong>full-stack</strong> PHP 5.3+ Framework
+            is a <strong>full-stack</strong> PHP 5.6+ Framework
             <br>
-            built on top of <strong>Symfony2</strong> Components
+            built on top of <strong>Symfony3</strong> Components
         </h1>
     </div>
 
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-3">
                 <a href="https://github.com/tomahawkphp/standard" class="btn btn-lg btn-success">
-                    <span class="fa fa-download"></span> Download v<?php echo $publishedVersion ?>
+                    <span class="fa fa-download"></span> Download
                 </a>
             </div>
         </div>
@@ -42,7 +42,7 @@
 
             <p>
                 Tomahawk has enough great features to get you started on most projects.
-                It uses the Symfony2 Http Kernel for processing requests as well as
+                It uses the Symfony3 Http Kernel for processing requests as well as
                 other components to make your development easier. Check out some of them below!
             </p>
 
@@ -69,7 +69,6 @@
                     </h3>
 
                     <ul>
-                        <li>Illuminate Database and Eloquent ORM</li>
                         <li>Doctrine DBAL and ORM</li>
                         <li>Cache powered by Doctrine</li>
                     </ul>
@@ -101,7 +100,6 @@
                     <ul>
                         <li>Swiftmailer email support</li>
                         <li>Event dispatcher</li>
-                        <li>Crypt</li>
                         <li>String helpers</li>
                         <li>Array helpers</li>
                     </ul>

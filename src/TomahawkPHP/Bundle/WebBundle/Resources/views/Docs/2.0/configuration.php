@@ -12,56 +12,26 @@
         Configuration
     </h1>
 
-    <div class="alert alert-info">
-        This documentation is incomplete.
-    </div>
 
-    <h2>Cache</h2>
+    <p>
+        All of the configuration files for the Tomahawk framework are stored in the config directory.
+        This can be found in <code>app/config</code>.
+    </p
 
-    <p>...</p>
+    <p>Each config file is documented with the options that are available to you.</p>
 
-    <h2>Database/Doctrine</h2>
 
-    <p>...</p>
+    <h2>Environment Configuration</h2>
 
-    <h2>Error</h2>
+    <p>You can setup different configuration files per environment. All you need to do is create a new directory in the <code>app/config</code> folder.</p>
 
-    <p>...</p>
+    <p>For example if you wanted to created a set of <code>dev</code> environment config files, just create the
+    following older <code>app/config/dev</code> and copy any files out of the main directory into that one.</p>
 
-    <h2>Kernel</h2>
+    <p>
+        For more information about the environments available to you,
+        please see the <a href="<?php echo $view['url']->route('docs.setup.environments', array('fw_version' => $fw_version)) ?>" class="links">Environments</a> section.
+    </p>
 
-    <p>...</p>
-
-    <h2>Kernel</h2>
-
-    <p>...</p>
-
-    <h2>Request</h2>
-
-    <p>...</p>
-
-    <h2>Monolog</h2>
-
-    <p>...</p>
-
-    <h2>Security</h2>
-
-    <p>...</p>
-
-    <h2>Session</h2>
-
-    <p>...</p>
-
-    <h2>Swiftmailer</h2>
-
-    <p>...</p>
-
-    <h2>Templating</h2>
-
-    <p>...</p>
-
-    <h2>Translation</h2>
-
-    <p>...</p>
 
 <?php $view['blocks']->stop() ?>

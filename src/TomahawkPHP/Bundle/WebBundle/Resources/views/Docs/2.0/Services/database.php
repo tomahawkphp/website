@@ -12,124 +12,9 @@
     <h1>Database</h1>
 
     <p>
-        Tomahawk comes with 2 choices of database services, <strong>Illuminate Database</strong> (Laravel)
-        and <strong>Doctrine</strong>, each one has its own config that needs to be setup.
+        Tomahawk comes with <strong>Doctrine</strong> as its database layer. Although there's nothing
+        stopping you adding your own.
     </p>
-
-    <hr>
-
-    <h2>Illuminate Database</h2>
-
-    <p>From Laravel's Github: </p>
-
-    <p>
-        <i>"The Illuminate Database component is a full database toolkit for PHP, providing an expressive <strong>Query Builder</strong>,
-        <strong>ActiveRecord style ORM</strong>, and <strong>Schema Builder</strong>. It currently supports MySQL, Postgres, SQL Server, and SQLite."</i>
-    </p>
-
-    <h3>Configuration</h3>
-
-    <div class="alert-info alert">
-        If you are not using the <strong>Illuminate Database</strong> service you will need to set
-        <strong>enabled</strong> in the <code>app/config/database.php</code> file to <code>false</code>.
-    </div>
-
-    <p>Open <code>app/config/database.php</code> in a text editor.</p>
-
-    <p>
-        Here you can set your default connection as well as adding in all your connections. Below is an example of
-        what your config might look like:
-    </p>
-
-<div>
-<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
-
-/*
- * Config for use with the Illuminate Database Component (Laravel)
- */
-return array(
-
-    'default' => 'default',
-
-    // Whether to load Laravel services etc
-    'enabled' => true,
-
-    /*
-     * Fetch Mode
-     */
-    'fetch'   => \PDO::FETCH_CLASS,
-
-    /*
-     * All Connections
-     */
-    'connections' => array(
-
-        'default' => array(
-            'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '3306',
-            'database'  => 'test',
-            'username'  => 'root',
-            'password'  => '',
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-        ),
-        'laravel' => array(
-            'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '3306',
-            'database'  => 'laravel',
-            'username'  => 'root',
-            'password'  => '',
-            'charset'   => 'utf8',
-            'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
-        )
-    )
-
-);
-</script>
-</div>
-
-    <hr>
-
-    <h3>Using Eloquent</h3>
-
-    <p>
-        Make sure you have <code>Tomahawk\Database\DatabaseManager</code> passed in as loading this from the service container
-        will 'boot' Eloquent. You can then use your Eloquent models as normal.
-    </p>
-
-    <hr>
-
-    <h3>Using Illuminate Query Builder</h3>
-
-    <p>
-        Make sure you have <code>Tomahawk\Database\DatabaseManager</code> passed in as loading this from the service container
-        will 'boot' Eloquent as well as all connections for use with the Query Builder.
-    </p>
-
-    <p>
-        If your Controllers extends <code>Tomahawk\Routing\Controller</code>
-        then you then have access to it through <code>$this->database</code>.
-    </p>
-
-    <p>You can then query as if you are using the <code>DB</code>:</p>
-
-<div>
-<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
-
-$results = $this->database->connection('readonly')
-    ->table('users')
-    ->where('id', '=', 1)
-    ->first();
-</script>
-</div>
-
-    <hr>
-
-    <h2>Doctrine</h2>
 
     <p>
         The Doctrine service provides a <strong>Object Relational Mapper (ORM)</strong> and
@@ -137,11 +22,6 @@ $results = $this->database->connection('readonly')
     </p>
 
     <h3>Configuration</h3>
-
-    <div class="alert-info alert">
-        If you are not using the <strong>Illuminate Database</strong> service you will need to set
-        <strong>enabled</strong> in the <code>app/config/database.php</code> file to <code>false</code>.
-    </div>
 
     <p>
         Open <code>app/config/doctrine.php</code> in a text editor. Doctrine has more options
@@ -155,10 +35,7 @@ $results = $this->database->connection('readonly')
 <div>
 <script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
 
-/*
- * Config for use with Doctrine
- */
-return array(
+return [
 
     /*
      * Cache
@@ -198,7 +75,22 @@ return array(
     /*
      * Mapping files directory
      */
-    'mapping_directories' => array(__DIR__ . '/../Resources/Doctrine/mappings'),
+    'mapping_directories' => [__DIR__ . '/../Resources/Doctrine/mappings'],
+
+    /*
+     * Migrations directory
+     */
+    'migrations_directory' => __DIR__ . '/../Resources/Doctrine/migrations',
+
+    /*
+     * Migrations namespace
+     */
+    'migration_namespace' => 'Migrations',
+
+    /*
+     * Migrations name
+     */
+    'migration_name' => 'migrations',
 
     /*
      * Default connection
@@ -208,34 +100,33 @@ return array(
     /*
      * All connections
      */
-    'connections' => array(
-        'default' => array(
+    'connections' => [
+        'default' => [
             /*
              * Name of service in container
              */
             'service'      => 'doctrine.connection.default',
             'wrapperClass' => 'Doctrine\DBAL\Connections\MasterSlaveConnection',
             'driver'       => 'pdo_mysql',
-            'master'       => array(
+            'master'       => [
                 'host'      => 'localhost',
                 'port'      => '3306',
                 'dbname'    => 'tomahawk',
                 'user'      => 'root',
                 'password'  => '',
-            ),
-            'slaves' => array(
-                array(
+            ],
+            'slaves' => [
+                [
                     'host'      => 'localhost',
                     'port'      => '3306',
                     'dbname'    => 'tomahawk',
                     'user'      => 'root',
                     'password'  => '',
-                )
-            ),
-        )
-    ),
-);
-
+                ]
+            ],
+        ]
+    ],
+];
 
 </script>
 </div>
@@ -302,6 +193,33 @@ $em->persist($user);
 $em->flush();
 </script>
 </div>
+
+    <h3>Doctrine Mappings</h3>
+    <hr>
+    <p>
+        By default Doctrine Migrations are created in <code>Resources/Doctrine/mappings</code>. You
+        Can edit this config if you want them to be created/stored elsewhere by editing the <code>mapping_directories</code>
+        setting in <code>app/config/doctrine.php</code>.
+    </p>
+
+    <h3>Doctrine Proxies</h3>
+    <hr>
+
+    <p>
+        By default Doctrine Proxies are created in <code>Resources/Doctrine/proxies</code>. You
+        Can edit this config if you want them to be created/stored elsewhere by editing the <code>proxy_directories</code>
+        setting in <code>app/config/doctrine.php</code>.
+    </p>
+
+    <h3>Doctrine Migrations</h3>
+    <hr>
+
+    <p>
+        By default Doctrine Migrations are created in <code>Resources/Doctrine/migrations</code>. You
+        Can edit this config if you want them to be created/stored elsewhere by editing the <code>migrations_directory</code>
+        setting in <code>app/config/doctrine.php</code>.
+    </p>
+
 
     <div class="push-down-20"></div>
 

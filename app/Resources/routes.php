@@ -30,6 +30,7 @@ $router->section('/docs/{fw_version}', array('fw_version' => BaseController::CUR
         $router->get('/config', 'docs.services.config', 'WebBundle:Docs:config');
         $router->get('/cli', 'docs.services.cli', 'WebBundle:Docs:cli');
         $router->get('/database', 'docs.services.database', 'WebBundle:Docs:database');
+        $router->get('/directory-structure', 'docs.services.directory_structure', 'WebBundle:Docs:directoryStructure');
         $router->get('/dependency-injection', 'docs.services.di', 'WebBundle:Docs:di');
         $router->get('/encryption', 'docs.services.encryption', 'WebBundle:Docs:crypt');
         $router->get('/event-dispatcher', 'docs.services.event', 'WebBundle:Docs:event');

@@ -9,6 +9,9 @@ $currentRoute = $app->getRequest()->attributes->get('_route');
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.installation') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.setup.installation', array('fw_version' => $fw_version)) ?>">Installation</a>
             </li>
+            <li class="<?php echo Str::is($currentRoute, 'docs.services.directory_structure') ? 'active' : '' ?>">
+                <a href="<?php echo $view['url']->route('docs.services.directory_structure', array('fw_version' => $fw_version)) ?>">Directory Structure</a>
+            </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.configuration') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.setup.configuration', array('fw_version' => $fw_version)) ?>">Configuration</a>
             </li>
