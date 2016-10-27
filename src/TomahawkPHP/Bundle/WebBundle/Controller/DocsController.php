@@ -35,47 +35,47 @@ class DocsController extends BaseController
 
     public function assetAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/asset');
+        return $this->renderDocView($request, 'Services/asset');
     }
 
     public function authAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/auth');
+        return $this->renderDocView($request, 'Services/auth');
     }
 
     public function bundlesAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/bundles');
+        return $this->renderDocView($request, 'Services/bundles');
     }
 
     public function cacheAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/cache');
+        return $this->renderDocView($request, 'Services/cache');
     }
 
     public function configAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/config');
+        return $this->renderDocView($request, 'Services/config');
     }
 
     public function cliAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/cli');
+        return $this->renderDocView($request, 'Services/cli');
     }
 
     public function diAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/di');
+        return $this->renderDocView($request, 'Services/di');
     }
 
     public function cryptAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/crypt');
+        return $this->renderDocView($request, 'Services/crypt');
     }
 
     public function databaseAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/database');
+        return $this->renderDocView($request, 'Services/database');
     }
 
     public function environmentsAction(Request $request)
@@ -85,12 +85,12 @@ class DocsController extends BaseController
 
     public function eventAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/events');
+        return $this->renderDocView($request, 'Services/events');
     }
 
     public function errorHandlingAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/errors');
+        return $this->renderDocView($request, 'Services/errors');
     }
 
     public function extendingAction(Request $request)
@@ -101,62 +101,62 @@ class DocsController extends BaseController
 
     public function formsAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/forms');
+        return $this->renderDocView($request, 'Services/forms');
     }
 
     public function hashingAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/hashing');
+        return $this->renderDocView($request, 'Services/hashing');
     }
 
     public function htmlAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/html');
+        return $this->renderDocView($request, 'Services/html');
     }
 
     public function inputAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/input');
+        return $this->renderDocView($request, 'Services/input');
     }
 
     public function middlewareAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/middleware');
+        return $this->renderDocView($request, 'Services/middleware');
     }
 
     public function responsesAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/responses');
+        return $this->renderDocView($request, 'Services/responses');
     }
 
     public function routingAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/routing');
+        return $this->renderDocView($request, 'Services/routing');
     }
 
     public function sessionsAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/sessions');
+        return $this->renderDocView($request, 'Services/sessions');
     }
 
     public function translationsAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/translations');
+        return $this->renderDocView($request, 'Services/translations');
     }
 
     public function templatesAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/templates');
+        return $this->renderDocView($request, 'Services/templates');
     }
 
     public function urlAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/url');
+        return $this->renderDocView($request, 'Services/url');
     }
 
     public function validationAction(Request $request)
     {
-        return $this->renderDocView($request, 'services/validation');
+        return $this->renderDocView($request, 'Services/validation');
     }
 
     protected function renderDocView(Request $request, $view)
