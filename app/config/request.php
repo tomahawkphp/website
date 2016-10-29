@@ -4,7 +4,7 @@ return [
     // Used by the URL Generator via the RequestContext class
     #'base_url' => '/app_dev.php',
 
-    'host'     => 'www.tomahawkphp.com',
+    'host'     => 'tomahawkphp.com',
 
     'asset_host' => '',
 
