@@ -19,6 +19,7 @@ $router->section('/docs/{fw_version}', array('fw_version' => BaseController::CUR
     $router->get('/', 'docs.home', 'WebBundle:Docs:home');
     $router->get('/installation', 'docs.setup.installation', 'WebBundle:Docs:install');
     $router->get('/configuration', 'docs.setup.configuration', 'WebBundle:Docs:configure');
+    $router->get('/server-configuration', 'docs.setup.server_configuration', 'WebBundle:Docs:serverConfigure');
     $router->get('/environments', 'docs.setup.environments', 'WebBundle:Docs:environments');
 
     $router->section('/services', array(), function(Router $router) {

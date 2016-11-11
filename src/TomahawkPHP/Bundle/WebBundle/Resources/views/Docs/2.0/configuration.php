@@ -5,13 +5,10 @@
     <ol class="breadcrumb">
         <li><a href="#">Documentation</a></li>
         <li>Setup</li>
-        <li class="active">Configuration</li>
+        <li class="active">ApplicationConfiguration</li>
     </ol>
 
-    <h1>
-        Configuration
-    </h1>
-
+    <h1>Application Configuration</h1>
 
     <p>
         All of the configuration files for the Tomahawk framework are stored in the config directory.

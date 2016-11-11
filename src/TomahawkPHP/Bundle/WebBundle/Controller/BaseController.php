@@ -91,6 +91,7 @@ class BaseController extends Controller
             ->addJs('php_mode', 'js/codemirror/mode/php/php.js', array('codemirror'))
             ->addJs('shell_mode', 'js/codemirror/mode/shell/shell.js', array('codemirror'))
             ->addJs('twig_mode', 'js/codemirror/mode/twig/twig.js', array('codemirror'))
+            ->addJs('nginx_mode', 'js/codemirror/mode/nginx/nginx.js', array('codemirror'))
 
             ->addCss('codemirror_css', 'js/codemirror/lib/codemirror.css')
             ->addCss('codemirror_theme_css', 'js/codemirror/theme/base16-light.css', array('codemirror_css'));

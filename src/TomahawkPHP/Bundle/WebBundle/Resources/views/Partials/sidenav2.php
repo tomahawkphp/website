@@ -13,7 +13,10 @@ $currentRoute = $app->getRequest()->attributes->get('_route');
                 <a href="<?php echo $view['url']->route('docs.services.directory_structure', array('fw_version' => $fw_version)) ?>">Directory Structure</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.configuration') ? 'active' : '' ?>">
-                <a href="<?php echo $view['url']->route('docs.setup.configuration', array('fw_version' => $fw_version)) ?>">Configuration</a>
+                <a href="<?php echo $view['url']->route('docs.setup.configuration', array('fw_version' => $fw_version)) ?>">Application Configuration</a>
+            </li>
+            <li class="<?php echo Str::is($currentRoute, 'docs.setup.server_configuration') ? 'active' : '' ?>">
+                <a href="<?php echo $view['url']->route('docs.setup.server_configuration', array('fw_version' => $fw_version)) ?>">Server Configuration</a>
             </li>
             <li class="<?php echo Str::is($currentRoute, 'docs.setup.environments') ? 'active' : '' ?>">
                 <a href="<?php echo $view['url']->route('docs.setup.environments', array('fw_version' => $fw_version)) ?>">Environments</a>

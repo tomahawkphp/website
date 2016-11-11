@@ -23,6 +23,11 @@ class DocsController extends BaseController
         return $this->renderDocView($request, 'configuration');
     }
 
+    public function serverConfigureAction(Request $request)
+    {
+        return $this->renderDocView($request, 'server_configuration');
+    }
+
     public function directoryStructureAction(Request $request)
     {
         return $this->renderDocView($request, 'structure');
