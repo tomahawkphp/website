@@ -95,7 +95,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>($url, $method = &#039;POST&#039;, $model = null, array $oldInput = array(), array $attributes = array())
+                    <a href="#method___construct">__construct</a>($url, $method = &#039;POST&#039;, array $attributes = array())
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -183,7 +183,7 @@
                     <abbr title="Tomahawk\Forms\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_bind">bind</a>($input)
+                    <a href="#method_handleInput">handleInput</a>($input)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -213,7 +213,7 @@
                     <abbr title="Tomahawk\Forms\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setUrl">setUrl</a>(mixed $url)
+                    <a href="#method_setUrl">setUrl</a>(string $url)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -243,7 +243,7 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getOldInput">getOldInput</a>()
+                    <a href="#method_getInput">getInput</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -253,7 +253,7 @@
                     <abbr title="Tomahawk\Forms\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setOldInput">setOldInput</a>(array $oldInput)
+                    <a href="#method_setInput">setInput</a>(array $input)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -288,6 +288,33 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTransformers">addTransformers</a>(array $dataTransformers)
+                                            <p>Add a group of data transformers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addTransformer">addTransformer</a>($type, <abbr title="Tomahawk\Forms\Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr> $dataTransformer)
+                                            <p>Add a data transformer</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Forms/DataTransformerInterface.html"><abbr title="Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr></a>[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTransformers">getTransformers</a>()
+                                            <p>Get all data tranformers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -296,9 +323,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 48</div>
+        <div class="location">at line 61</div>
         <code>                    
-    <strong>__construct</strong>($url, $method = &#039;POST&#039;, $model = null, array $oldInput = array(), array $attributes = array())</code>
+    <strong>__construct</strong>($url, $method = &#039;POST&#039;, array $attributes = array())</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -314,18 +341,6 @@
                     <tr>
                 <td></td>
                 <td>$method</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td>
-</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$oldInput</td>
                 <td>
 </td>
             </tr>
@@ -346,7 +361,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setValidator">
-        <div class="location">at line 60</div>
+        <div class="location">at line 71</div>
         <code>                    
     <strong>setValidator</strong>(<abbr title="Tomahawk\Forms\Tomahawk\Validation\ValidatorInterface">ValidatorInterface</abbr> $validator)</code>
     </h3>
@@ -372,7 +387,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getValidator">
-        <div class="location">at line 68</div>
+        <div class="location">at line 79</div>
         <code>                    <a href="../../Tomahawk/Validation/ValidatorInterface.html"><abbr title="Tomahawk\Validation\ValidatorInterface">ValidatorInterface</abbr></a>
     <strong>getValidator</strong>()</code>
     </h3>
@@ -397,7 +412,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setModel">
-        <div class="location">at line 77</div>
+        <div class="location">at line 88</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
     <strong>setModel</strong>(mixed $model)</code>
     </h3>
@@ -433,7 +448,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModel">
-        <div class="location">at line 86</div>
+        <div class="location">at line 97</div>
         <code>                    mixed
     <strong>getModel</strong>()</code>
     </h3>
@@ -458,7 +473,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_add">
-        <div class="location">at line 95</div>
+        <div class="location">at line 106</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
     <strong>add</strong>(<abbr title="Tomahawk\Forms\Tomahawk\Forms\Element\Element">Element</abbr> $element)</code>
     </h3>
@@ -494,7 +509,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_open">
-        <div class="location">at line 106</div>
+        <div class="location">at line 117</div>
         <code>                    string
     <strong>open</strong>()</code>
     </h3>
@@ -521,7 +536,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at line 123</div>
+        <div class="location">at line 134</div>
         <code>                    string
     <strong>close</strong>()</code>
     </h3>
@@ -548,7 +563,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_render">
-        <div class="location">at line 133</div>
+        <div class="location">at line 144</div>
         <code>                    mixed
     <strong>render</strong>($name, array $attributes = array())</code>
     </h3>
@@ -589,10 +604,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_bind">
-        <div class="location">at line 151</div>
+                    <h3 id="method_handleInput">
+        <div class="location">at line 167</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
-    <strong>bind</strong>($input)</code>
+    <strong>handleInput</strong>($input)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -626,7 +641,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isValid">
-        <div class="location">at line 170</div>
+        <div class="location">at line 187</div>
         <code>                    bool
     <strong>isValid</strong>()</code>
     </h3>
@@ -651,7 +666,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUrl">
-        <div class="location">at line 182</div>
+        <div class="location">at line 199</div>
         <code>                    mixed
     <strong>getUrl</strong>()</code>
     </h3>
@@ -676,9 +691,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setUrl">
-        <div class="location">at line 191</div>
+        <div class="location">at line 208</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
-    <strong>setUrl</strong>(mixed $url)</code>
+    <strong>setUrl</strong>(string $url)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -686,7 +701,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td>string</td>
                 <td>$url</td>
                 <td>
 </td>
@@ -712,7 +727,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMethod">
-        <div class="location">at line 200</div>
+        <div class="location">at line 217</div>
         <code>                    string
     <strong>getMethod</strong>()</code>
     </h3>
@@ -737,7 +752,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMethod">
-        <div class="location">at line 209</div>
+        <div class="location">at line 226</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
     <strong>setMethod</strong>(string $method)</code>
     </h3>
@@ -772,10 +787,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getOldInput">
-        <div class="location">at line 218</div>
+                    <h3 id="method_getInput">
+        <div class="location">at line 235</div>
         <code>                    array
-    <strong>getOldInput</strong>()</code>
+    <strong>getInput</strong>()</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -797,10 +812,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setOldInput">
-        <div class="location">at line 227</div>
+                    <h3 id="method_setInput">
+        <div class="location">at line 244</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
-    <strong>setOldInput</strong>(array $oldInput)</code>
+    <strong>setInput</strong>(array $input)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -809,7 +824,7 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>array</td>
-                <td>$oldInput</td>
+                <td>$input</td>
                 <td>
 </td>
             </tr>
@@ -834,7 +849,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAttributes">
-        <div class="location">at line 236</div>
+        <div class="location">at line 254</div>
         <code>                    array
     <strong>getAttributes</strong>()</code>
     </h3>
@@ -859,7 +874,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setAttributes">
-        <div class="location">at line 245</div>
+        <div class="location">at line 263</div>
         <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
     <strong>setAttributes</strong>(array $attributes)</code>
     </h3>
@@ -895,7 +910,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getElements">
-        <div class="location">at line 254</div>
+        <div class="location">at line 272</div>
         <code>                    <a href="../../Tomahawk/Forms/Element/Element.html"><abbr title="Tomahawk\Forms\Element\Element">Element</abbr></a>[]
     <strong>getElements</strong>()</code>
     </h3>
@@ -907,6 +922,117 @@
                     <table class="table table-condensed">
         <tr>
             <td><a href="../../Tomahawk/Forms/Element/Element.html"><abbr title="Tomahawk\Forms\Element\Element">Element</abbr></a>[]</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTransformers">
+        <div class="location">at line 287</div>
+        <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
+    <strong>addTransformers</strong>(array $dataTransformers)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a group of data transformers</p>                    <p>array (
+ 'date' => DataTransformerInterface
+)</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$dataTransformers</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Forms\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addTransformer">
+        <div class="location">at line 308</div>
+        <code>                    <abbr title="Tomahawk\Forms\$this">$this</abbr>
+    <strong>addTransformer</strong>($type, <abbr title="Tomahawk\Forms\Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr> $dataTransformer)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a data transformer</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$type</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tomahawk\Forms\Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr></td>
+                <td>$dataTransformer</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Forms\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTransformers">
+        <div class="location">at line 320</div>
+        <code>                    <a href="../../Tomahawk/Forms/DataTransformerInterface.html"><abbr title="Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr></a>[]
+    <strong>getTransformers</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get all data tranformers</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Forms/DataTransformerInterface.html"><abbr title="Tomahawk\Forms\DataTransformerInterface">DataTransformerInterface</abbr></a>[]</td>
             <td>
 </td>
         </tr>

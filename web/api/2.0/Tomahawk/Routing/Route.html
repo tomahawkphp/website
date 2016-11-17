@@ -22,8 +22,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../1.4/index.html" selected>1.4 branch</option>
-                                            <option value="../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../2.0/index.html" selected>2.0 branch</option>
                                             <option value="../../../master/index.html">master branch</option>
                                     </select>
             </form>
@@ -115,7 +115,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_unserialize">unserialize</a>(string $data)
+                    <a href="#method_unserialize">unserialize</a>(string $serialized)
                                             <p>Set route information from array of data</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -134,24 +134,6 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setPath">setPath</a>(string $pattern)
-                                            <p>Sets the pattern for the path.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getPattern">getPattern</a>()
-                                            <p>Returns the pattern for the path.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setPattern">setPattern</a>(string $pattern)
                                             <p>Sets the pattern for the path.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -409,22 +391,20 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_where">where</a>($parameter, $pattern)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Set a pattern for a parameter</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_setDefaultParameter">setDefaultParameter</a>($name, $value)
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Set a default for a parameter</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -502,7 +482,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_serialize">
-        <div class="location">at line 111</div>
+        <div class="location">at line 105</div>
         <code>                    string
     <strong>serialize</strong>()</code>
     </h3>
@@ -529,9 +509,9 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_unserialize">
-        <div class="location">at line 130</div>
+        <div class="location">at line 125</div>
         <code>                    
-    <strong>unserialize</strong>(string $data)</code>
+    <strong>unserialize</strong>(string $serialized)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -542,7 +522,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$data</td>
+                <td>$serialized</td>
                 <td>
 </td>
             </tr>
@@ -557,7 +537,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at line 148</div>
+        <div class="location">at line 149</div>
         <code>                    string
     <strong>getPath</strong>()</code>
     </h3>
@@ -583,7 +563,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setPath">
-        <div class="location">at line 162</div>
+        <div class="location">at line 163</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setPath</strong>(string $pattern)</code>
     </h3>
@@ -618,70 +598,8 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getPattern">
-        <div class="location">at line 179</div>
-        <code>                    string
-    <strong>getPattern</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Returns the pattern for the path.</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td>The pattern</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setPattern">
-        <div class="location">at line 195</div>
-        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
-    <strong>setPattern</strong>(string $pattern)</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Sets the pattern for the path.</p>                    <p>This method implements a fluent interface.</p>            </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$pattern</td>
-                <td>The path pattern</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
-            <td>The current Route instance</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getHost">
-        <div class="location">at line 205</div>
+        <div class="location">at line 178</div>
         <code>                    string
     <strong>getHost</strong>()</code>
     </h3>
@@ -707,7 +625,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setHost">
-        <div class="location">at line 219</div>
+        <div class="location">at line 192</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setHost</strong>(string $pattern)</code>
     </h3>
@@ -743,7 +661,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getSchemes">
-        <div class="location">at line 233</div>
+        <div class="location">at line 206</div>
         <code>                    array
     <strong>getSchemes</strong>()</code>
     </h3>
@@ -769,7 +687,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setSchemes">
-        <div class="location">at line 248</div>
+        <div class="location">at line 221</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setSchemes</strong>(string|array $schemes)</code>
     </h3>
@@ -807,7 +725,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_hasScheme">
-        <div class="location">at line 271</div>
+        <div class="location">at line 236</div>
         <code>                    bool
     <strong>hasScheme</strong>(string $scheme)</code>
     </h3>
@@ -844,7 +762,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getMethods">
-        <div class="location">at line 289</div>
+        <div class="location">at line 247</div>
         <code>                    array
     <strong>getMethods</strong>()</code>
     </h3>
@@ -870,7 +788,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setMethods">
-        <div class="location">at line 304</div>
+        <div class="location">at line 262</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setMethods</strong>(string|array $methods)</code>
     </h3>
@@ -908,7 +826,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getOptions">
-        <div class="location">at line 325</div>
+        <div class="location">at line 275</div>
         <code>                    array
     <strong>getOptions</strong>()</code>
     </h3>
@@ -934,7 +852,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setOptions">
-        <div class="location">at line 339</div>
+        <div class="location">at line 289</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setOptions</strong>(array $options)</code>
     </h3>
@@ -970,7 +888,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_addOptions">
-        <div class="location">at line 357</div>
+        <div class="location">at line 307</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>addOptions</strong>(array $options)</code>
     </h3>
@@ -1006,7 +924,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setOption">
-        <div class="location">at line 379</div>
+        <div class="location">at line 329</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setOption</strong>(string $name, mixed $value)</code>
     </h3>
@@ -1047,7 +965,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getOption">
-        <div class="location">at line 394</div>
+        <div class="location">at line 344</div>
         <code>                    mixed
     <strong>getOption</strong>(string $name)</code>
     </h3>
@@ -1083,7 +1001,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_hasOption">
-        <div class="location">at line 406</div>
+        <div class="location">at line 356</div>
         <code>                    bool
     <strong>hasOption</strong>(string $name)</code>
     </h3>
@@ -1119,7 +1037,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getDefaults">
-        <div class="location">at line 416</div>
+        <div class="location">at line 366</div>
         <code>                    array
     <strong>getDefaults</strong>()</code>
     </h3>
@@ -1145,7 +1063,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefaults">
-        <div class="location">at line 430</div>
+        <div class="location">at line 380</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setDefaults</strong>(array $defaults)</code>
     </h3>
@@ -1181,7 +1099,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_addDefaults">
-        <div class="location">at line 446</div>
+        <div class="location">at line 396</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>addDefaults</strong>(array $defaults)</code>
     </h3>
@@ -1217,7 +1135,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getDefault">
-        <div class="location">at line 463</div>
+        <div class="location">at line 413</div>
         <code>                    mixed
     <strong>getDefault</strong>(string $name)</code>
     </h3>
@@ -1253,7 +1171,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_hasDefault">
-        <div class="location">at line 475</div>
+        <div class="location">at line 425</div>
         <code>                    bool
     <strong>hasDefault</strong>(string $name)</code>
     </h3>
@@ -1289,7 +1207,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefault">
-        <div class="location">at line 490</div>
+        <div class="location">at line 440</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setDefault</strong>(string $name, mixed $default)</code>
     </h3>
@@ -1330,7 +1248,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequirements">
-        <div class="location">at line 503</div>
+        <div class="location">at line 453</div>
         <code>                    array
     <strong>getRequirements</strong>()</code>
     </h3>
@@ -1356,7 +1274,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setRequirements">
-        <div class="location">at line 517</div>
+        <div class="location">at line 467</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setRequirements</strong>(array $requirements)</code>
     </h3>
@@ -1392,7 +1310,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_addRequirements">
-        <div class="location">at line 533</div>
+        <div class="location">at line 483</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>addRequirements</strong>(array $requirements)</code>
     </h3>
@@ -1428,7 +1346,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getRequirement">
-        <div class="location">at line 550</div>
+        <div class="location">at line 500</div>
         <code>                    string|null
     <strong>getRequirement</strong>(string $key)</code>
     </h3>
@@ -1464,7 +1382,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_hasRequirement">
-        <div class="location">at line 562</div>
+        <div class="location">at line 512</div>
         <code>                    bool
     <strong>hasRequirement</strong>(string $key)</code>
     </h3>
@@ -1500,7 +1418,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setRequirement">
-        <div class="location">at line 577</div>
+        <div class="location">at line 527</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setRequirement</strong>(string $key, string $regex)</code>
     </h3>
@@ -1541,7 +1459,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_getCondition">
-        <div class="location">at line 590</div>
+        <div class="location">at line 540</div>
         <code>                    string
     <strong>getCondition</strong>()</code>
     </h3>
@@ -1567,7 +1485,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setCondition">
-        <div class="location">at line 604</div>
+        <div class="location">at line 554</div>
         <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
     <strong>setCondition</strong>(string $condition)</code>
     </h3>
@@ -1603,7 +1521,7 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_compile">
-        <div class="location">at line 622</div>
+        <div class="location">at line 572</div>
         <code>                    <abbr title="Symfony\Component\Routing\CompiledRoute">CompiledRoute</abbr>
     <strong>compile</strong>()</code>
     </h3>
@@ -1648,11 +1566,13 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_where">
-        <div class="location">at line 633</div>
-        <code>                    
+        <div class="location">at line 590</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
     <strong>where</strong>($parameter, $pattern)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Set a pattern for a parameter</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1672,6 +1592,16 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -1680,11 +1610,13 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </div>
                     <div class="method-item">
                     <h3 id="method_setDefaultParameter">
-        <div class="location">at line 639</div>
-        <code>                    
+        <div class="location">at line 603</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
     <strong>setDefaultParameter</strong>($name, $value)</code>
     </h3>
     <div class="details">
+                    <div class="method-description">
+                                    <p>Set a default for a parameter</p>                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -1704,6 +1636,16 @@ Tomahawk strips off the end slash to normalise rout matching based on URL</p>   
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
             
             
                     </div>

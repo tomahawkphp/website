@@ -114,7 +114,7 @@
                     <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_stream">stream</a>(<a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback, int $status = 200, array $headers = array())
+                    <a href="#method_stream">stream</a>(callable $callback, int $status = 200, array $headers = array())
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -147,7 +147,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_content">
-        <div class="location">at line 29</div>
+        <div class="location">at line 28</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\Response">Response</abbr>
     <strong>content</strong>(string $content = &#039;&#039;, int $status = 200, array $headers = array())</code>
     </h3>
@@ -195,7 +195,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_redirect">
-        <div class="location">at line 37</div>
+        <div class="location">at line 36</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\RedirectResponse">RedirectResponse</abbr>
     <strong>redirect</strong>($url, int $status = 302, array $headers = array())</code>
     </h3>
@@ -243,9 +243,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_stream">
-        <div class="location">at line 45</div>
+        <div class="location">at line 44</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\StreamedResponse">StreamedResponse</abbr>
-    <strong>stream</strong>(<a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a> $callback, int $status = 200, array $headers = array())</code>
+    <strong>stream</strong>(callable $callback, int $status = 200, array $headers = array())</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -253,7 +253,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a target="_blank" href="http://php.net/Closure"><abbr title="Closure">Closure</abbr></a></td>
+                <td>callable</td>
                 <td>$callback</td>
                 <td>
 </td>
@@ -291,7 +291,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_json">
-        <div class="location">at line 53</div>
+        <div class="location">at line 52</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\JsonResponse">JsonResponse</abbr>
     <strong>json</strong>(array $data, int $status = 200, array $headers = array())</code>
     </h3>
@@ -339,7 +339,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_download">
-        <div class="location">at line 65</div>
+        <div class="location">at line 64</div>
         <code>                    <abbr title="Symfony\Component\HttpFoundation\BinaryFileResponse">BinaryFileResponse</abbr>
     <strong>download</strong>($file, int $status = 200, array $headers = array(), bool $public = true, $contentDisposition, bool $autoEtag = false, bool $autoLastModified = true)</code>
     </h3>

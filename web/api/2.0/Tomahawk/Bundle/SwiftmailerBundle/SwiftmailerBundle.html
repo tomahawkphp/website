@@ -22,8 +22,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../1.4/index.html" selected>1.4 branch</option>
-                                            <option value="../../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../../2.0/index.html" selected>2.0 branch</option>
                                             <option value="../../../../master/index.html">master branch</option>
                                     </select>
             </form>
@@ -84,6 +84,19 @@
     <strong>SwiftmailerBundle</strong>        extends <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a></p>
 
     
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Tomahawk/DependencyInjection/ContainerAwareTrait.html"><abbr title="Tomahawk\DependencyInjection\ContainerAwareTrait">Tomahawk\DependencyInjection\ContainerAwareTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+            </div>
     
     
     
@@ -95,9 +108,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setContainer">setContainer</a>(<abbr title="Tomahawk\DI\Tomahawk\DI\ContainerInterface">ContainerInterface</abbr> $container = null)
+                    <a href="#method_setContainer">setContainer</a>(<abbr title="Tomahawk\DependencyInjection\Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr> $container = null)
                                             <p>Sets the Container.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/DI/ContainerAware.html#method_setContainer"><abbr title="Tomahawk\DI\ContainerAware">ContainerAware</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Tomahawk/DependencyInjection/ContainerAwareTrait.html#method_setContainer"><abbr title="Tomahawk\DependencyInjection\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -188,9 +201,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_setContainer">
-        <div class="location">in <a href="../../../Tomahawk/DI/ContainerAware.html#method_setContainer"><abbr title="Tomahawk\DI\ContainerAware">ContainerAware</abbr></a> at line 28</div>
+        <div class="location">in <a href="../../../Tomahawk/DependencyInjection/ContainerAwareTrait.html#method_setContainer"><abbr title="Tomahawk\DependencyInjection\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at line 28</div>
         <code>                    
-    <strong>setContainer</strong>(<abbr title="Tomahawk\DI\Tomahawk\DI\ContainerInterface">ContainerInterface</abbr> $container = null)</code>
+    <strong>setContainer</strong>(<abbr title="Tomahawk\DependencyInjection\Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr> $container = null)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -200,7 +213,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Tomahawk\DI\Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></td>
+                <td><abbr title="Tomahawk\DependencyInjection\Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></td>
                 <td>$container</td>
                 <td>A ContainerInterface instance or null</td>
             </tr>
@@ -215,7 +228,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNamespace">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getNamespace"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 41</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getNamespace"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 51</div>
         <code>                    string
     <strong>getNamespace</strong>()</code>
     </h3>
@@ -241,7 +254,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getPath"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 55</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getPath"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 65</div>
         <code>                    string
     <strong>getPath</strong>()</code>
     </h3>
@@ -284,7 +297,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shutdown">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_shutdown"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 70</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_shutdown"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 80</div>
         <code>                    
     <strong>shutdown</strong>()</code>
     </h3>
@@ -301,7 +314,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRoutePath">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getRoutePath"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 82</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getRoutePath"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 92</div>
         <code>                    mixed
     <strong>getRoutePath</strong>()</code>
     </h3>
@@ -328,7 +341,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerEvents">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_registerEvents"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 96</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_registerEvents"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 106</div>
         <code>                    
     <strong>registerEvents</strong>(<abbr title="Tomahawk\HttpKernel\Bundle\Symfony\Component\EventDispatcher\EventDispatcherInterface">EventDispatcherInterface</abbr> $dispatcher)</code>
     </h3>
@@ -357,7 +370,7 @@ to all the services</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getParent">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getParent"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 112</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getParent"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 122</div>
         <code>                    string
     <strong>getParent</strong>()</code>
     </h3>
@@ -385,7 +398,7 @@ bundle.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getName"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 124</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_getName"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 134</div>
         <code>final                    string
     <strong>getName</strong>()</code>
     </h3>
@@ -411,7 +424,7 @@ bundle.</p>            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerCommands">
-        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_registerCommands"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 146</div>
+        <div class="location">in <a href="../../../Tomahawk/HttpKernel/Bundle/Bundle.html#method_registerCommands"><abbr title="Tomahawk\HttpKernel\Bundle\Bundle">Bundle</abbr></a> at line 156</div>
         <code>                    
     <strong>registerCommands</strong>(<abbr title="Tomahawk\HttpKernel\Bundle\Tomahawk\Console\Application">Application</abbr> $application)</code>
     </h3>

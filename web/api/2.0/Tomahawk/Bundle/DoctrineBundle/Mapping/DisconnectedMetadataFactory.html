@@ -22,8 +22,8 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
-                                            <option value="../../../../../1.4/index.html" selected>1.4 branch</option>
-                                            <option value="../../../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../../../2.0/index.html" selected>2.0 branch</option>
                                             <option value="../../../../../master/index.html">master branch</option>
                                     </select>
             </form>
@@ -84,6 +84,9 @@
     <p>    class
     <strong>DisconnectedMetadataFactory</strong></p>
 
+            <div class="description">
+            <p>Based of the DisconnectedMetadataFactory from the DoctrineBundle</p>            <p>This class provides methods to access Doctrine entity class metadata for a
+given bundle, namespace or entity class, for generation purposes</p>        </div>
     
     
     
@@ -144,7 +147,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 35</div>
+        <div class="location">at line 41</div>
         <code>                    
     <strong>__construct</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\Doctrine\Common\Persistence\ManagerRegistry">ManagerRegistry</abbr> $registry)</code>
     </h3>
@@ -171,7 +174,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundleMetadata">
-        <div class="location">at line 48</div>
+        <div class="location">at line 55</div>
         <code>                    <a href="../../../../Tomahawk/Bundle/DoctrineBundle/Mapping/ClassMetadataCollection.html"><abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\ClassMetadataCollection">ClassMetadataCollection</abbr></a>
     <strong>getBundleMetadata</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr> $bundle)</code>
     </h3>
@@ -216,7 +219,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getClassMetadata">
-        <div class="location">at line 70</div>
+        <div class="location">at line 81</div>
         <code>                    <a href="../../../../Tomahawk/Bundle/DoctrineBundle/Mapping/ClassMetadataCollection.html"><abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\ClassMetadataCollection">ClassMetadataCollection</abbr></a>
     <strong>getClassMetadata</strong>(string $class, string $path = null)</code>
     </h3>
@@ -266,7 +269,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getNamespaceMetadata">
-        <div class="location">at line 89</div>
+        <div class="location">at line 103</div>
         <code>                    <a href="../../../../Tomahawk/Bundle/DoctrineBundle/Mapping/ClassMetadataCollection.html"><abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\ClassMetadataCollection">ClassMetadataCollection</abbr></a>
     <strong>getNamespaceMetadata</strong>(string $namespace, string $path = null)</code>
     </h3>
@@ -316,7 +319,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_findNamespaceAndPathForMetadata">
-        <div class="location">at line 106</div>
+        <div class="location">at line 123</div>
         <code>                    
     <strong>findNamespaceAndPathForMetadata</strong>(<abbr title="Tomahawk\Bundle\DoctrineBundle\Mapping\Tomahawk\Bundle\DoctrineBundle\Mapping\ClassMetadataCollection">ClassMetadataCollection</abbr> $metadata, string|null $path = null)</code>
     </h3>

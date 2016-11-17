@@ -179,15 +179,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_registerMiddleware">registerMiddleware</a>()
-                                            <p>Returns an array of middleware to register</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -260,7 +251,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a>
+                    <a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getContainer">getContainer</a>()
@@ -272,7 +263,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_setContainer">setContainer</a>(<a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a> $container)
+                    <a href="#method_setContainer">setContainer</a>(<a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a> $container)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -329,16 +320,6 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_unserialize">unserialize</a>($data)
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_initializeMiddleware">initializeMiddleware</a>()
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -424,7 +405,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 60</div>
+        <div class="location">at line 95</div>
         <code>                    
     <strong>__construct</strong>(string $environment, bool $debug)</code>
     </h3>
@@ -456,7 +437,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___clone">
-        <div class="location">at line 72</div>
+        <div class="location">at line 107</div>
         <code>                    
     <strong>__clone</strong>()</code>
     </h3>
@@ -471,7 +452,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_registerBundles">
-        <div class="location">at line 89</div>
+        <div class="location">at line 124</div>
         <code>    abstract                <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>registerBundles</strong>()</code>
     </h3>
@@ -496,34 +477,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_registerMiddleware">
-        <div class="location">at line 96</div>
-        <code>    abstract                <a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]
-    <strong>registerMiddleware</strong>()</code>
-    </h3>
-    <div class="details">
-                    <div class="method-description">
-                                    <p>Returns an array of middleware to register</p>                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../Tomahawk/Middleware/Middleware.html"><abbr title="Tomahawk\Middleware\Middleware">Middleware</abbr></a>[]</td>
-            <td>An array of middleware instances</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_boot">
-        <div class="location">at line 103</div>
+        <div class="location">at line 131</div>
         <code>                    
     <strong>boot</strong>()</code>
     </h3>
@@ -540,7 +495,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_terminate">
-        <div class="location">at line 140</div>
+        <div class="location">at line 165</div>
         <code>                    
     <strong>terminate</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, <abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Response">Response</abbr> $response)</code>
     </h3>
@@ -574,7 +529,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shutdown">
-        <div class="location">at line 156</div>
+        <div class="location">at line 181</div>
         <code>                    
     <strong>shutdown</strong>()</code>
     </h3>
@@ -591,7 +546,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at line 177</div>
+        <div class="location">at line 202</div>
         <code>                    
     <strong>handle</strong>(<abbr title="Tomahawk\HttpKernel\Symfony\Component\HttpFoundation\Request">Request</abbr> $request, $type = HttpKernelInterface::MASTER_REQUEST, $catch = true)</code>
     </h3>
@@ -631,7 +586,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getName">
-        <div class="location">at line 201</div>
+        <div class="location">at line 226</div>
         <code>                    string
     <strong>getName</strong>()</code>
     </h3>
@@ -657,7 +612,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getEnvironment">
-        <div class="location">at line 215</div>
+        <div class="location">at line 240</div>
         <code>                    string
     <strong>getEnvironment</strong>()</code>
     </h3>
@@ -683,7 +638,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isDebug">
-        <div class="location">at line 225</div>
+        <div class="location">at line 250</div>
         <code>                    bool
     <strong>isDebug</strong>()</code>
     </h3>
@@ -709,7 +664,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRootDir">
-        <div class="location">at line 235</div>
+        <div class="location">at line 260</div>
         <code>                    string
     <strong>getRootDir</strong>()</code>
     </h3>
@@ -735,8 +690,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getContainer">
-        <div class="location">at line 250</div>
-        <code>                    <a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a>
+        <div class="location">at line 275</div>
+        <code>                    <a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a>
     <strong>getContainer</strong>()</code>
     </h3>
     <div class="details">
@@ -748,7 +703,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a></td>
+            <td><a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a></td>
             <td>A ContainerInterface instance</td>
         </tr>
     </table>
@@ -761,9 +716,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setContainer">
-        <div class="location">at line 258</div>
+        <div class="location">at line 283</div>
         <code>                    
-    <strong>setContainer</strong>(<a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a> $container)</code>
+    <strong>setContainer</strong>(<a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a> $container)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -771,7 +726,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><a href="../../Tomahawk/DI/ContainerInterface.html"><abbr title="Tomahawk\DI\ContainerInterface">ContainerInterface</abbr></a></td>
+                <td><a href="../../Tomahawk/DependencyInjection/ContainerInterface.html"><abbr title="Tomahawk\DependencyInjection\ContainerInterface">ContainerInterface</abbr></a></td>
                 <td>$container</td>
                 <td>
 </td>
@@ -787,7 +742,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStartTime">
-        <div class="location">at line 268</div>
+        <div class="location">at line 293</div>
         <code>                    int
     <strong>getStartTime</strong>()</code>
     </h3>
@@ -813,7 +768,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCacheDir">
-        <div class="location">at line 278</div>
+        <div class="location">at line 303</div>
         <code>                    string
     <strong>getCacheDir</strong>()</code>
     </h3>
@@ -839,7 +794,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLogDir">
-        <div class="location">at line 288</div>
+        <div class="location">at line 313</div>
         <code>                    string
     <strong>getLogDir</strong>()</code>
     </h3>
@@ -865,7 +820,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCharset">
-        <div class="location">at line 298</div>
+        <div class="location">at line 323</div>
         <code>                    string
     <strong>getCharset</strong>()</code>
     </h3>
@@ -891,7 +846,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_serialize">
-        <div class="location">at line 303</div>
+        <div class="location">at line 328</div>
         <code>                    
     <strong>serialize</strong>()</code>
     </h3>
@@ -906,7 +861,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unserialize">
-        <div class="location">at line 308</div>
+        <div class="location">at line 333</div>
         <code>                    
     <strong>unserialize</strong>($data)</code>
     </h3>
@@ -931,23 +886,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_initializeMiddleware">
-        <div class="location">at line 327</div>
-        <code>                    
-    <strong>initializeMiddleware</strong>()</code>
-    </h3>
-    <div class="details">
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_getRoutePaths">
-        <div class="location">at line 340</div>
+        <div class="location">at line 357</div>
         <code>                    array
     <strong>getRoutePaths</strong>()</code>
     </h3>
@@ -974,7 +914,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setRoutePaths">
-        <div class="location">at line 351</div>
+        <div class="location">at line 368</div>
         <code>                    <abbr title="Tomahawk\HttpKernel\$this">$this</abbr>
     <strong>setRoutePaths</strong>(array $routePaths)</code>
     </h3>
@@ -1012,7 +952,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPaths">
-        <div class="location">at line 357</div>
+        <div class="location">at line 374</div>
         <code>                    mixed
     <strong>setPaths</strong>($paths)</code>
     </h3>
@@ -1050,7 +990,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPaths">
-        <div class="location">at line 363</div>
+        <div class="location">at line 380</div>
         <code>                    mixed
     <strong>getPaths</strong>()</code>
     </h3>
@@ -1077,7 +1017,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at line 368</div>
+        <div class="location">at line 385</div>
         <code>                    mixed
     <strong>getPath</strong>($path)</code>
     </h3>
@@ -1115,7 +1055,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundles">
-        <div class="location">at line 373</div>
+        <div class="location">at line 390</div>
         <code>                    <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundles</strong>()</code>
     </h3>
@@ -1141,7 +1081,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBundle">
-        <div class="location">at line 384</div>
+        <div class="location">at line 401</div>
         <code>                    <a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>|<a href="../../Tomahawk/HttpKernel/Bundle/BundleInterface.html"><abbr title="Tomahawk\HttpKernel\Bundle\BundleInterface">BundleInterface</abbr></a>[]
     <strong>getBundle</strong>(string $name, bool $first = true)</code>
     </h3>
@@ -1190,7 +1130,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_locateResource">
-        <div class="location">at line 539</div>
+        <div class="location">at line 556</div>
         <code>                    string|array
     <strong>locateResource</strong>(string $name, string $dir = null, bool $first = true)</code>
     </h3>
