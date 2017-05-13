@@ -111,5 +111,17 @@
         <li><s>Add HTML navigation menu builder</s> No longer implementing</li>
     </ul>
 
+    <h3>
+        v2.1.0
+    </h3>
+    <hr>
+
+    <ul>
+        <li>Deprecate route sections</li>
+        <li>Add in route groups</li>
+        <li>Add in requiresHttp and requiresHttps methods</li>
+        <li>Symfony 3.1 deprecation fixes</li>
+    </ul>
+
 
 <?php $view['blocks']->stop() ?>
