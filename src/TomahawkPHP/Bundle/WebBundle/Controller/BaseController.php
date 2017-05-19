@@ -13,18 +13,18 @@ class BaseController extends Controller
     /**
      * @var string
      */
-    const CURRENT_VERSION = '2.1';
+    const CURRENT_VERSION = '2.0';
 
     /**
      * @var string
      */
-    protected $publishedVersion = '2.1.0';
+    protected $publishedVersion = '2.0.3';
 
     /**
      * @var array
      */
     protected $availableVersions = array(
-        '2.1',
+        //'2.1',
         '2.0',
         '1.4',
     );
