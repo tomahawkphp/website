@@ -148,10 +148,12 @@ $router = new Router();
 
 $router->group('account', function(Router $router, RouteCollection $collection) {
 
-    $collection->addDefaults(['before' => 'auth']);
 
     $router->get('/', 'account.home', 'AccountController::homeAction'));
     $router->get('orders', 'account.orders', 'AccountController::ordersAction'));
+
+    // Must be declared after routes as the defaults will get applied to the routes
+    $collection->addDefaults(['before' => 'auth']);
 });
 </script>
 </div>
