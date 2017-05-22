@@ -14,7 +14,7 @@ $router->group('/roadmap', function(Router $router) {
     $router->get('/', 'roadmap.home', 'WebBundle:Roadmap:home');
 });
 
-$router->section('/docs/{fw_version}', ['fw_version' => BaseController::CURRENT_VERSION], function(Router $router, RouteCollection $routeCollection) {
+$router->group(['prefix' => '/docs/{fw_version}', 'defaults' => ['name' => 'Tom', 'fw_version' => BaseController::CURRENT_VERSION]], function(Router $router, RouteCollection $routeCollection) {
 
     $router->get('/', 'docs.home', 'WebBundle:Docs:home');
     $router->get('/installation', 'docs.setup.installation', 'WebBundle:Docs:install');
@@ -22,7 +22,7 @@ $router->section('/docs/{fw_version}', ['fw_version' => BaseController::CURRENT_
     $router->get('/server-configuration', 'docs.setup.server_configuration', 'WebBundle:Docs:serverConfigure');
     $router->get('/environments', 'docs.setup.environments', 'WebBundle:Docs:environments');
 
-    $router->section('/services', [], function(Router $router, RouteCollection $routeCollection) {
+    $router->group('/services', function(Router $router) {
 
         $router->get('/', 'docs.services.home', 'WebBundle:Docs:services');
         $router->get('/asset-manager', 'docs.services.asset', 'WebBundle:Docs:asset');
@@ -52,8 +52,6 @@ $router->section('/docs/{fw_version}', ['fw_version' => BaseController::CURRENT_
         $router->get('/extending', 'docs.extending', 'WebBundle:Docs:extending');
     });
 
-    //$routeCollection->addDefaults(['fw_version' => BaseController::CURRENT_VERSION]);
 });
-
 
 return $router->getRoutes();

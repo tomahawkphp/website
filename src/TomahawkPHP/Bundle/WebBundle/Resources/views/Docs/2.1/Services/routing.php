@@ -136,7 +136,10 @@ $router->get('/user/{id}', 'home', function(Request $request, $id) {
 
     <h2>Route Groups</h2>
 
-    <p>You can also define a group to control a set of routes.</p>
+    <p>You can also define a group to control a set of routes. The first parameter to the <code>group</code> method
+        can either be a <code>string</code> or <code>array</code> of settings.</p>
+
+    <p>When a string is passed this should be the prefix for the route group:</p>
 
 <div>
 <script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
@@ -157,6 +160,41 @@ $router->group('account', function(Router $router, RouteCollection $collection) 
 });
 </script>
 </div>
+
+    <p>An array can be passed with the following options available: </p>
+
+    <ul>
+        <li>prefix - string - Prefix for the route group</li>
+        <li>domain - string - Domain host pattern. e.g domain.com You can also set placeholders. e.g {subdomain}.domain.com</li>
+        <li>schemes - string|array - What schemes a route should match (http, https)</li>
+        <li>methods - string|array - What methods a route should match (GET, POST etc)</li>
+        <li>defaults - array - Default values for parameters. e.g. ['version', 1]. Can also be used to pass information to the Requests attributes</li>
+        <li>options - array - Options for route(s) Will get passed to the request</li>
+        <li>requirements - array - Requirements for route parameters. e.g. ['id', "\d+"]</li>
+    </ul>
+
+<div>
+<script data-style="application/x-httpd-php" type="x-code-example">&lt;?php
+
+use Tomahawk\Routing\Router;
+use Symfony\Component\Routing\RouteCollection;
+
+$router = new Router();
+
+$router->group(array(
+    'prefix' => '/users/{id}',
+    'schemes' => 'https',
+    'requirements' => ['id' => "\d+"],
+), function(Router $router, RouteCollection $collection) {
+
+    $router->any('/', 'admin_home', function() {
+        return 'Home';
+    });
+
+});
+</script>
+</div>
+
 
     <h2>Http and Https Routes</h2>
 
