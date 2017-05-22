@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Tomahawk\Routing\Router | TomahawkPHP API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Tomahawk_Routing_Router" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../1.4/index.html">1.4 branch</option>
+                                            <option value="../../../2.0/index.html">2.0 branch</option>
+                                            <option value="../../../2.1/index.html" selected>2.1 branch</option>
+                                            <option value="../../../master/index.html">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">TomahawkPHP API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Tomahawk.html">Tomahawk</a></li>
+                                        <li><a href="../../Tomahawk/Routing.html">Routing</a></li>
+    
+                <li>Router</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Router</h1>
+    </div>
+
+    <p>    class
+    <strong>Router</strong></p>
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr> $routes = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRoutes">setRoutes</a>(<abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr> $routes)
+                                            <p>Set route collection</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Symfony\Component\Routing\RouteCollection">RouteCollection</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRoutes">getRoutes</a>()
+                                            <p>Get route collection</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>GET Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_post">post</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>POST Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_put">put</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>PUT Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_patch">patch</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>PATCH Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_options">options</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>OPTIONS Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>DELETE Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_any">any</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>ANY Route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_match">match</a>($path, $name, null $callback = null, array $schemes = array())
+                                            <p>Match a given path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createRoute">createRoute</a>($method, $path, $name, $callback, array $schemes = array())
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_formatPath">formatPath</a>($path)
+                                            <p>Format Request Path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_section">section</a>($name, array $options = array(), <abbr title="Tomahawk\Routing\Closure">Closure</abbr> $callback)
+                                            <p>Create a route section</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_group">group</a>(string|array $options, <abbr title="Tomahawk\Routing\Closure">Closure</abbr> $callback)
+                                            <p>Create a route group</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInSection">setInSection</a>(boolean $inSection)
+                                            <p>Set whether we are in a route section or not</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInSection">getInSection</a>()
+                                            <p>Get whether we are in a route section or not</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setInGroup">setInGroup</a>(boolean $inGroup)
+                                            <p>Set whether we are in a route group or not</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getInGroup">getInGroup</a>()
+                                            <p>Get whether we are in a route group or not</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 40</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr> $routes = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr></td>
+                <td>$routes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRoutes">
+        <div class="location">at line 51</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+    <strong>setRoutes</strong>(<abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr> $routes)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set route collection</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Tomahawk\Routing\Symfony\Component\Routing\RouteCollection">RouteCollection</abbr></td>
+                <td>$routes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRoutes">
+        <div class="location">at line 62</div>
+        <code>                    <abbr title="Symfony\Component\Routing\RouteCollection">RouteCollection</abbr>
+    <strong>getRoutes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get route collection</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Symfony\Component\Routing\RouteCollection">RouteCollection</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 76</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>get</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>GET Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_post">
+        <div class="location">at line 90</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>post</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>POST Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_put">
+        <div class="location">at line 104</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>put</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>PUT Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_patch">
+        <div class="location">at line 118</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>patch</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>PATCH Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_options">
+        <div class="location">at line 132</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>options</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>OPTIONS Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line 146</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>delete</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>DELETE Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_any">
+        <div class="location">at line 160</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>any</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>ANY Route</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_match">
+        <div class="location">at line 176</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>match</strong>($path, $name, null $callback = null, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Match a given path</p>                    <p>You would proceed this method call by setting allowed methods</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>null</td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRoute">
+        <div class="location">at line 189</div>
+        <code>                    <a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a>
+    <strong>createRoute</strong>($method, $path, $name, $callback, array $schemes = array())</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$schemes</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Tomahawk/Routing/Route.html"><abbr title="Tomahawk\Routing\Route">Route</abbr></a></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formatPath">
+        <div class="location">at line 214</div>
+        <code>                    string
+    <strong>formatPath</strong>($path)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Format Request Path</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_section">
+        <div class="location">at line 231</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+    <strong>section</strong>($name, array $options = array(), <abbr title="Tomahawk\Routing\Closure">Closure</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a route section</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tomahawk\Routing\Closure">Closure</abbr></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_group">
+        <div class="location">at line 256</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+    <strong>group</strong>(string|array $options, <abbr title="Tomahawk\Routing\Closure">Closure</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a route group</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$options</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="Tomahawk\Routing\Closure">Closure</abbr></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInSection">
+        <div class="location">at line 324</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+    <strong>setInSection</strong>(boolean $inSection)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set whether we are in a route section or not</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$inSection</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInSection">
+        <div class="location">at line 337</div>
+        <code>                    boolean
+    <strong>getInSection</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get whether we are in a route section or not</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setInGroup">
+        <div class="location">at line 348</div>
+        <code>                    <abbr title="Tomahawk\Routing\$this">$this</abbr>
+    <strong>setInGroup</strong>(boolean $inGroup)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set whether we are in a route group or not</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>boolean</td>
+                <td>$inGroup</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Tomahawk\Routing\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInGroup">
+        <div class="location">at line 359</div>
+        <code>                    boolean
+    <strong>getInGroup</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get whether we are in a route group or not</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>boolean</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
