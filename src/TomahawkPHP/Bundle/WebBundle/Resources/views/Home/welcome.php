@@ -105,6 +105,9 @@
                     </ul>
                 </div>
             </div>
+          
+        </div>
+
             <div class="row">
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Wide -->
@@ -116,8 +119,6 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
             </div>
-        </div>
-
     </div>
 
 <?php $view['blocks']->stop() ?>
