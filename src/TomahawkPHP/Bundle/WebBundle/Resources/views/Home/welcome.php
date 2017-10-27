@@ -109,7 +109,7 @@
         </div>
 
             <div class="row">
-                <div class="center-block">
+                <div class="text-center">
                     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- Wide -->
                     <ins class="adsbygoogle"
