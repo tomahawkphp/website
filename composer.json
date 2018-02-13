@@ -9,7 +9,7 @@
         }
     },
     "require": {
-        "tomahawk/framework": "2.1.0"
+        "tomahawk/framework": "2.1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.6.*"
